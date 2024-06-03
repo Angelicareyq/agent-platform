@@ -8,6 +8,7 @@
             {
                 "class": "btnsecondary",
                 "text": "No",
+                "question": {},
                 "solution": {
                     "title": "Smudges",
                     "action": "File the complaint in Presta",
@@ -49,6 +50,7 @@
                                     {
                                         "class": "btnsecondary",
                                         "text": "No",
+                                        "question": {},
                                         "solution": {
                                             "title": "Smudges",
                                             "action": "File the complaint in Presta",
@@ -86,6 +88,7 @@
                                     {
                                         "class": "btnprimary",
                                         "text": "Yes",
+                                        "question": {},
                                         "solution": {
                                             "title": "Smudges",
                                             "action": "File the complaint in Presta",
@@ -126,6 +129,7 @@
                         {
                             "class": "btnprimary",
                             "text": "Yes",
+                            "question": {},
                             "solution": {
                                 "title": "Smudges",
                                 "action": "File the complaint in Presta",

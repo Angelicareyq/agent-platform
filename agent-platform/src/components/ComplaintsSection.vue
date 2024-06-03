@@ -6,21 +6,19 @@
   <div class="container">
     <div class="column">
       <MainCard @click="toQuestion('low-resolution')" msg="Low resolution" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('print-marks')" msg="Print Marks" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('colour-deviation')" msg="Colour deviation" :disabled=false></MainCard>
+      <MainCard @click="toQuestion('colour-deviation')" msg="Colour Deviation" :disabled=false></MainCard>
       <MainCard @click="toQuestion('smudges')" msg="Smudges" :disabled=false></MainCard>
     </div>
     <div class="column">
-      <MainCard msg="The finishing is wrong" :disabled=true></MainCard>
-      <MainCard msg="I received the incorrect sizes of textile" :disabled=true></MainCard>
-      <MainCard msg="Customer received order from different customer" :disabled=true></MainCard>
-      <MainCard msg="Lost order" :disabled=true></MainCard>
+      <MainCard @click="toQuestion('print-marks')" msg="Print Marks" :disabled=false></MainCard>
+      <MainCard @click="toQuestion('Delayed/missing items')" msg="Delayed/Missing Items/Lost" :disabled=true></MainCard>
+      <MainCard @click="toQuestion('Deadline-missied')" msg="Deadline Missied" :disabled=true></MainCard>
     </div>
     <div class="column">
+       <MainCard msg="Customer received order from different customer" :disabled=true></MainCard>
       <MainCard msg="There are stains / smudges on my product" :disabled=true></MainCard>
       <MainCard msg="Incomplete order / missing pieces" :disabled=true></MainCard>
-      <MainCard msg="Damaged product/order" :disabled=true></MainCard>
-      <MainCard msg="Order delayed" :disabled=true></MainCard>
+      
     </div>
   </div>
 </template>

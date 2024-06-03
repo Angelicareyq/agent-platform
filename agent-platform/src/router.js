@@ -7,7 +7,7 @@ import Solutions from './components/Solutions.vue'
 const routes = [
     { path: '/', name: "ComplaintsSection", component: ComplaintsSection },
     { path: '/questions/:id', name: "Questions", component: Questions },
-    { path: '/solutions', name: "Solutions", component: Solutions, props: route => ({ solutionInformation: route.query.dato }) },
+    { path: '/solutions', name: "Solutions", component: Solutions, props: route => ({ solutionInformation: route.query.solutionInformation }) },
 ]
 
 const router = createRouter({
