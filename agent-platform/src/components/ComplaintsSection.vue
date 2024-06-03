@@ -5,9 +5,7 @@
   </div>
   <div class="container">
     <div class="column">
-      <MainCard @click="toQuestion('low-resolution')" msg="Low resolution" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('colour-deviation')" msg="Colour Deviation" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('smudges')" msg="Smudges" :disabled=false></MainCard>
+      <MainCard @click="goToSubComplaints(this.printerQuality)" msg="Low resolution" :disabled=false></MainCard>
     </div>
     <div class="column">
       <MainCard @click="toQuestion('print-marks')" msg="Print Marks" :disabled=false></MainCard>
@@ -15,10 +13,10 @@
       <MainCard @click="toQuestion('Deadline-missied')" msg="Deadline Missied" :disabled=true></MainCard>
     </div>
     <div class="column">
-       <MainCard msg="Customer received order from different customer" :disabled=true></MainCard>
+      <MainCard msg="Customer received order from different customer" :disabled=true></MainCard>
       <MainCard msg="There are stains / smudges on my product" :disabled=true></MainCard>
       <MainCard msg="Incomplete order / missing pieces" :disabled=true></MainCard>
-      
+
     </div>
   </div>
 </template>
@@ -32,9 +30,38 @@ export default {
   components: {
     MainCard
   },
+  data() {
+    return {
+      printerQuality: {
+        "title": "Printer Quality",
+        "sub_complanints": [
+          {
+            key: 'low-resolution',
+            message: 'Low resolution',
+          },
+          {
+            key: 'colour-deviation',
+            message: 'Colour Deviation',
+          },
+          {
+            key: 'smudges',
+            message: 'Smudges',
+          },
+        ]
+      }
+    };
+  },
   methods: {
     toQuestion(questionId) {
       this.$router.push({ path: '/questions/' + questionId });
+    },
+    goToSubComplaints(subComplaints) {
+      this.$router.push({
+        name: "SubComplains",
+        query: {
+          subComplaintsParam: JSON.stringify(subComplaints)
+        }
+      });
     }
   }
 }

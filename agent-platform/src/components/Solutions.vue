@@ -43,7 +43,6 @@ export default {
     computed: {
         parseSolution() {
             const solution = JSON.parse(this.solutionInformation);
-            console.log("Parsed solution:", solution); // <-- Agrega este log
             return solution;
         }
     },
