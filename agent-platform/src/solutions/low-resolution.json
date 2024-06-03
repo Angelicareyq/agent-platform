@@ -40,7 +40,7 @@
                                                     "isValid": false
                                                 }
                                             ],
-                                            "sumaries": [
+                                            "summaries": [
                                                 {
                                                     "title": "Solution",
                                                     "description": "Since it's our fault we didn't sent a warning, we have to make up with it by offering a reprint or a refund."
@@ -77,7 +77,7 @@
                                                     "isValid": true
                                                 }
                                             ],
-                                            "sumaries": [
+                                            "summaries": [
                                                 {
                                                     "title": "Solution",
                                                     "description": "The customer approved the file even when we stated there was a risk that the quality of the print is going to be bad."
@@ -125,7 +125,7 @@
                                                     "isValid": false
                                                 }
                                             ],
-                                            "sumaries": [
+                                            "summaries": [
                                                 {
                                                     "title": "Solution",
                                                     "description": "Since it's our fault we didn't sent a warning, we have to make up with it by offering a reprint or a refund."
@@ -162,7 +162,7 @@
                                                     "isValid": true
                                                 }
                                             ],
-                                            "sumaries": [
+                                            "summaries": [
                                                 {
                                                     "title": "Solution",
                                                     "description": "The customer approved the file even when we stated there was a risk that the quality of the print is going to be bad."
@@ -198,7 +198,7 @@
                             "isValid": true
                         }
                     ],
-                    "sumaries": [
+                    "summaries": [
                         {
                             "title": "Solution",
                             "description": "Since it's a complaint on the supplier and the file has no issues we can reprint using the same file."

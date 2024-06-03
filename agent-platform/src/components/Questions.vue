@@ -69,7 +69,6 @@ export default {
             this.action = option.action !== "" ? option.action : "";
 
             if (Object.keys(option.question).length === 0) {
-                console.info(JSON.stringify(option.solution))
                 this.$router.push({
                     name: "Solutions",
                     query: {

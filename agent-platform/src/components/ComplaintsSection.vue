@@ -8,9 +8,8 @@
       <MainCard @click="goToSubComplaints(this.printerQuality)" msg="Low resolution" :disabled=false></MainCard>
     </div>
     <div class="column">
-      <MainCard @click="toQuestion('print-marks')" msg="Print Marks" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('Delayed/missing items')" msg="Delayed/Missing Items/Lost" :disabled=true></MainCard>
-      <MainCard @click="toQuestion('Deadline-missied')" msg="Deadline Missied" :disabled=true></MainCard>
+      <MainCard @click="goToSubComplaints(this.printerQuality2)" msg="Deadline Missied" :disabled=false></MainCard>
+      
     </div>
     <div class="column">
       <MainCard msg="Customer received order from different customer" :disabled=true></MainCard>
@@ -46,6 +45,15 @@ export default {
           {
             key: 'smudges',
             message: 'Smudges',
+          },
+        ]
+      },
+      printerQuality2: {
+        "title": "Printer Quality 3",
+        "sub_complanints": [
+          {
+            key: 'deadline-missied',
+            message: 'Deadline Missied',
           },
         ]
       }
