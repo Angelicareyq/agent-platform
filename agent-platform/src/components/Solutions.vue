@@ -18,7 +18,7 @@
     </div>
     <h3>Solutions and next steps</h3>
     <div>
-        <div v-for="(summary, index) in parseSolution.sumaries" :key="index" class="solutions">
+        <div v-for="(summary, index) in parseSolution.summaries" :key="index" class="solutions">
             <p><span style="font-weight: bold; color: #222222;">{{ summary.title }} </span></p>
             <p>{{ summary.description }}</p>
         </div>
@@ -35,11 +35,15 @@
 export default {
     name: "Solutions",
     props: {
-        solutionInformation: Object,
+        solutionInformation: {
+            type: String,
+            required: true
+        }
     },
     computed: {
         parseSolution() {
-            return JSON.parse(this.$route.query.solutionInformation);
+            const solution = JSON.parse(this.solutionInformation);
+            return solution;
         }
     },
     methods: {
@@ -48,7 +52,6 @@ export default {
         }
     }
 }
-
 </script>
 <style scoped>
 h1 {

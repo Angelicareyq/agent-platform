@@ -5,22 +5,17 @@
   </div>
   <div class="container">
     <div class="column">
-      <MainCard @click="toQuestion('low-resolution')" msg="Low resolution" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('print-marks')" msg="Print Marks" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('colour-deviation')" msg="Colour deviation" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('smudges')" msg="Smudges" :disabled=false></MainCard>
+      <MainCard @click="goToSubComplaints(this.printerQuality)" msg="Low resolution" :disabled=false></MainCard>
     </div>
     <div class="column">
-      <MainCard msg="The finishing is wrong" :disabled=true></MainCard>
-      <MainCard msg="I received the incorrect sizes of textile" :disabled=true></MainCard>
+      <MainCard @click="goToSubComplaints(this.printerQuality2)" msg="Deadline Missied" :disabled=false></MainCard>
+      
+    </div>
+    <div class="column">
       <MainCard msg="Customer received order from different customer" :disabled=true></MainCard>
-      <MainCard msg="Lost order" :disabled=true></MainCard>
-    </div>
-    <div class="column">
       <MainCard msg="There are stains / smudges on my product" :disabled=true></MainCard>
       <MainCard msg="Incomplete order / missing pieces" :disabled=true></MainCard>
-      <MainCard msg="Damaged product/order" :disabled=true></MainCard>
-      <MainCard msg="Order delayed" :disabled=true></MainCard>
+
     </div>
   </div>
 </template>
@@ -34,9 +29,47 @@ export default {
   components: {
     MainCard
   },
+  data() {
+    return {
+      printerQuality: {
+        "title": "Printer Quality",
+        "sub_complanints": [
+          {
+            key: 'low-resolution',
+            message: 'Low resolution',
+          },
+          {
+            key: 'colour-deviation',
+            message: 'Colour Deviation',
+          },
+          {
+            key: 'smudges',
+            message: 'Smudges',
+          },
+        ]
+      },
+      printerQuality2: {
+        "title": "Printer Quality 3",
+        "sub_complanints": [
+          {
+            key: 'deadline-missied',
+            message: 'Deadline Missied',
+          },
+        ]
+      }
+    };
+  },
   methods: {
     toQuestion(questionId) {
       this.$router.push({ path: '/questions/' + questionId });
+    },
+    goToSubComplaints(subComplaints) {
+      this.$router.push({
+        name: "SubComplains",
+        query: {
+          subComplaintsParam: JSON.stringify(subComplaints)
+        }
+      });
     }
   }
 }

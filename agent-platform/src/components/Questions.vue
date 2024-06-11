@@ -1,19 +1,15 @@
 <template>
-
-    <div v-if="this.invalidQuestion === false">
-
+    <div v-if="!invalidQuestion">
         <div class="header">
             <h1>{{ data.title }}</h1>
             <h4>{{ data.subTitle }}</h4>
-            <h3 v-if="this.action"><span style="font-weight: bold; color: #222222;">Action: </span> {{ this.action }}
-            </h3>
+            <h3 v-if="action"><span style="font-weight: bold; color: #222222;">Action: </span> {{ action }}</h3>
         </div>
         <div class="question">
-            <h1 class="question">{{ question.text }}</h1>
+            <h1 class="question" v-html="question.text"></h1>
             <div class="btn-container">
-                <button :class="option.class" v-for="option in this.question.options" :key="option.id"
-                    @click="answerQuestion(option)">
-                    {{ option.text }}
+                <button :class="option.class" v-for="option in question.options" :key="option.id" @click="answerQuestion(option)">
+                    <span v-html="option.text"></span>
                 </button>
             </div>
         </div>
@@ -72,9 +68,7 @@ export default {
             this.question = option.question || {};
             this.action = option.action !== "" ? option.action : "";
 
-
             if (Object.keys(option.question).length === 0) {
-                console.info(JSON.stringify(option.solution))
                 this.$router.push({
                     name: "Solutions",
                     query: {
@@ -94,7 +88,6 @@ export default {
 .header {
     margin: 80px 0 40px 0;
     color: #222222;
-
 }
 
 h4 {
@@ -113,7 +106,6 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-
 
 .btnprimary {
     background-color: #E84E1E;
