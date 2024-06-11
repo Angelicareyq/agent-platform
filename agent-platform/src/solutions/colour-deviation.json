@@ -35,7 +35,7 @@
                                         "description": "The colours do not deviate enough for us to validate the complaint. The customer is to use the product as printed. If the customer needs the colours to be correct, you can place a discount on a PMS order."
                                     },
                                     {
-                                        "title": "What to say to the customer",
+                                        "title": "What to tell the customer",
                                         "description": "Sorry, but the colours are judged to be within 10% of the approved proof, we can not validate the complaint. In CMYK printing colours can deviate because of different factors such as: Ink quality, paper type, calibration issues, environmental factors, human error. We are happy to offer a discount on this product with PMS print to ensure the correct colours are printed."
                                     }
                                 ]
@@ -65,7 +65,7 @@
                                         "description": "The supplier mixed the inks incorrectly and they deviated over 10% from the cPDF. A reprint can be processed with the same file as approved."
                                     },
                                     {
-                                        "title": "What to say to the customer",
+                                        "title": "What to tell the customer",
                                         "description": "It seems the colours have deviated over 10%, this could have been caused because of multiple reasons: Ink quality, paper type, calibration issues, environmental factors, human error. We would like to offer to reprint the product with the same file. If no time for a reprint, could you use this product at a discount?"
                                     }
                                     ,
@@ -120,7 +120,7 @@
                                                     "description": "We altered the colours from the original design but did not warn the customer, this indicates a lack of attention on our end. The agent should have reviewed the altered colours. We can reprint with a fixed CMYK / PMS file from the customer or they can use the current order at a discount."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "We altered the colours in your file but failed to inform you. As we can not print the colours you have uploaded, we suggest using the current product at a discount or we offer to reprint with an altered file."
                                                 },
                                                 {
@@ -158,7 +158,7 @@
                                                     "description": "Autocheck can not yet send warnings when colours have been altered. Since the customer was not informed we can reprint with a fixed CMYK / PMS file from the customer or they can use the current order at a discount."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "We altered the colours in your file but failed to inform you. As we can not print the colours you have uploaded, we suggest using the current product at a discount or we offer to reprint with an altered file."
                                                 },
                                                 {
@@ -217,7 +217,7 @@
                                                                 "description": "The colours do not deviate enough for us to validate the complaint. The customer is to use the product as printed. If the customer needs the colours to be correct, you can place a discount on a PMS order."
                                                             },
                                                             {
-                                                                "title": "What to say to the customer",
+                                                                "title": "What to tell the customer",
                                                                 "description": "Sorry, but the colours are judged to be within 10% of the approved proof, we can not validate the complaint. In CMYK printing colours can deviate because of different factors such as: Ink quality, paper type, calibration issues, environmental factors, human error. We are happy to offer a discount on this product with PMS print to ensure the correct colours are printed."
                                                             }
                                                         ]
@@ -255,7 +255,7 @@
                                                                 "description": "The supplier mixed the inks incorrectly and they deviated over 10% from the cPDF. A reprint can be processed with the same file as approved."
                                                             },
                                                             {
-                                                                "title": "What to say to the customer",
+                                                                "title": "What to tell the customer",
                                                                 "description": "It seems the colours have deviated over 10%, this could have been caused because of multiple reasons: Ink quality, paper type, calibration issues, environmental factors, human error. We would like to offer to reprint the product with the same file. If no time for a reprint, could you use this product at a discount?"
                                                             },
                                                             {
@@ -296,7 +296,7 @@
                                                     "description": "PMS colours are inks that are premade and should always have the same colour. If a colour deviation is apparent on a PMS order it means the supplier did not use the correct pot. Hence you can reprint with the same file (correct PMS colours)."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "It seems we printed alternative PMS colours to those approved on the print proof, we want to rectify this by reprinting your order with the correct PMS colours.  If you can't use the reprint because it will be too late, I can offer you a refund on this order."
                                                 },
                                                 {

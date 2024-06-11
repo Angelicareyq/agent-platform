@@ -5,7 +5,7 @@
     </div>
     <div class="container">
         <div class="column">
-            <MainCard v-for="complaint in parseSubComplaints.sub_complanints" :key="complaint.key"
+            <MainCard v-for="complaint in parseSubComplaints.sub_complaints" :key="complaint.key"
                 @click="toQuestion(complaint.key)" style="margin-right: 30px;" :msg="complaint.message"
                 :disabled="false">
             </MainCard>

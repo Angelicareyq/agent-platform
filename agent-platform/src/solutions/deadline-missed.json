@@ -1,0 +1,179 @@
+{
+    "title": "Deadline Missed",
+    "subTitle": "The production deadline was missed causing a delay in the order.",
+    "action": "Check the log in the DTP tab. Does the time stamp when the order was approved exceed the daily production deadline?",
+    "question": {
+        "text": "Did the order go to production before the deadline?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "Search the order detail in dixa to find out if the supplier rejected the order or delayed it for other reasons.",
+                "question": {
+                    "text": "Did the supplier contact us regarding the order?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "Search the order detail in dixa to find out if the supplier rejected the order or delayed it for other reasons.",
+                            "question": {},
+                            "solution": {
+                                "title": "Deadline Missed",
+                                "action": "",
+                                "validComplaint": false,
+                                "questions": [
+                                    {
+                                        "title": "Did the order go to production before the deadline?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Did the supplier contact us regarding the order?",
+                                        "isValid": false
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The missed deadline is not the issue. Check the 'Delayed' decision tree to reach the correct outcome."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {
+                                "text": "Rejected because supplied artwork incorrect?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {
+                                            "text": "Stock issues?",
+                                            "options": [
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Deadline Missed",
+                                                        "action": "File the complaint in Presta.",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Did the order go to production before the deadline?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Did the supplier contact us regarding the order?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Rejected because supplied artwork incorrect?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Stock issues?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The ordered item is not in stock, we can print an alternative product or ask the customer if they can wait until it's back in stock."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "The ordered product is not in stock at the moment. We can offer you an alternative product or wait until it is back in stock. We apologise for the inconvenience and offer a discount for the time lost."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Other - Process Wrong / Product not in stock"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Deadline Missed",
+                                            "action": "File the complaint in Presta.",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Did the order go to production before the deadline?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Did the supplier contact us regarding the order?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Rejected because supplied artwork incorrect?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "If the supplier rejects the file after it was processed incorrectly it is valid on the artworker who processed it. DTP will fix it, we can offer a discount for time lost."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "The order was delayed in production as the print file was not ready for production yet. We have resolved the issue and placed the file back in production. We apologise for the delay and offer to discount the order."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Artwork - Manual Checked / Incorrect process"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "",
+                "question": {},
+                "solution": {
+                    "title": "Deadline Missed",
+                    "action": "File the complaint in Presta.",
+                    "validComplaint": true,
+                    "questions": [
+                        {
+                            "title": "Did the order go to production before the deadline?",
+                            "isValid": true
+                        }
+                    ],
+                    "summaries": [
+                        {
+                            "title": "Solution",
+                            "description": "The production deadline was missed because of the high workload or a difficult file. We can offer a discount to make up for this."
+                        },
+                        {
+                            "title": "What to tell the customer",
+                            "description": "The production deadline was missed because of the high workload, our apologies for this. Can you still use the order with it's new expected delivery date? We would like to offer you a discount to make up for time lost."
+                        },
+                        {
+                            "title": "Log in Presta",
+                            "description": "Artwork Process / Deadline missed"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

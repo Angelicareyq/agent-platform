@@ -46,7 +46,7 @@
                                                     "description": "Since no cropmarks were needed and the cPDF has them means the agent used the incorrect export. We can reprint the order with a new cPDF obtained via prepress."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "We incorrectly added cropmarks to your file which were not required for this product. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
                                                 },
                                                 {
@@ -84,7 +84,7 @@
                                                     "description": "Since no cropmarks were needed and the cPDF has them means the autocheck has incorrect settings for this product. We can reprint the order with a new cPDF obtained via prepress."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "We incorrectly added cropmarks to your file which were not required for this product. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
                                                 },
                                                 {
@@ -121,7 +121,7 @@
                                         "description": "The supplier has either used their own cropmarks or the cutting has deviated. As it's on supplier, this should not happen again, reprint using the same file."
                                     },
                                     {
-                                        "title": "What to say to the customer",
+                                        "title": "What to tell the customer",
                                         "description": "During production new cropmarks were added which became visible when the product was cut incorrectly. This should not repeat itself. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
                                     },
                                     {
@@ -149,84 +149,84 @@
                                 "text": "Cutting over 3mm deviated?",
                                 "options": [
                                     {
-                                    "class": "btnsecondary",
-                                    "text": "No",
-                                    "question": {},
-                                    "solution": {
-                                        "title": "Print Marks",
-                                        "action": "File the complaint in Presta",
-                                        "validComplaint": false,
-                                        "questions": [
-                                            {
-                                                "title": "Customer uploaded print marks?",
-                                                "isValid": true
-                                            },
-                                            {
-                                                "title": "CPDF has double set of print marks?",
-                                                "isValid": false
-                                            },
-                                            {
-                                                "title": "Cutting over 3mm deviated?",
-                                                "isValid": false
-                                            }
-                                        ],
-                                        "summaries": [
-                                            {
-                                                "title": "Solution",
-                                                "description": "We mention on the website not to upload cropmarks, if this has been done and it was read as \"part of the design\" by either autocheck or our agents, we can't validate the complaint."
-                                            },
-                                            {
-                                                "title": "What to say to the customer - First time CMR or cheap order",
-                                                "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include cropmarks. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
-                                            },
-                                            {
-                                                "title": "What to say to the customer",
-                                                "description": "I am sorry but you approved the proof with cropmarks, which we mention, on the website, should not be included in your design. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
-                                            }
-                                        ]
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Print Marks",
+                                            "action": "File the complaint in Presta",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Customer uploaded print marks?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "CPDF has double set of print marks?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Cutting over 3mm deviated?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "We mention on the website not to upload cropmarks, if this has been done and it was read as \"part of the design\" by either autocheck or our agents, we can't validate the complaint."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer - First time CMR or cheap order",
+                                                    "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include cropmarks. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "I am sorry but you approved the proof with cropmarks, which we mention, on the website, should not be included in your design. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Print Marks",
+                                            "action": "File the complaint in Presta",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Customer uploaded print marks?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "CPDF has double set of print marks?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Cutting over 3mm deviated?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The supplier has used our cPDF but has cut the product incorrectly. This should not happen again so you can use the same file for a reprint."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "The product was cut incorrectly. This should not repeat itself. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Supplier - Quality wrong Cutting"
+                                                }
+                                            ]
+                                        }
                                     }
-                                },
-                                {
-                                    "class": "btnprimary",
-                                    "text": "Yes",
-                                    "question": {},
-                                    "solution": {
-                                        "title": "Print Marks",
-                                        "action": "File the complaint in Presta",
-                                        "validComplaint": true,
-                                        "questions": [
-                                            {
-                                                "title": "Customer uploaded print marks?",
-                                                "isValid": true
-                                            },
-                                            {
-                                                "title": "CPDF has double set of print marks?",
-                                                "isValid": false
-                                            },
-                                            {
-                                                "title": "Cutting over 3mm deviated?",
-                                                "isValid": true
-                                            }
-                                        ],
-                                        "summaries": [
-                                            {
-                                                "title": "Solution",
-                                                "description": "The supplier has used our cPDF but has cut the product incorrectly. This should not happen again so you can use the same file for a reprint."
-                                            },
-                                            {
-                                                "title": "What to say to the customer",
-                                                "description": "The product was cut incorrectly. This should not repeat itself. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
-                                            },
-                                            {
-                                                "title": "Log in Presta",
-                                                "description": "Supplier - Quality wrong Cutting"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        }
-                    },
+                                ]
+                            }
+                        },
                         {
                             "class": "btnprimary",
                             "text": "Yes",
@@ -250,6 +250,10 @@
                                                         "validComplaint": true,
                                                         "questions": [
                                                             {
+                                                                "title": "Customer uploaded print marks?",
+                                                                "isValid": true
+                                                            },
+                                                            {
                                                                 "title": "CPDF has double set of print marks?",
                                                                 "isValid": true
                                                             },
@@ -268,8 +272,12 @@
                                                                 "description": "Printed cropmarks in this case indicate a lack of attention during process as the agent should have seen and removed them. Upon seeing these cropmarks the customer will have thought it will be cut there. A reprint can be processed with a new file obtained by our Prepress team."
                                                             },
                                                             {
-                                                                "title": "What to say to the customer",
+                                                                "title": "What to tell the customer",
                                                                 "description": "We incorrectly added cropmarks to your file which were not required for this product. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Artwork - Manual Checked / Incorrect Process "
                                                             }
                                                         ]
                                                     }
@@ -284,6 +292,10 @@
                                                         "validComplaint": true,
                                                         "questions": [
                                                             {
+                                                                "title": "Customer uploaded print marks?",
+                                                                "isValid": true
+                                                            },
+                                                            {
                                                                 "title": "CPDF has double set of print marks?",
                                                                 "isValid": true
                                                             },
@@ -299,11 +311,15 @@
                                                         "summaries": [
                                                             {
                                                                 "title": "Solution",
-                                                                "description": "Printed cropmarks in this case indicate a lack of attention during process as the agent should have seen and removed them. Upon seeing these cropmarks the customer will have thought it will be cut there. A reprint can be processed with a new file obtained by our Prepress team."
+                                                                "description": "Autocheck can not recognise pixelated cropmarks so if they are printed it means the customer uploaded incorrectly. Since the customer then saw the cropmarks on the proof, they will assume that is where it will be cut. So expecting a different result than printed."
                                                             },
                                                             {
-                                                                "title": "What to say to the customer",
-                                                                "description": "We incorrectly added cropmarks to your file which were not required for this product. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
+                                                                "title": "What to tell the customer",
+                                                                "description": "You uploaded pixelated cropmarks which were not recognised by our autocheck. We mention on the website not to upload cropmarks for this reason. We can reprint your order with an altered file."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Customer Goodwill : Mismatch on product expectations"
                                                             }
                                                         ]
                                                     }
@@ -338,11 +354,11 @@
                                                     "description": "The customer design implies they wanted the cropmarks printed, this was visible on the proof and they accepted so we can not validate the complaint."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer - First time CMR or cheap order",
+                                                    "title": "What to tell the customer - First time CMR or cheap order",
                                                     "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include cropmarks. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "I am sorry but you uploaded cropmarks that indicated a different size which were proofed by us and accepted by you. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
                                                 }
                                             ]

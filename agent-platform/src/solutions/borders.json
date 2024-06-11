@@ -1,0 +1,331 @@
+{
+    "title": "Borders",
+    "subTitle": "Equal borders on a small product can stand out extremely clearly with a minimal cutting deviation.",
+    "action": "Check for a clear frame around the customers design.",
+    "question": {
+        "text": "CMR File has clear borders?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "Place the cPDF in the Template linked to the order & offset by 3mm then compare to the complaint pictures.",
+                "question": {
+                    "text": "Over 3mm deviated?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "question": {},
+                            "solution": {
+                                "title": "Borders",
+                                "validComplaint": false,
+                                "questions": [
+                                    {
+                                        "title": "CMR File has clear borders?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Over 3mm deviated?",
+                                        "isValid": false
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "There are no clear borders on the design and the product was cut accurately. We can not validate the complaint. A voucher of 10% is acceptable here."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "There are no clear borders in your design and the order was cut neatly. We can not validate your complaint, apologies. To meet you half way we are prepared to offer a voucher of 10% on a future order."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "question": {},
+                            "solution": {
+                                "title": "Borders",
+                                "action": "File the complaint in presta",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "CMR File has clear borders?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Over 3mm deviated?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "There are no clear borders in the design but the supplier has cut incorrectly causing the design not to be center on the printed page. We can reprint with the same file."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "The order was not cut accurately in post production. Apologies for this carelessness. We can reprint the order with the same file. If a reprint is too late we can refund the full order."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "Supplier / Cutting"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "Check the order description/SKU for the size. ",
+                "question": {
+                    "text": "Order is smaller than A5?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "Place the cPDF in the Template linked to the order & offset by 3mm then compare to the complaint pictures.",
+                            "question": {
+                                "text": "Over 3mm deviated?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Borders",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "CMR File has clear borders?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Order is smaller than A5?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Over 3mm deviated?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "There are no clear borders on the design and the product was cut accurately. We can not validate the complaint. A voucher of 10% is acceptable here."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "There are no clear borders in your design and the order was cut neatly. We can not validate your complaint, apologies. To meet you half way we are prepared to offer a voucher of 10% on a future order."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Borders",
+                                            "action": "File the complaint in presta",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "CMR File has clear borders?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Order is smaller than A5?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Over 3mm deviated?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "There are no clear borders in the design but the supplier has cut incorrectly causing the design not to be center on the printed page. We can reprint with the same file."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "The order was not cut accurately in post production. Apologies for this carelessness. We can reprint the order with the same file. If a reprint is too late we can refund the full order."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Supplier / Cutting"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {
+                                "text": "DTP Warning sent?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {
+                                            "text": "Automatic artwork check?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Borders",
+                                                        "action": "File the complaint in presta",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "CMR File has clear borders?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Order is smaller than A5?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "DTP Warning sent?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Automatic artwwork check?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "There are clear borders in the design for a small order. A minimal cutting deviation stands out like a sore thumb. Since we did not send a warning, ideally we reprint a file without  borders, but we can reprint the same file if the customer is aware of the risk."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We did not send you a warning regarding the borders on small size. Apologies for this oversight. We can reprint the order with a file without borders, in case these borders are crucial we can use the same file but be aware that the risk remains.   If a reprint is too late we can refund the full order."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Artwork - Manual Checked / No Warning Sent"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Borders",
+                                                        "action": "File the complaint in presta",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "CMR File has clear borders?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Order is smaller than A5?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "DTP Warning sent?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Automatic artwwork check?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "There are clear borders in the design for a small order. A minimal cutting deviation stands out like a sore thumb. Since we did not send a warning, ideally we reprint a file without  borders, but we can reprint the same file if the customer is aware of the risk."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We did not send you a warning regarding the borders on small size. Apologies for this oversight. We can reprint the order with a file without borders, in case these borders are crucial we can use the same file but be aware that the risk remains.   If a reprint is too late we can refund the full order."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Artwork - Automatic Checked / Autocheck - Uneven Borders"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "Place the cPDF in the Template linked to the order & offset by 3mm then compare to the complaint pictures.",
+                                        "question": {
+                                            "text": "Over 3mm deviated?",
+                                            "options": [
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Borders",
+                                                        "action": "File the complaint in presta",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "CMR File has clear borders?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Order is smaller than A5?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "DTP Warning sent?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Over 3mm deviated?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "There are no clear borders in the design but the supplier has cut incorrectly causing the design not to be center on the printed page. We can reprint with the same file."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "The order was not cut accurately in post production. Apologies for this carelessness. We can reprint the order with the same file. If a reprint is too late we can refund the full order."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Supplier / Cutting"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
