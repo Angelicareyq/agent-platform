@@ -5,17 +5,16 @@
   </div>
   <div class="container">
     <div class="column">
-      <MainCard @click="goToSubComplaints(this.printerQuality)" msg="Low resolution" :disabled=false></MainCard>
-    </div>
-    <div class="column">
-      <MainCard @click="goToSubComplaints(this.printerQuality2)" msg="Deadline Missied" :disabled=false></MainCard>
-      
-    </div>
-    <div class="column">
-      <MainCard msg="Customer received order from different customer" :disabled=true></MainCard>
-      <MainCard msg="There are stains / smudges on my product" :disabled=true></MainCard>
-      <MainCard msg="Incomplete order / missing pieces" :disabled=true></MainCard>
+      <MainCard @click="goToSubComplaints(this.printQuality)" msg="Print Quality" :disabled=false></MainCard>
+      <MainCard @click="goToSubComplaints(this.deliveryDamage)" msg="Delivery Damage" :disabled=false></MainCard>
 
+    </div>
+    <div class="column">
+      <MainCard @click="goToSubComplaints(this.designIssues)" msg="Design Issues" :disabled=false></MainCard>
+      <MainCard @click="goToSubComplaints(this.printMarks)" msg="Print Marks" :disabled=false></MainCard>
+    </div>
+    <div class="column">
+      <MainCard @click="goToSubComplaints(this.finishing)" msg="Finishing" :disabled=false></MainCard>
     </div>
   </div>
 </template>
@@ -31,32 +30,79 @@ export default {
   },
   data() {
     return {
-      printerQuality: {
-        "title": "Printer Quality",
-        "sub_complanints": [
+      printQuality: {
+        "title": "Print Quality",
+        "sub_complaints": [
           {
-            key: 'low-resolution',
-            message: 'Low resolution',
+            key: "low-resolution",
+            message: "Low resolution",
           },
           {
-            key: 'colour-deviation',
-            message: 'Colour Deviation',
+            key: "colour-deviation",
+            message: "Colour Deviation",
           },
           {
-            key: 'smudges',
-            message: 'Smudges',
+            key: "smudges",
+            message: "Smudges",
           },
         ]
       },
-      printerQuality2: {
-        "title": "Printer Quality 3",
-        "sub_complanints": [
+      deliveryDamage: {
+        "title": "Delivery/Damage",
+        "sub_complaints": [
           {
-            key: 'deadline-missied',
-            message: 'Deadline Missied',
+            key: 'deadline-missed',
+            message: 'Deadline Missed',
+          },
+          {
+            key: 'damage',
+            message: 'Damage',
+          }
+        ]
+      },
+      designIssues: {
+        "title": "Design Issues",
+        "sub_complaints": [
+          {
+            key: 'incorrect-artwork',
+            message: 'Incorrect Artwork/Typo',
+          },
+          {
+            key: 'overprint',
+            message: 'Overprint',
+          },
+          {
+            key: 'missing-font',
+            message: 'Missing Font/Images',
+          },
+          {
+            key: 'borders',
+            message: 'Borders',
+          }
+        ]
+      },
+      printMarks: {
+        "title": "Print Marks",
+        "sub_complaints": [
+          {
+            key: 'print-marks',
+            message: 'Print Marks',
           },
         ]
-      }
+      },
+      finishing: {
+        "title": "Finishing",
+        "sub_complaints": [
+          {
+            key: 'cutting-folding',
+            message: 'Cutting/Folding',
+          },
+          {
+            key: 'delayed',
+            message: 'Delayed',
+          },
+        ]
+      },
     };
   },
   methods: {

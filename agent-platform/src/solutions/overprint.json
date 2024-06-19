@@ -1,0 +1,148 @@
+{
+    "title": "Overprint",
+    "subTitle": "Overprint is a function that can be activated in design programs. It blends overlapping layers causing the top colours to be mixed with the bottom colours. Light colours will disappear on darker colours.",
+    "action": "Open the cPDF & customers file in acrobat. Check the 'Output preview' box and see whether it states YES on 'Page has overprint'",
+    "question": {
+        "text": "Light coloured elements disappearing?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "question": {},
+                "solution": {
+                    "title": "Overprint",
+                    "validComplaint": false,
+                    "questions": [
+                        {
+                            "title": "Light coloured elements disappearing?",
+                            "isValid": false
+                        }
+                    ],
+                    "summaries": [
+                        {
+                            "title": "Solution",
+                            "description": "Overprint did not cause the issue in this case. Check with Artwork to see what happened."
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "Check with the Artwork Team",
+                "question": {
+                    "text": "Elements in Illustrator have overprint?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "question": {},
+                            "solution": {
+                                "title": "Overprint",
+                                "validComplaint": false,
+                                "questions": [
+                                    {
+                                        "title": "Light coloured elements disappearing?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Elements in Illustrator have overprint?",
+                                        "isValid": false
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Overprint did not cause the issue in this case. Check with Artwork to see what happened."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "Check the customers account on presta to see if they either not placed any order before or a lot of orders.",
+                            "question": {
+                                "text": "New/Good End Label customer?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Overprint",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Light coloured elements disappearing?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Elements in Illustrator have overprint?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "New/Good End Label customer?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "As overprint is a design choice and we do not alter customers designs we did not remove the overprint. This is something we don't look out for and we mention on the product page not to add."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "As overprint is a design choice and we do not alter customers designs we did not remove the overprint. Our apologies for the inconvenience caused. We would like to offer you a discounted reprint with a revised file."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "File the complaint in Presta.",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Overprint",
+                                            "validComplaint": true,
+                                            "action": "File the complaint in presta",
+                                            "questions": [
+                                                {
+                                                    "title": "Light coloured elements disappearing?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Elements in Illustrator have overprint?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "New/Good End Label customer?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "As overprint is a design choice and we do not alter customers designs we did not remove the overprint. This is something we don't look out for and we mention on the product page not to add. Since the customer is new or loyal we can offer a discount."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "As overprint is a design choice and we do not alter customers designs we did not remove the overprint. Our apologies for the inconvenience caused. We would like to offer you a reprint with a revised file."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Customer Goodwill"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

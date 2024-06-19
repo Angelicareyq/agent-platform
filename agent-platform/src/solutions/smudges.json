@@ -22,15 +22,15 @@
                     "summaries": [
                         {
                             "title": "Solution",
-                            "description": "High ink areas processed on coated products without lamination caused the ink to spread as it needs more time to dry. We can offer a reprint on an uncoated or laminated product. Alternatively, we can ask the customer to adjust their file and remove the high coverage areas."
+                            "description": "No high ink coverage but still stains means the supplier did not allow plenty time to dry or incorrect packaging which allowed product to rub and spread ink. Reprint with the same file."
                         },
                         {
-                            "title": "What to say to the customer",
-                            "description": "It seems some areas contained high ink coverage and we did not send a warning. We would like to offer you a reprint on the same product with a revised file, or a reprint on a laminated or uncoated product with the same file. If no time for a reprint, could you use this product at a discount?"
+                            "title": "What to tell the customer",
+                            "description": "It seems not enough time was allowed for the ink to dry causing smudges on your product. We would like to offer to reprint the product with the same file. If no time for a reprint, could you use this product at a discount?"
                         },
                         {
                             "title": "Log in Presta",
-                            "description": "Artwork - Manual Checked / No Warning Sent"
+                            "description": "Supplier - Quality Wrong / Stains & Smudging "
                         }
                     ]
                 }
@@ -75,7 +75,7 @@
                                                     "description": "High ink areas processed on coated products without lamination caused the ink to spread as it needs more time to dry. We can offer a reprint on an uncoated or laminated product. Alternatively, we can ask the customer to adjust their file and remove the high coverage areas."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "It seems some areas contained high ink coverage and we did not send a warning. We would like to offer you a reprint on the same product with a revised file, or a reprint on a laminated or uncoated product with the same file. If no time for a reprint, could you use this product at a discount?"
                                                 },
                                                 {
@@ -113,7 +113,7 @@
                                                     "description": "High ink areas processed on coated products without lamination caused the ink to spread as it needs more time to dry. We can offer a reprint on a uncoated or laminated product. Alternatively we can ask the customer to adjust their file and remove the high coverage areas."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "It seems some areas contained high ink coverage and we did not send a warning. We would like to offer you a reprint on the same product with a revised file, or a reprint on a laminated or uncoated product with the same file. If no time for a reprint, could you use this product at a discount?"
                                                 },
                                                 {
@@ -150,7 +150,7 @@
                                         "description": "Uncoated paper has a high absorbency so inks should dry quick, while laminated products have an extra layer of film over the print, both options should prevent smudges. If these are still smudged it indicates the supplier did not use the correct product, finishing or allowed plenty time to dry. We can reprint with the same file on the same order."
                                     },
                                     {
-                                        "title": "What to say to the customer",
+                                        "title": "What to tell the customer",
                                         "description": "It seems not enough time was allowed for the ink to dry causing smudges on your product. We would like to offer to reprint the product with the same file. If no time for a reprint, could you use this product at a discount?"
                                     },
                                     {

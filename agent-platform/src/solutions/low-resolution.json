@@ -46,7 +46,7 @@
                                                     "description": "Since it's our fault we didn't sent a warning, we have to make up with it by offering a reprint or a refund."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "I see the file you uploaded has a low resolution. Our team should have sent you an email about the risk. For the inconvenience, I would like to offer you a reprint of the order. In this case, we will need a good file from you with good resolution. Could you provide us with a file that meets the necessary resolution requirements? If you can't use the reprint because it will be too late, I can offer you a refund on this order. Turn on screen reader support"
                                                 },
                                                 {
@@ -83,11 +83,11 @@
                                                     "description": "The customer approved the file even when we stated there was a risk that the quality of the print is going to be bad."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer - First time CMR or cheap order",
+                                                    "title": "What to tell the customer - First time CMR or cheap order",
                                                     "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include low resolution. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "I am sorry but you approved the proof despite being informed about the potential risk of poor print quality. We warned you via email that there is a risk that it will be printed badly. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
                                                 }
                                             ]
@@ -131,7 +131,7 @@
                                                     "description": "Since it's our fault we didn't sent a warning, we have to make up with it by offering a reprint or a refund."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "I see the file you uploaded has a low resolution. Our autocheck should have sent you an email about the risk. For the inconvenience, I would like to offer you a reprint of the order. In this case, we will need a good file from you with good resolution. Could you provide us with a file that meets the necessary resolution requirements? If you can't use the reprint because it will be too late, I can offer you a refund on this order."
                                                 },
                                                 {
@@ -168,11 +168,11 @@
                                                     "description": "The customer approved the file even when we stated there was a risk that the quality of the print is going to be bad."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer - First time CMR or cheap order",
+                                                    "title": "What to tell the customer - First time CMR or cheap order",
                                                     "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include low resolution. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
                                                 },
                                                 {
-                                                    "title": "What to say to the customer",
+                                                    "title": "What to tell the customer",
                                                     "description": "I am sorry but you approved the proof despite being informed about the potential risk of poor print quality. We warned you via email that there is a risk that it will be printed badly. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
                                                 }
                                             ]
@@ -204,7 +204,7 @@
                             "description": "Since it's a complaint on the supplier and the file has no issues we can reprint using the same file."
                         },
                         {
-                            "title": "What to say to the customer",
+                            "title": "What to tell the customer",
                             "description": "The file you provided was of good quality, but unfortunately, the printer outputted it with a lower DPI than expected. To make up for any inconvenience caused, I'd like to offer you a reprint of your order. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
                         },
                         {

@@ -1,0 +1,220 @@
+{
+    "title": "Missing Font/Images",
+    "subTitle": "Images or fonts have disappeard or changed from the customers original design.",
+    "action": "-Open acrobat, press 'Command + D' and check if fonts are embedded. -Open Illustrator, head to 'Links' and check if images are linked. -Check if no warnings pop up when opening in Illustrator",
+    "question": {
+        "text": "Elements are embedded?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "question": {
+                    "text": "Automatic artwork check?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "question": {},
+                            "solution": {
+                                "title": "Missing Font/Images",
+                                "action": "File the complaint in presta",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Elements are embedded?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Automatic artwork check?",
+                                        "isValid": false
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Links were not embedded in the file which was not fixed or caught in the artwork check. As the customer was not made aware we can offer a reprint with a fixed file."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "The fonts & images in your design were not embedded in the file, we did not notice this during our checks which caused it to print incorrectly. Our apologies for this oversight. We would like to offer you a reprint with a revised file with embedded links."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "Artwork - Manual Checked / Incorrect Process"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Missing Font/Images",
+                                "action": "File the complaint in presta",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Elements are embedded?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Automatic artwork check?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Links were not embedded in the file which was not fixed or caught in the artwork check. As the customer was not made aware we can offer a reprint with a fixed file. "
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "The fonts & images in your design were not embedded in the file, we did not notice this during our checks which caused it to print incorrectly. Our apologies for this oversight. We would like to offer you a reprint with a revised file with embedded links."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "Artwork - Automatic Checked / Autocheck - No Warning Given"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "Check with artwork if the missing items are incorrectly clipped.",
+                "question": {
+                    "text": "Shading/Clipping mask issue in AI",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "Open the file in Adobe Illustrator & check if the text changes & turns pink.",
+                            "question": {
+                                "text": "Fonts are recognised in AI?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Missing Font/Images",
+                                            "action": "File the complaint in presta",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Elements are embedded?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Shading/Clipping mask issue in AI",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Fonts are recognised in AI?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "We process commercial print files in indesign which doesn't warn us of links that are not embedded, we then proceed to check it in acrobat where we would receive a warning. Acrobat did not warn us which caused the file to print incorrectly. We can reprint with a revised file."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "The fonts & images in your design were not embedded in the file, we did not notice this during our checks which caused it to print incorrectly. Our apologies for this oversight. We would like to offer you a reprint with a revised file with embedded links."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Customer Goodwill"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Missing Font/Images",
+                                            "action": "File the complaint in presta",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Elements are embedded?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Shading/Clipping mask issue in AI",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Fonts are recognised in AI?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "All elements are embedded and the file is correct. The cause of complaint lies with the supplier as the printer did not read or print all information correctly. We can reprint with a flattened file."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "All links were correctly embedded in your design, it seems however that the printer did not read all information correctly which resulted in a print with missing links. We can reprint the order with a flattened file. If a reprint is too late we can refund the full order."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Supplier / Printed incorrectly"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Missing Font/Images",
+                                "action": "File the complaint in presta",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Elements are embedded?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Shading/Clipping mask issue in AI",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The design contained multiple clipping masks which caused an issue during printing. We can reprint the order."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "All links were correctly embedded in your design, it seems however that the file contained multiple clipping masks which resulted in an incorrect print. We can reprint the order with a flattened file. If a reprint is too late we can refund the full order."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "Customer Goodwill"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

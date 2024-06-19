@@ -1,0 +1,443 @@
+{
+    "title": "Cutting/Folding",
+    "subTitle": "The design is not placed correctly on the product, either it does not match the fold lines or the cut.",
+    "action": "Place the cPDF on the template linked to the DTP tab. Compare if the supplier ID on the template matches the supplier ID on the DTP tab.",
+    "question": {
+        "text": "Correct Supplier Template?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "question": {},
+                "solution": {
+                    "title": "Cutting/Folding",
+                    "validComplaint": true,
+                    "questions": [
+                        {
+                            "title": "Correct Supplier Template?",
+                            "isValid": false
+                        }
+                    ],
+                    "summaries": [
+                        {
+                            "title": "Solution",
+                            "description": "The incorrect template was linked to Presta. We can reprint the order and reprocess the file on the correct template. This needs to go via manual."
+                        },
+                        {
+                            "title": "What to tell the customer - First time CMR or cheap order",
+                            "description": "Your design was placed on an incorrect internal template causing the incorrect print. we would love to offer you a reprint with a revised file. If not possible we can refund the order."
+                        },
+                        {
+                            "title": "Log in Presta",
+                            "description": "Artwork - Process / Incorrect Template/Spec."
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "Check if the cPDF fits the template perfectly. Double check fold lines & bleed zone.",
+                "question": {
+                    "text": "cPDF matches template?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "question": {
+                                "text": "Automatic artwork check?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Cutting/Folding",
+                                            "action": "File the complaint in presta",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Correct Supplier Template?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "cPDF matches template?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The cPDF does not fit the template correctly. We can offer the customer a reprint but it needs to be checked again manually."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "Your design was placed incorrectly on our internal templates causing the incorrect print. we would love to offer you a reprint with a revised file. If not possible we can refund the order."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Artwork - Manual Checked / Agent mistake - Incorrectly Checked"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Cutting/Folding",
+                                            "action": "File the complaint in presta",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Correct Supplier Template?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "cPDF matches template?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The cPDF does not fit the template correctly. This needs to be adjusted in autocheck. We can offer the customer a reprint but it needs to be checked again manually."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "Your design was placed incorrectly on our internal templates causing the incorrect print. we would love to offer you a reprint with a revised file. If not possible we can refund the order."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Artwork - Automatic Checked / Orientation Issue"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "Check the borders in indesign for important elements beyond the purple line.",
+                            "question": {
+                                "text": "Safety margins respected?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "Check the log in the DTP tab for a green message containing a 'Insufficient safety margins' warning.",
+                                        "question": {
+                                            "text": "DTP Warning sent?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "question": {
+                                                        "text": "Automatic artwork check?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutting/Folding",
+                                                                    "action": "File the complaint in presta",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Correct Supplier Template?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "cPDF matches template?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Safety margins respected?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "DTP Warning sent?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Automatic artwork check?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "There are crucial design elements placed beyond the safe margins which were cut because of a minimal deviation. As we did not send a warning we can offer to reprint with a fixed file."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The design features crucial elements outside of the safe zone. A minimal cutting deviation has cause these elements to be removed. As we did not send you a warning we would love to offer you a reprint with a revised file. If not possible we can refund the order."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "Artwork - Manual Checked / Agent mistake - No Warning Sent"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutting/Folding",
+                                                                    "action": "File the complaint in presta",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Correct Supplier Template?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "cPDF matches template?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Safety margins respected?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "DTP Warning sent?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Automatic artwork check?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "There are crucial design elements placed beyond the safe margins which were cut because of a minimal deviation. As we did not send a warning we can offer to reprint with a fixed file."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The design features crucial elements outside of the safe zone. A minimal cutting deviation has cause these elements to be removed. As we did not send you a warning we would love to offer you a reprint with a revised file. If not possible we can refund the order."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "Artwork - Automatic Checked / Insufficient Text Margins"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "Place the cPDF in the template & offset by 3mm, compare this with the complaint pictures.",
+                                                    "question": {
+                                                        "text": "Over 3mm deviated?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutting/Folding",
+                                                                    "action": "File the complaint in presta",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Correct Supplier Template?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "cPDF matches template?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Safety margins respected?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "DTP Warning sent?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Over 3mm deviated?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The cPDF fits neatly on the template and the supplier has cut accurately."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "We have deemed the complaint as not valid as the print file was prepared correctly and the printer has cut the product accurately. In order to meet you halfway we offer a voucher of 10% on a future order."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutting/Folding",
+                                                                    "action": "File the complaint in presta",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Correct Supplier Template?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "cPDF matches template?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Safety margins respected?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "DTP Warning sent?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Over 3mm deviated?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The cPDF fits neatly on the template but the supplier has cut incorrectly causing the design to be offset on the product. We can reprint with the same file."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The order was not cut accurately in post production. Apologies for this carelessness. We can reprint the order with the same file. If a reprint is too late we can refund the full order."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "Supplier - Quality Wrong / Cutting"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "Place the cPDF in the template & offset by 3mm, compare this with the complaint pictures.",
+                                        "question": {
+                                            "text": "Over 3mm deviated?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutting/Folding",
+                                                        "action": "File the complaint in presta",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Correct Supplier Template?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "cPDF matches template?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Safety margins respected?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Over 3mm deviated?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The cPDF fits neatly on the template and the supplier has cut accurately."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We have deemed the complaint as not valid as the print file was prepared correctly and the printer has cut the product accurately. In order to meet you halfway we offer a voucher of 10% on a future order."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutting/Folding",
+                                                        "action": "File the complaint in presta",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Correct Supplier Template?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "cPDF matches template?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Safety margins respected?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Over 3mm deviated?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The cPDF fits neatly on the template but the supplier has cut incorrectly causing the design to be offset on the product. We can reprint with the same file."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "The order was not cut accurately in post production. Apologies for this carelessness. We can reprint the order with the same file. If a reprint is too late we can refund the full order."
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

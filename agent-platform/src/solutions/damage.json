@@ -1,0 +1,268 @@
+{
+    "title": "Damage",
+    "subTitle": "The order arrived damaged/broken.",
+    "action": "Check the complaint pictures for rips, water damage or dents on the box.",
+    "question": {
+        "text": "Box is damaged?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "Check how it was packaged on the complaint pictures. Look out for loose, unbound products in a box that is too big.",
+                "question": {
+                    "text": "Packaged correctly in box?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "question": {},
+                            "solution": {
+                                "title": "Damage",
+                                "action": "File the complaint in presta",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Box is damaged?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Packaged correctly in box?",
+                                        "isValid": false
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The product was not safely packaged in the box causing it to tumble during transit. This caused the product to be damaged."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "Our apologies for the incorrect packaging, this caused the product to tumble during transit. We offer a free reprint with the same file. In case this is too late we can refund the full order."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "Supplier / Quality Wrong - Packaging"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "Check for clear evidence of damage in the complaint pictures",
+                            "question": {
+                                "text": "Scratches/Broken edges/Ripped paper?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Damage",
+                                            "action": "File the complaint in Presta.",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Box is damaged?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Packaged correctly in box?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Scratches/Broken edges/Ripped paper?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "No evidence of damage, we can ask for more pictures if the customer insists."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "We can not see any evidence of damage on your pictures, thus we can't validate the complaint. Please send us more clear evidence so we can reassess."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "Check the order description in presta, look for 170 - 400gm & no lamination",
+                                        "question": {
+                                            "text": "+170gm without lamination?<br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 0px; margin-bottom: 10px;'><br>Commercial print only<br></span>",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Damage",
+                                                        "action": "File the complaint in Presta.",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Box is damaged?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Packaged correctly in box?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Scratches/Broken edges/Ripped paper?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "+170gm without lamination?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The product was packaged correctly by the supplier but was damaged during transit."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "Our apologies for damaged order, it seems the order was damaged during transit. We offer a free reprint with the same file. In case this is too late we can refund the full order."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Carrier / Quality Wrong - Damaged"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Damage",
+                                                        "action": "File the complaint in Presta.",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Box is damaged?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Packaged correctly in box?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Scratches/Broken edges/Ripped paper?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "+170gm without lamination?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Fibres in thick non laminated paper will break when folding causing the ink to break & the underlying paper to become visible."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "Fibres in thick non laminated paper will break when folding causing the ink to break & the underlying paper to become visible. Since this is expected with this product we can not validate the complaint. Can you use the product at a discount?"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "Suppliers will not use any binding when packaging an order so look out for tape with the carriers logo on the complaint pictures",
+                "question": {
+                    "text": "Carrier repackaged?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "question": {},
+                            "solution": {
+                                "title": "Damage",
+                                "action": "File the complaint in Presta.",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Box is damaged?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Carrier repackaged?",
+                                        "isValid": false
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The box was damaged during which indicates the product inside took a hit. We can reprint the order with the same file or refund."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "Our apologies for damaged order, it seems the order was damaged during transit. We offer a free reprint with the same file. In case this is too late we can refund the full order."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "Carrier / Quality Wrong - Damaged"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Damage",
+                                "action": "File the complaint in Presta.",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Box is damaged?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Carrier repackaged?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The product was repackaged by the carrier which points out that the box was damaged at one point during transit. We can reprint the order with the same file or refund."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "Our apologies for damaged order, it seems the order was damaged during transit. We offer a free reprint with the same file. In case this is too late we can refund the full order."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "Carrier / Quality Wrong - Damaged"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
