@@ -97,6 +97,10 @@ export default {
             key: 'cutting-folding',
             message: 'Cutting/Folding',
           },
+          {
+            key: 'delayed',
+            message: 'Delayed',
+          },
         ]
       },
     };
