@@ -1,13 +1,16 @@
 <template>
     <div class="container">
         <div class="column">
-            <h1> {{ parseSolution.title }}</h1>
-            <h2 v-if="parseSolution.action"><span style="font-weight: bold; color: #222222;">Action: </span> {{ parseSolution.action }}</h2>
-            <h2 v-if="parseSolution.validComplaint" class="valid-complaint-status">Valid complaint</h2>
-            <h2 v-else class="invalid-complaint-status">Invalid complaint</h2>
+            <h1>{{ parseSolution.title }}</h1>
+            <h2 v-if="parseSolution.action">
+                <span style="font-weight: bold; color: #222222;">Action: </span>
+                <span v-html="formattedText(parseSolution.action)"></span>
+            </h2>
+            <h2 v-if="parseSolution && parseSolution.validComplaint === true" class="valid-complaint-status">Valid complaint</h2>
+            <h2 v-else-if="parseSolution && parseSolution.validComplaint === false" class="invalid-complaint-status">Invalid complaint</h2>
         </div>
         <div class="column">
-            <h3> Summary of questions</h3>
+            <h3>Summary of questions</h3>
             <div v-for="(question, index) in parseSolution.questions" :key="index">
                 <h4>{{ question.title }} -
                     <span v-if="question.isValid" style="font-weight: bold; color: #73C15A;">Yes</span>
@@ -19,13 +22,13 @@
     <h3>Solutions and next steps</h3>
     <div>
         <div v-for="(summary, index) in parseSolution.summaries" :key="index" class="solutions">
-            <p><span style="font-weight: bold; color: #222222;">{{ summary.title }} </span></p>
-            <p>{{ summary.description }}</p>
+            <p><span style="font-weight: bold; color: #222222;">{{ summary.title }}</span></p>
+            <p v-html="formattedText(summary.description)"></p>
         </div>
     </div>
     <div>
         <div class="button-container">
-            <button class="btnprimary" @click="goToHome"> Back to homepage</button>
+            <button class="btnprimary" @click="goToHome">Back to homepage</button>
         </div>
     </div>
 </template>
@@ -47,12 +50,16 @@ export default {
         }
     },
     methods: {
+        formattedText(text) {
+            return text.replace(/\n/g, '<br>');
+        },
         goToHome() {
             this.$router.push({ name: 'ComplaintsSection' });
         }
     }
 }
 </script>
+
 <style scoped>
 h1 {
     color: #222222;

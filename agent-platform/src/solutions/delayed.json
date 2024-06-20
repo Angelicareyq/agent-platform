@@ -1,0 +1,609 @@
+{
+    "title": "Delayed",
+    "subTitle": "Orders that did not arrive or were not complete.",
+    "question": {
+        "text": "Order status is in production?, ready for production or packaged",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "In production",
+                "action": "Please refer to Presta to check the Target Dispatch Date\nThis can be found on the Information tab",
+                "question": {
+                    "text": "The dispatch date has passed?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "question": {},
+                            "solution": {
+                                "title": "Delayed",
+                                "action": "Inform to customer the new date",
+                                "validComplaint": false,
+                                "questions": [
+                                    {
+                                        "title": "In production",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "The dispatch date has passed?",
+                                        "isValid": false
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Explain to the customer the expected dispatch/delivery date. <strong>No complaint or ticket needed.</strong>"
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "Your order is expected to be delivered on 'XX/XX'"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "Please refer to Presta to check the Latest Delivery Date. This can be found on the Information tab",
+                            "question": {
+                                "text": "Has the delivery date passed?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {
+                                            "text": "Check delayed list + Dixa. Is there a new dispatch date?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Delayed",
+                                                        "action": "Create a ticket order status and direct this email to Traffic_CS_Urgent",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "In production",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "The dispatch date has passed?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Has the delivery date passed?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Check delayed list + Dixa. Is there a new dispatch date?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Inform customer the supply team are investigating this. We will get back to them ASAP.\n(Do not finish the complaint until you have an update from Traffic)."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "I have requested our Supply team to investigate this, we will get back to you as soon as we have an update."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Delayed"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Delayed",
+                                                        "action": "Inform customer of new dispatch date",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "In production",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "The dispatch date has passed?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Has the delivery date passed?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Check delayed list + Dixa. Is there a new dispatch date?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Explain to the customer the new expected dispatch/delivery date.\nFile and finish the complaint in presta on the responsible department for the delays <strong>(Supplier/CS, CGW etc).</strong>"
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "Inform customer of new dispatch date/ or the delivery date and offer partial refund of 10% or the extra shipping fee."
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {
+                                            "text": "Check delayed list + Dixa for a new dispatch date. Is there one?",
+                                            "options": [
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "Who is responsable for the delay?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Internal Issue",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Delayed",
+                                                                    "action": "File and finish the complaint in Presta",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "In production",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "The dispatch date has passed?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Has the delivery date passed?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Check delayed list + Dixa. Is there a new dispatch date?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Internal issue",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "Inform the customer of the new dispatch date.\nProvide the customer a discount."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Inform the customer of the new dispatch date, apologize for the delay which has been caused. \nProvide the customer with a 10% discount code for their next order."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint department:</strong> Other\n<strong>Complaint type:</strong> Process wrong: Product not in stock\nor Process wrong: Shipping label error"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Supplier",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Delayed",
+                                                                    "action": "File and finish the complaint in Presta",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "In production",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "The dispatch date has passed?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Has the delivery date passed?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Check delayed list + Dixa. Is there a new dispatch date?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Supplier",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "Inform the customer of the new dispatch date.\nProvide the customer a discount."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Inform the customer of the new dispatch date and apologize for the delay. Provide the customer with a 10% discount code for their next order."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint department:</strong> Supplier\n<strong>Complaint type:</strong> Too late / Delayed"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Carrier",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Delayed",
+                                                                    "action": "File and finish the complaint in Presta",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "In production",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "The dispatch date has passed?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Has the delivery date passed?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Check delayed list + Dixa. Is there a new dispatch date?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Carrier",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "Inform the customer of the new dispatch date.\nProvide the customer a discount."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Inform the customer of the new dispatch date, apologize for the delay which has been caused. \nProvide the customer with a 10% discount code for their next order."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint department:</strong> Carrier\n<strong>Complaint type: </strong>Too late: elayed <strong>or</strong>\nSecured delivery: To late (If paid)\nDelayed carrier did not collect"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Other",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Delayed",
+                                                                    "action": "File and finish the complaint in Presta",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "In production",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "The dispatch date has passed?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Has the delivery date passed?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Check delayed list + Dixa. Is there a new dispatch date?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Other",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "Inform the customer of the new dispatch date.\nProvide the customer a discount."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Inform the customer of the new dispatch date, apologize for the delay which has been caused. Provide the customer with a 10% discount code for their next order."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint department: </strong> Customer goodwill, Customer service, Finance, Website or Artwork"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No, purchase price is under €200",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Delayed",
+                                                        "action": "<span style='font-weight: 600; color: #E84E1E;'>If there is an email with the Supplier requesting an update on this order</span>, \n<strong>1.</strong> Create a side conversation requesting an update on the order status.\n<strong>2.</strong> Leave an internal note that you require an update to be provided on the side convo and state the FULL order number.\n<strong>3.</strong> Create a follow up of 1 hour on the Supplier ticket so if they have not responded Traffic can request an update.\n<span style='font-weight: 600; color: #E84E1E;'>If there is not an email with the Supplier</span>, create a ticket traffic status order and send it to traffic CS.",
+                                                        "questions": [
+                                                            {
+                                                                "title": "In production",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "The dispatch date has passed?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Has the delivery date passed?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Check delayed list + Dixa for a new dispatch date. Is there one?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under €200",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Inform customer the supply team are investigating this. We will get back to them ASAP.\n(Do not finish the complaint until you have an update from Traffic)."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "I have requested our Supply team to investigate this, we will get back to you as soon as we have an update."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Delayed"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No, purchase price is over €200",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Delayed",
+                                                        "action": "Check for updates from the Supplier, if there is not an update then create a ticket to Traffic and direct this email to Traffic_CS_Urgent.",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "In production",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "The dispatch date has passed?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Has the delivery date passed?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Check delayed list + Dixa for a new dispatch date. Is there one?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over €200",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Inform customer the supply team are investigating this. We will get back to them ASAP.\n<strong>(Do not finish the complaint until you have an update from Traffic)</strong>"
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "I have requested our Supply team to investigate this, we will get back to you as soon as we have an update."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "Waiting traffic for reply"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnsecondary",
+                "text": "Ready for production",
+                "question": {},
+                "solution": {
+                    "title": "Delayed",
+                    "action": "Create a ticket to traffic",
+                    "validComplaint": false,
+                    "questions": [
+                        {
+                            "title": "Ready for production",
+                            "isValid": true
+                        }
+                    ],
+                    "summaries": [
+                        {
+                            "title": "Solution",
+                            "description": "Wait to have the ticket back from traffic to update the customer."
+                        },
+                        {
+                            "title": "What to tell the customer",
+                            "description": "We have opened an investigation and will get in touch with you as soon as possible."
+                        },
+                        {
+                            "title": "Ticket to traffic",
+                            "description": "Traffic- order status \nTraffic CS Urgent"
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnsecondary",
+                "text": "Packaged",
+                "action": "",
+                "question": {
+                    "text": "Check tracking link, paazl, transsmart. Any update?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "question": {
+                                "text": "Is there a ticket in DIXA where the supplier confirms they provided the order to the carrier?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Delayed",
+                                            "action": "Check for updates from the Supplier, if there is not an update then create a ticket to Traffic and direct this email to <strong>Traffic_CS_Urgent</strong> if the order is <span style='color: #E84E1E;'>above 200</span> pp prices and <strong>Traffic_CS_</strong> if the order is <span style='color: #E84E1E;'>below 200</span> pp prices",
+
+                                            "questions": [
+                                                {
+                                                    "title": "Packaged",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Check tracking link, paazl, transsmart. Any update?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Is there a ticket in DIXA where the supplier confirms they provided the order to the carrier?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Inform customer the supply team are investigating this. \nWe will get back to them ASAP.<strong>\n(Do not finish the complaint until you have an update from Traffic).</strong>"
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "I have requested our Supply team to investigate this, we will get back to you as soon as we have an update."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Waiting for traffic reply."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Delayed",
+                                            "action": " File and finish the complaint in Presta if there is any delayed",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Packaged",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Check tracking link, paazl, transsmart. Any update?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Is there a ticket in DIXA where the supplier confirms they provided the order to the carrier?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Await a minimum of 2 days for a scan and offer voucher of 10% for the next order."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "Apologize for the inconvenient, the supplier gave the order correctly to the carrier, we do have to wait a couple of days for the scan to be up to date, to localize your order."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint department: </strong>Carrier \n<strong>Complaint type: </strong>Delayed - Carrier did not collect <strong>or</strong> Too late delayed"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Delayed",
+                                "action": " File and finish the complaint in Presta if there is any delayed",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Packaged",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Check tracking link, paazl, transsmart. Any update?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": " Inform the customer of the new tracking link.Provide the customer a discount if there is any delayed."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "Inform the customer of the new dispatch date, apologise for the delay which has been caused. Provide the customer with a 10% discount code for their next order."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint department: </strong>Other\n<strong>Complaint type: </strong>Shipping label error"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

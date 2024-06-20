@@ -3,13 +3,16 @@
         <div class="header">
             <h1>{{ data.title }}</h1>
             <h4>{{ data.subTitle }}</h4>
-            <h3 v-if="action"><span style="font-weight: bold; color: #222222;">Action: </span> {{ action }}</h3>
+            <h3 v-if="action">
+                <span style="font-weight: bold; color: #222222;">Action: </span> 
+                <span v-html="formattedText(action)"></span>
+            </h3>
         </div>
         <div class="question">
-            <h1 class="question" v-html="question.text"></h1>
+            <h1 class="question" v-html="formattedText(question.text)"></h1>
             <div class="btn-container">
-                <button :class="option.class" v-for="option in question.options" :key="option.id" @click="answerQuestion(option)">
-                    <span v-html="option.text"></span>
+                <button :class="option.class" v-for="(option, index) in question.options" :key="index" @click="answerQuestion(option)">
+                    <span v-html="formattedText(option.text)"></span>
                 </button>
             </div>
         </div>
@@ -24,18 +27,12 @@
 </template>
 
 <script>
-import Solutions from './Solutions.vue';
-
 /* eslint-disable */
 export default {
     name: "Questions",
-    components: {
-        Solutions
-    },
     data() {
         return {
             invalidQuestion: false,
-            questionId: null,
             data: {},
             action: "",
             question: {}
@@ -76,6 +73,9 @@ export default {
                     }
                 });
             }
+        },
+        formattedText(text) {
+            return text ? text.replace(/\n/g, '<br>') : '';
         },
         goToHome() {
             this.$router.push({ name: 'ComplaintsSection' });

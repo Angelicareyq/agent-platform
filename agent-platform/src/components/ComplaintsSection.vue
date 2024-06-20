@@ -6,15 +6,17 @@
   <div class="container">
     <div class="column">
       <MainCard @click="goToSubComplaints(this.printQuality)" msg="Print Quality" :disabled=false></MainCard>
-      <MainCard @click="goToSubComplaints(this.deliveryDamage)" msg="Delivery Damage" :disabled=false></MainCard>
+      <MainCard @click="toQuestion('damage')" msg="Damage" :disabled=false></MainCard>
+      <MainCard @click="toQuestion('delivery-issues')" msg="Delivery Issue" :disabled=false></MainCard>
 
     </div>
     <div class="column">
       <MainCard @click="goToSubComplaints(this.designIssues)" msg="Design Issues" :disabled=false></MainCard>
-      <MainCard @click="goToSubComplaints(this.printMarks)" msg="Print Marks" :disabled=false></MainCard>
+      <MainCard @click="toQuestion('print-marks')" msg="Print Marks" :disabled=false></MainCard>
     </div>
     <div class="column">
       <MainCard @click="goToSubComplaints(this.finishing)" msg="Finishing" :disabled=false></MainCard>
+      <MainCard @click="toQuestion('delayed')" msg="Delayed" :disabled=false></MainCard>
     </div>
   </div>
 </template>
@@ -47,16 +49,21 @@ export default {
           },
         ]
       },
-      deliveryDamage: {
-        "title": "Delivery/Damage",
+      damage: {
+        "title": "Damage",
         "sub_complaints": [
-          {
-            key: 'deadline-missed',
-            message: 'Deadline Missed',
-          },
           {
             key: 'damage',
             message: 'Damage',
+          }
+        ]
+      },
+      deliveryIssue: {
+        "title": "Delivery Issue",
+        "sub_complaints": [
+          {
+            key: 'delivery-issues',
+            message: 'Delivery Issue',
           }
         ]
       },
@@ -97,6 +104,11 @@ export default {
             key: 'cutting-folding',
             message: 'Cutting/Folding',
           },
+        ]
+      },
+      delayed: {
+        "title": "Delayed",
+        "sub_complaints": [
           {
             key: 'delayed',
             message: 'Delayed',

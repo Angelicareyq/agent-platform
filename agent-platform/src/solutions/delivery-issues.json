@@ -1,0 +1,165 @@
+{
+    "title": "Delivery Issues/ Missing piece",
+    "subTitle": "An order was not delivered or was missing pieces",
+    "action": "Check Presta, Track & Trace, Dixa & Paazl/Transsmart. Check how many boxes the order should be, how many labels have been created?",
+    "question": {
+        "text": "All boxes have been delivered?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "",
+                "question": {},
+                "solution": {
+                    "title": "Damaged",
+                    "action": "",
+                    "validComplaint": true,
+                    "questions": [
+                        {
+                            "title": "All boxes have been delivered?",
+                            "isValid": false
+                        }
+                    ],
+                    "summaries": [
+                        {
+                            "title": "What to tell the customer",
+                            "description": "The full order is yet to be delivered, here is the remainder tracking link- *INSERT TRACKING LINK*"
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "If the customer has not provided images of the boxes, label and damaged product, then request the images in order to continue the complaint process.",
+                "question": {
+                    "text": "Box is damaged?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "Check the pictures in which the customer has provided, does this match the file on the order? \nEnsure you have the image of the full order received and the labels on the boxes received. \nIf the order is high value, ask in the Customer_Experience group if anyone recognises the order.",
+                            "question": {
+                                "text": "Incorrect order received?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Damaged",
+                                            "action": "File and finish the complaint in Presta. ",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "All boxes have been delivered?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Box is damaged?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Incorrect order received?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Create a ticket to the Traffic team, they will investigate the reasoning for this and offer a solution after contacting the supplier. \nThe ticket should be directed to Traffic_CS, using the macro Missing Pieces and all information, images and full order number to be provided. \nIf the order is for an urgent event or a high value order this can be directed to Traffic_CS_Urgent"
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "I apologise that you have received an incomplete order, I have raised this issue with our supply team so they are able to investigate the reasoning for this and provide a solution. We will get back in contact as soon as possible."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Supplier \nOrder incomplete (missing parts)"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Damaged",
+                                            "action": "File and finish the complaint in Presta. ",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "All boxes have been delivered?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Box is damaged?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Incorrect order received?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The supplier has attached the incorrect label to the order meaning another customer has received their order. Reprint or refund the order line affected. \nIf the order is high value (PP over 500) check in the Customer_Experience group if somebody recognizes the order in order to organize a swap for the orders."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "I would like to apologize that you have received the incorrect order, I can resolve this for you by reprinting the order if this would still be of use to you? Or would a refund be better suited? The product in which you have received can be disposed of.\n Any order for corporate gifts a return will be required"
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "Supplier \n Too late: Incorrect Shipping"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Damaged",
+                                "action": "File and finish the complaint in Presta. ",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "All boxes have been delivered?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Box is damaged?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Reprint or refund the % of the order in which has been affected. \nRemember if the Supplier is Own Carrier the complaint option of Carrier will not be possible."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "If the customer has not stated the solution they require: \nI have reviewed your case and I can see that damage has occurred during transport, I apologize for this inconvenience to you. I would like to offer a reprint of the affected product if this would still be of use to you? Alternatively I can offer a refund for the affected product."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "Carrier \nQuality Wrong: Damaged \nOwn Carrier? Check Solution"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
