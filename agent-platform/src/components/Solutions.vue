@@ -3,7 +3,7 @@
         <div class="column">
             <h1>{{ parseSolution.title }}</h1>
             <h2 v-if="parseSolution.action">
-                <span style="font-weight: bold; color: #222222;">Action: </span>
+                <span style="font-weight: bold; color: #E84E1E;">Action: </span>
                 <span v-html="formattedText(parseSolution.action)"></span>
             </h2>
             <h2 v-if="parseSolution && parseSolution.validComplaint === true" class="valid-complaint-status">Valid complaint</h2>

@@ -33,7 +33,7 @@
                                 ],
                                 "summaries": [
                                     {
-                                        "title": "Solution",
+                                        "title": "Invalid complaint",
                                         "description": "The missed deadline is not the issue. Check the 'Delayed' decision tree to reach the correct outcome."
                                     }
                                 ]
@@ -52,6 +52,47 @@
                                         "question": {
                                             "text": "Stock issues?",
                                             "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Deadline Missed",
+                                                        "action": "No complaint in presta until we found the issue \nCheck with your TL for help, it might be an issue in Presta so Marquer.io",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Did the order go to production before the deadline?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Did the supplier contact us regarding the order?",
+                                                                "isValid": true
+                                                            
+                                                            },
+                                                            {
+                                                                "title": "Rejected because supplied artwork incorrect?",
+                                                                "isValid": false
+                                                            
+                                                            },
+                                                            {
+                                                                "title": "Stock issues?",
+                                                                "isValid": false
+                                                            
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The order might be stuck in our system, we need to investigate."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "I will investigate your order and come back to you as soon as possiblle, apologise for the inconvenient."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
                                                 {
                                                     "class": "btnprimary",
                                                     "text": "Yes",
@@ -124,7 +165,7 @@
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "If the supplier rejects the file after it was processed incorrectly it is valid on the artworker who processed it. DTP will fix it, we can offer a discount for time lost."
+                                                    "description": "If the supplier rejects the file after it was processed incorrectly it is valid on the artworker who processed it. DTP will fix it, we can offer a discount for time lost. \nAsk  a speed up request to traffic, if the order is hight value (check the template of Traffic - Speed Up Request , to know the minimum order value), inform the customer that a request is send ,and we try our maximum. Do not promise  any date to the customer, as it is insure if it is possible or not."
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
@@ -161,11 +202,11 @@
                     "summaries": [
                         {
                             "title": "Solution",
-                            "description": "The production deadline was missed because of the high workload or a difficult file. We can offer a discount to make up for this."
+                            "description": "The production deadline was missed because of the high workload or a difficult file. We can offer a discount to make up for this. \nAsk  a speed up request to traffic, if the order is hight value (check the template of Traffic - Speed Up Request , to know the minimum order value), inform the customer that a request is send ,and we try our maximum. Do not promise  any date to the customer, as it is insure if it is possible or not."
                         },
                         {
                             "title": "What to tell the customer",
-                            "description": "The production deadline was missed because of the high workload, our apologies for this. Can you still use the order with it's new expected delivery date? We would like to offer you a discount to make up for time lost."
+                            "description": "The production deadline was missed because of the high workload, our apologies for this. Can you still use the order with its new expected delivery date? We would like to offer you a discount to make up for time lost."
                         },
                         {
                             "title": "Log in Presta",

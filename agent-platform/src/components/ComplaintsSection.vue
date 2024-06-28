@@ -5,17 +5,17 @@
   </div>
   <div class="container">
     <div class="column">
-      <MainCard @click="goToSubComplaints(this.printQuality)" msg="Print Quality" :disabled=false></MainCard>
+
       <MainCard @click="toQuestion('damage')" msg="Damage" :disabled=false></MainCard>
       <MainCard @click="toQuestion('delivery-issues')" msg="Delivery Issue" :disabled=false></MainCard>
 
     </div>
     <div class="column">
-      <MainCard @click="goToSubComplaints(this.designIssues)" msg="Design Issues" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('print-marks')" msg="Print Marks" :disabled=false></MainCard>
+
+      <MainCard @click="toQuestion('deadline-missed')" msg="Deadline Missed" :disabled=false></MainCard>
     </div>
     <div class="column">
-      <MainCard @click="goToSubComplaints(this.finishing)" msg="Finishing" :disabled=false></MainCard>
+
       <MainCard @click="toQuestion('delayed')" msg="Delayed" :disabled=false></MainCard>
     </div>
   </div>
