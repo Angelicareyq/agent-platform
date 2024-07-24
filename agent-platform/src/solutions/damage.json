@@ -1,7 +1,7 @@
 {
     "title": "Damaged",
     "subTitle": "The order arrived damaged/broken.",
-    "action": "Make sure before you start you have all the pictures necessary including the label.",
+    "action": "Make sure before you start you have all the pictures necessary (10% of the order - or unit, picture with the damaged, picture of the label and picture of the packaging).",
     "question": {
         "text": "Box is damaged?",
         "options": [
@@ -10,7 +10,7 @@
                 "text": "No",
                 "action": "Review the images that have been submitted on the complaint, is there a sign of an oversized box being used? or too much weight wihtin one box?",
                 "question": {
-                    "text": "Packaged correctly in box?",
+                    "text": "Pack incorrectly in the box?",
                     "options": [
                         {
                             "class": "btnsecondary",
@@ -26,7 +26,7 @@
                                         "isValid": false
                                     },
                                     {
-                                        "title": "Packaged correctly in box?",
+                                        "title": "Pack incorrectly in the box?",
                                         "isValid": false
                                     }
                                 ],
@@ -37,7 +37,7 @@
                                     },
                                     {
                                         "title": "What to tell the customer",
-                                        "description": "Our apologies for the incorrect packaging, this caused the product to tumble during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the full order."
+                                        "description": "Our apologies for the incorrect packaging, this caused the product to tumble during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the % of the order that has been affected.\n(Reprint for expensive order above 500 Eu purchase price need a confirmation of the supplier/traffic with clear evidence. It can be partial or full reprint - partial or full refund.)"
                                     },
                                     {
                                         "title": "Log in Presta",
@@ -60,14 +60,14 @@
                                         "solution": {
                                             "title": "Damaged",
                                             "action": "File the complaint in Presta.",
-                                            "validComplaint": true,
+                                            "validComplaint": false,
                                             "questions": [
                                                 {
                                                     "title": "Box is damaged?",
                                                     "isValid": false
                                                 },
                                                 {
-                                                    "title": "Packaged correctly in box?",
+                                                    "title": "Pack incorrectly in the box?",
                                                     "isValid": true
                                                 },
                                                 {
@@ -78,7 +78,7 @@
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "No evidence of damage, we. can only offer a CMGW , if the box was already destroy, a connect , a reseller."
+                                                    "description": "No evidence of damage, we. can only offer a CMGW Customer Goodwill , if the box was already destroy, a connect , a reseller."
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
@@ -106,7 +106,7 @@
                                                     "isValid": false
                                                 },
                                                 {
-                                                    "title": "Packaged correctly in box?",
+                                                    "title": "Pack incorrectly in the box?",
                                                     "isValid": true
                                                 },
                                                 {
@@ -121,7 +121,7 @@
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "Our apologies for damaged order, it seems the order was damaged during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the full order. \nRemember if the Supplier is Own Carrier the complaint option of Carrier will not be possible."
+                                                    "description": "Our apologies for damaged order, it seems the order was damaged during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the % of the order that has been affected. \nRemember if the Supplier is Own Carrier the complaint option of Carrier will not be possible."
                                                 },
                                                 {
                                                     "title": "Log in Presta",
@@ -168,7 +168,7 @@
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "Our apologies for damaged order, it seems the order was damaged during transit. /nWe offer a free reprint with the same file. In case this is too late we can refund the full order."
+                                                    "description": "Our apologies for damaged order, it seems the order was damaged during transit. /nWe offer a free reprint with the same file. In case this is too late we can reprint or refund the % of the order in which has been effected."
                                                 },
                                                 {
                                                     "title": "Log in Presta",
@@ -203,7 +203,7 @@
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "Our apologies for damaged order, it seems the order was damaged during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the full order."
+                                                    "description": "Our apologies for damaged order, it seems the order was damaged during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the % of the order that has been affected."
                                                 },
                                                 {
                                                     "title": "Log in Presta",

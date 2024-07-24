@@ -159,7 +159,7 @@
                                                                 "solution": {
                                                                     "title": "Delayed",
                                                                     "action": "File and finish the complaint in Presta",
-                                                                    "validComplaint": false,
+                                                                    "validComplaint": true,
                                                                     "questions": [
                                                                         {
                                                                             "title": "In production",
@@ -348,7 +348,7 @@
                                                     "question": {},
                                                     "solution": {
                                                         "title": "Delayed",
-                                                        "action": "<span style='font-weight: 600; color: #E84E1E;'>If there is an email with the Supplier requesting an update on this order</span>, \n<strong>1.</strong> Create a side conversation requesting an update on the order status.\n<strong>2.</strong> Leave an internal note that you require an update to be provided on the side convo and state the FULL order number.\n<strong>3.</strong> Create a follow up of 1 hour on the Supplier ticket so if they have not responded Traffic can request an update.\n<span style='font-weight: 600; color: #E84E1E;'>If there is not an email with the Supplier</span>, create a ticket traffic status order and send it to traffic CS.",
+                                                        "action": "<span style='font-weight: 600; color: #E84E1E;'>If there is an email with the Supplier requesting an update on this order</span>, \n<strong>1.</strong> Check for updates from the supplier ON DIXA by typing the order number (try both).\n<strong>2.</strong> Create a side conversation requesting an update on the order status.\n<strong>3.</strong> Leave an internal note that you require an update to be provided on the side convo and state the FULL order number.\n<strong>4.</strong> Create a follow up of 1 hour on the Supplier ticket so if they have not responded Traffic can request an update.\n<span style='font-weight: 600; color: #E84E1E;'>If there is not an email with the Supplier</span>, create a ticket traffic status order and send it to traffic CS.",
                                                         "questions": [
                                                             {
                                                                 "title": "In production",
@@ -374,7 +374,7 @@
                                                         "summaries": [
                                                             {
                                                                 "title": "Solution",
-                                                                "description": "Inform customer the supply team are investigating this. We will get back to them ASAP.\n(Do not finish the complaint until you have an update from Traffic)."
+                                                                "description": "Inform customer the supply team are investigating this. We will get back to them ASAP.\n(Do not finish the complaint until you have an update from Traffic).\nIf there is not an update, create a side-conversation, choose ‘fake email address’ and if the order is over 200 euros purchase price, put it on the queue Traffic_CS_Urgent. If the order is below 200 euros purchase price, send it to Traffic_CS queue."
                                                             },
                                                             {
                                                                 "title": "What to tell the customer",
