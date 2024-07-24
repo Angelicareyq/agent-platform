@@ -2,7 +2,7 @@
     "title": "Delayed",
     "subTitle": "Orders that did not arrive or were not complete.",
     "question": {
-        "text": "Order status is in production?, ready for production or packaged",
+        "text": "Order status?",
         "options": [
             {
                 "class": "btnsecondary",
