@@ -11,9 +11,9 @@
                 "action": "",
                 "question": {},
                 "solution": {
-                    "title": "Damaged",
+                    "title": "Delivery Issues/ Missing piece",
                     "action": "",
-                    "validComplaint": true,
+                    "validComplaint": false,
                     "questions": [
                         {
                             "title": "All boxes have been delivered?",
@@ -23,7 +23,7 @@
                     "summaries": [
                         {
                             "title": "What to tell the customer",
-                            "description": "The full order is yet to be delivered, here is the remainder tracking link- *INSERT TRACKING LINK*"
+                            "description": "The full order is yet to be delivered, here is the other tracking link in which will complete your order- **INSERT TRACKING LINK**\nCheck the returns list if the order has been returned, if it has double check the delivery address and contact number in order to resend the order."
                         }
                     ]
                 }
@@ -47,7 +47,7 @@
                                         "text": "No",
                                         "question": {},
                                         "solution": {
-                                            "title": "Damaged",
+                                            "title": "Delivery Issues/ Missing piece",
                                             "action": "File and finish the complaint in Presta. ",
                                             "validComplaint": true,
                                             "questions": [
@@ -67,7 +67,7 @@
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "Create a ticket to the Traffic team, they will investigate the reasoning for this and offer a solution after contacting the supplier. \nThe ticket should be directed to Traffic_CS, using the macro Missing Pieces and all information, images and full order number to be provided. \nIf the order is for an urgent event or a high value order this can be directed to Traffic_CS_Urgent"
+                                                    "description": "Create a ticket to the Traffic team, they will invesitgate the reasoning for this and offer a solution after contacting the supplier.\nThe ticket should be directed to Traffic_CS, using the macro Missing Pieces and all information, images and full order number to be provided.\nIf the order is for an urgent event or a high value order this can be directed to Traffic_CS_Urgent. If the order is on Own_Carrier then please also double check with a senior to check the suppliers account for location of more tracking links"
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
@@ -86,13 +86,13 @@
                                         "action": "",
                                         "question": {},
                                         "solution": {
-                                            "title": "Damaged",
+                                            "title": "Delivery Issues/ Missing piece",
                                             "action": "File and finish the complaint in Presta. ",
                                             "validComplaint": true,
                                             "questions": [
                                                 {
                                                     "title": "All boxes have been delivered?",
-                                                    "isValid": false
+                                                    "isValid": true
                                                 },
                                                 {
                                                     "title": "Box is damaged?",
@@ -110,7 +110,7 @@
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "I would like to apologize that you have received the incorrect order, I can resolve this for you by reprinting the order if this would still be of use to you? Or would a refund be better suited? The product in which you have received can be disposed of.\n Any order for corporate gifts a return will be required"
+                                                    "description": "I would like to apoligise that you have recieved the incorrect order, I can resolve this for you by reprinting the order if this would of still be of use to you? Or would a refund be better suited? The product in which you have recieved can be disposed of. (ONLY STATE THIS IF THE OTHER ORDER CAN NOT BE LOCATED) \nAny order for coporate gifts & textiles a return will be required"
                                                 },
                                                 {
                                                     "title": "Log in Presta",
@@ -128,7 +128,7 @@
                             "action": "",
                             "question": {},
                             "solution": {
-                                "title": "Damaged",
+                                "title": "Delivery Issues/ Missing piece",
                                 "action": "File and finish the complaint in Presta. ",
                                 "validComplaint": true,
                                 "questions": [

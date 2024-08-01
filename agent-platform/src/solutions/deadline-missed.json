@@ -1,21 +1,20 @@
 {
     "title": "Deadline Missed",
     "subTitle": "The production deadline was missed causing a delay in the order.",
-    "action": "Check the log in the DTP tab. Does the time stamp when the order was approved exceed the daily production deadline?",
+    "action": "Check the log in the DTP tab. Does the time stamp when the order was approved exceed the daily production deadline? \nPlease also check that the customer has made the payment or if the payment has been made but not linked?",
     "question": {
         "text": "Did the order go to production after the deadline?",
         "options": [
             {
                 "class": "btnsecondary",
                 "text": "No",
-                "action": "Search the order detail in dixa to find out if the supplier rejected the order or delayed it for other reasons.",
+                "action": "Search the order detail in dixa to find out if the supplier rejected the order or delayed it for other reasons. \nAlways check with the order line and the order number individually, if the supplier has a supplier order number also search with this.",
                 "question": {
                     "text": "Did the supplier contact us regarding the order?",
                     "options": [
                         {
                             "class": "btnsecondary",
                             "text": "No",
-                            "action": "Search the order detail in dixa to find out if the supplier rejected the order or delayed it for other reasons.",
                             "question": {},
                             "solution": {
                                 "title": "Deadline Missed",
@@ -34,7 +33,7 @@
                                 "summaries": [
                                     {
                                         "title": "Invalid complaint",
-                                        "description": "The missed deadline is not the issue. Check the 'Delayed' decision tree to reach the correct outcome."
+                                        "description": "Check the delayed list, if the order is not there please follow the 'Delayed' decision tree for futher assistance."
                                     }
                                 ]
                             }
@@ -84,11 +83,11 @@
                                                         "summaries": [
                                                             {
                                                                 "title": "Solution",
-                                                                "description": "The order might be stuck in our system, we need to investigate."
+                                                                "description": "Create a ticket to the Traffic team, they will invesitgate the reasoning for this and offer a solution after contacting the supplier.\nThe ticket should be directed to Traffic_CS, using the macro Order status and all information, images and full order number to be provided.\nIf the order is for an urgent event or a high value order this can be directed to Traffic_CS_Urgent. "
                                                             },
                                                             {
                                                                 "title": "What to tell the customer",
-                                                                "description": "I will investigate your order and come back to you as soon as possiblle, apologise for the inconvenient."
+                                                                "description": "I apologise that you have not received your order, I have raised this issue with our supply team so they are able to investigate the reasoning for this and provide a solution. We will get back in contact as soon as possible."
                                                             }
                                                         ]
                                                     }
@@ -123,11 +122,11 @@
                                                         "summaries": [
                                                             {
                                                                 "title": "Solution",
-                                                                "description": "The ordered item is not in stock, we can print an alternative product or ask the customer if they can wait until it's back in stock."
+                                                                "description": "The ordered item is not in stock, we can print an alternative product or ask the customer if they can wait until it's back in stock. \nDixa should always be checked as this will provide you the context of the stock issue and posible solution."
                                                             },
                                                             {
                                                                 "title": "What to tell the customer",
-                                                                "description": "The ordered product is not in stock at the moment. We can offer you an alternative product or wait until it is back in stock. We apologise for the inconvenience and offer a discount for the time lost."
+                                                                "description": "The ordered product is not in stock at the moment. We can offer you an alternative product or wait until it is back in stock. We apologise for the inconvenience and offer a discount or voucher for the time lost."
                                                             },
                                                             {
                                                                 "title": "Log in Presta",
@@ -165,11 +164,11 @@
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "If the supplier rejects the file after it was processed incorrectly it is valid on the artworker who processed it. DTP will fix it, we can offer a discount for time lost. \nAsk  a speed up request to traffic, if the order is hight value (check the template of Traffic - Speed Up Request , to know the minimum order value), inform the customer that a request is send ,and we try our maximum. Do not promise  any date to the customer, as it is insure if it is possible or not."
+                                                    "description": "If the supplier rejects the file after it was processed incorrectly it is valid on the artworker who processed it. DTP will fix it, we can offer a discount or voucher for the time lost.\nAsk a speed up request to traffic, if the order is high value (check the template of Traffic - Speed Up Request, to know the minimum order value and the supplier), inform the customer that a request is sent ,and we will try our best. Do not promise any date to the customer, as it is unsure if it is possible or not. Check the customers turn-around, if the order is on a 1 day turn-around this would not be possible. \nFor all countries (except NL - this will always be next day delivery for NL --> NL) check if the carrier is UPS, if so can the label can be adjusted from Standard to Saver meaning next day delivery. This should be an exception as there is a big surcharge in the change of the labels. You will require a senior to complete this action and to authorise it."
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "The order was delayed in production as the print file was not ready for production yet. We have resolved the issue and placed the file back in production. We apologise for the delay and offer to discount the order."
+                                                    "description": "The order was delayed in production as the print file was not ready for production yet. We have resolved the issue and placed the file back in production. We apologise for the delay and offer a disount or voucher for the time lost. "
                                                 },
                                                 {
                                                     "title": "Log in Presta",
@@ -202,7 +201,7 @@
                     "summaries": [
                         {
                             "title": "Solution",
-                            "description": "The production deadline was missed because of the high workload or a difficult file. We can offer a discount to make up for this. \nAsk  a speed up request to traffic, if the order is hight value (check the template of Traffic - Speed Up Request , to know the minimum order value), inform the customer that a request is send ,and we try our maximum. Do not promise  any date to the customer, as it is insure if it is possible or not."
+                            "description": "The production deadline was missed because of the high workload or a difficult file.\nWe can offer a discount if Helloprint were to blame for the delay in the proof being provided to the customer, if the customer submitted an incorrect file which required contact a discount should not be offered. \nAsk a speed up request to traffic, if the order is high value (check the template of Traffic - Speed Up Request, to know the minimum order value and the supplier), inform the customer that a request is sent ,and we will try our best. Do not promise any date to the customer, as it is unsure if it is possible or not. Check the customers turn-around, if the order is on a 1 day turn-around this would not be possible. \nFor all countries (except NL - this will always be next day delivery for NL --> NL) check if the carrier is UPS, if so can the label can be adjusted from Standard to Saver meaning next day delivery. This should be an exception as there is a big surcharge in the change of the labels. You will require a senior to complete this action and to authorise it."
                         },
                         {
                             "title": "What to tell the customer",

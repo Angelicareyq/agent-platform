@@ -1,16 +1,16 @@
 {
     "title": "Damaged",
     "subTitle": "The order arrived damaged/broken.",
-    "action": "Make sure before you start you have all the pictures necessary (10% of the order - or unit, picture with the damaged, picture of the label and picture of the packaging).",
+    "action": "Make sure before you start you have all the pictures necessary (minimum 10-15% of the order - or unit, picture with the damaged, picture of the label and picture of the packaging).",
     "question": {
         "text": "Box is damaged?",
         "options": [
             {
                 "class": "btnsecondary",
                 "text": "No",
-                "action": "Review the images that have been submitted on the complaint, is there a sign of an oversized box being used? or too much weight wihtin one box?",
+                "action": "Review the images that have been submitted on the complaint, there is no sign of an oversized box being used? or too much weight within one box?",
                 "question": {
-                    "text": "Pack incorrectly in the box?",
+                    "text": "Packaged correctly in the box?",
                     "options": [
                         {
                             "class": "btnsecondary",
@@ -26,18 +26,18 @@
                                         "isValid": false
                                     },
                                     {
-                                        "title": "Pack incorrectly in the box?",
+                                        "title": "Packaged correctly in the box?",
                                         "isValid": false
                                     }
                                 ],
                                 "summaries": [
                                     {
                                         "title": "Solution",
-                                        "description": "The product was not safely packaged in the box causing it to tumble during transit. This caused the product to be damaged."
+                                        "description": "The product was not packaged to a high standard in the box causing it to  during transit. This caused the product to be damaged."
                                     },
                                     {
                                         "title": "What to tell the customer",
-                                        "description": "Our apologies for the incorrect packaging, this caused the product to tumble during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the % of the order that has been affected.\n(Reprint for expensive order above 500 Eu purchase price need a confirmation of the supplier/traffic with clear evidence. It can be partial or full reprint - partial or full refund.)"
+                                        "description": "Our apologies for the packaging of this order which has resulted in the quality of your product not meeting expectations.\nWe offer a free reprint of the affected products, with the same file. In case this is too late we can refund tthe affected % of the order./nExpensive Orders: Take caution when proceeding with expensive orders, if the PP of the order exceed 2K approval from Traffic department is needed.\nMacro Name: Traffic Complaint \nInbox: Traffic CS Urgent."
                                     },
                                     {
                                         "title": "Log in Presta",
@@ -51,7 +51,7 @@
                             "text": "Yes",
                             "action": "Check for clear evidence of damage in the complaint pictures of the product and the % of damages product",
                             "question": {
-                                "text": "Scratches/Broken edges/Ripped paper?",
+                                "text": "Scratches/Broken edges/Ripped paper on the box?",
                                 "options": [
                                     {
                                         "class": "btnsecondary",
@@ -67,22 +67,22 @@
                                                     "isValid": false
                                                 },
                                                 {
-                                                    "title": "Pack incorrectly in the box?",
+                                                    "title": "Packaged correctly in the box?",
                                                     "isValid": true
                                                 },
                                                 {
-                                                    "title": "Scratches/Broken edges/Ripped paper?",
+                                                    "title": "Scratches/Broken edges/Ripped paper on the box?",
                                                     "isValid": false
                                                 }
                                             ],
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "No evidence of damage, we. can only offer a CMGW Customer Goodwill , if the box was already destroy, a connect , a reseller."
+                                                    "description": "No evidence of damage, we. can only offer a CMGW , if the box was already destroy, a connect , a reseller,"
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "We can not see any evidence of damage on your pictures, thus we can't validate the complaint. \nWe  understand  your disappointment and can set up a small reprint , a partial refund or a voucher of 10 %  as a commercial gesture"
+                                                    "description": "We can not see any evidence of damage on your pictures, thus we can't validate the complaint. \nWe  understand  your disappointment and can set up a small reprint , a partial refund or a voucher of 10 %  as a commercial gesture."
                                                 },
                                                 {
                                                     "title": "Log in Presta",
@@ -106,11 +106,11 @@
                                                     "isValid": false
                                                 },
                                                 {
-                                                    "title": "Pack incorrectly in the box?",
+                                                    "title": "Packaged correctly in the box?",
                                                     "isValid": true
                                                 },
                                                 {
-                                                    "title": "Scratches/Broken edges/Ripped paper?",
+                                                    "title": "Scratches/Broken edges/Ripped paper on the box?",
                                                     "isValid": true
                                                 }
                                             ],
@@ -121,7 +121,7 @@
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "Our apologies for damaged order, it seems the order was damaged during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the % of the order that has been affected. \nRemember if the Supplier is Own Carrier the complaint option of Carrier will not be possible."
+                                                    "description": "Our apologies for your order being damaged in transit, we would like to offer a free reprint for the effected quantity, with the same file. In case this is too late we can refund the full order.\nRemember if the Supplier is Own Carrier the complaint option of Carrier will not be possible, the complaint will be filed on:\nSupplier\nQuality Wrong: Damaged"
                                                 },
                                                 {
                                                     "title": "Log in Presta",
@@ -164,7 +164,7 @@
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "Reprint or refund the % of the order in which has been effected. \nThe box was damaged during which indicates the product inside took a hit. \nWe can reprint the order with the same file or refund. \nRemember if the Supplier is Own Carrier the complaint option of Carrier will not be possible."
+                                                    "description": "Reprint or refund the % of the order in which has been effected.\nThe box was damaged during transit due to poor packaging by the supplier, meaning the order has also been damaged. We can reprint the order with the same file or refund."
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
@@ -172,7 +172,7 @@
                                                 },
                                                 {
                                                     "title": "Log in Presta",
-                                                    "description": "Carrier \nQuality Wrong - Damaged"
+                                                    "description": "Supplier \nQuality Wrong - Packaging"
                                                 }
                                             ]
                                         }
@@ -203,7 +203,7 @@
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "Our apologies for damaged order, it seems the order was damaged during transit. \nWe offer a free reprint with the same file. In case this is too late we can refund the % of the order that has been affected."
+                                                    "description": "Our apologies for the packaging of this order which has resulted in the quality of your product not meeting expectations.\nWe offer a free reprint of the affected products, with the same file. In case this is too late we can refund tthe affected % of the order.\nExpensive Orders: Take caution when proceeding with expensive orders, if the PP of the order exceed 2K approval from Traffic department is needed.\nMacro Name: Traffic Complaint\nInbox: Traffic CS Urgent"
                                                 },
                                                 {
                                                     "title": "Log in Presta",
