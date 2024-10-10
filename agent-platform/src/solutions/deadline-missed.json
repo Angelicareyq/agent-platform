@@ -83,7 +83,7 @@
                                                         "summaries": [
                                                             {
                                                                 "title": "Solution",
-                                                                "description": "Create a ticket to the Traffic team, they will invesitgate the reasoning for this and offer a solution after contacting the supplier.\nThe ticket should be directed to Traffic_CS, using the macro Order status and all information, images and full order number to be provided.\nIf the order is for an urgent event or a high value order this can be directed to Traffic_CS_Urgent. "
+                                                                "description": "Create a ticket to the Traffic team, they will investigate the reasoning for this and offer a solution after contacting the supplier.\nThe ticket should be directed to Traffic_CS, using the macro Order status and all information, images and full order number to be provided.\nIf the order is for an urgent event or a high value order this can be directed to Traffic_CS_Urgent. "
                                                             },
                                                             {
                                                                 "title": "What to tell the customer",

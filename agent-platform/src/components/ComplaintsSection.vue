@@ -6,17 +6,30 @@
   <div class="container">
     <div class="column">
 
-      <MainCard @click="toQuestion('damage')" msg="Damage" :disabled=false></MainCard>
-      <MainCard @click="toQuestion('delivery-issues')" msg="Delivery Issue" :disabled=false></MainCard>
+      <h4>Logistic Issue:</h4>
+      <MainCard @click="toQuestion('delivery-issues')" msg="Delivery Issues" :disabled=false></MainCard>
 
     </div>
-    <div class="column">
 
+    <div class="column">
+      <h4>Artwork Issue:</h4>
       <MainCard @click="toQuestion('deadline-missed')" msg="Deadline Missed" :disabled=false></MainCard>
-    </div>
-    <div class="column">
+      <MainCard @click="goToSubComplaints(this.designIssues)" msg="Design Issues" :disabled=false></MainCard>
+      <MainCard @click="goToSubComplaints(this.printMarks)" msg="Print Marks" :disabled=false></MainCard>
+      <MainCard @click="toQuestion('PAC')" msg="Premium Artwork Check" :disabled=false></MainCard>
 
-      <MainCard @click="toQuestion('delayed')" msg="Delayed" :disabled=false></MainCard>
+
+
+    </div>
+
+    <div class="column">
+      <h4>Quality Issue:</h4>
+      <MainCard @click="toQuestion('damage')" msg="Damaged" :disabled=false></MainCard>
+      <MainCard @click="goToSubComplaints(this.printQuality)" msg="Print Quality" :disabled=false></MainCard>
+      <MainCard @click="goToSubComplaints(this.finishing)" msg="Finishing" :disabled=false></MainCard>
+
+
+
     </div>
   </div>
 </template>
@@ -49,24 +62,7 @@ export default {
           },
         ]
       },
-      damage: {
-        "title": "Damage",
-        "sub_complaints": [
-          {
-            key: 'damage',
-            message: 'Damage',
-          }
-        ]
-      },
-      deliveryIssue: {
-        "title": "Delivery Issue",
-        "sub_complaints": [
-          {
-            key: 'delivery-issues',
-            message: 'Delivery Issue',
-          }
-        ]
-      },
+
       designIssues: {
         "title": "Design Issues",
         "sub_complaints": [
@@ -75,8 +71,8 @@ export default {
             message: 'Incorrect Artwork/Typo',
           },
           {
-            key: 'overprint',
-            message: 'Overprint',
+            key: 'images-disappearing',
+            message: 'Text/Images disappearing',
           },
           {
             key: 'missing-font',
@@ -95,26 +91,41 @@ export default {
             key: 'print-marks',
             message: 'Print Marks',
           },
+          {
+            key: 'template',
+            message: 'Template',
+          },
+          {
+            key: 'cutcontour',
+            message: 'Cutcontour',
+          }, {
+            key: 'fold-lines',
+            message: 'Fold Lines',
+          },
         ]
       },
       finishing: {
         "title": "Finishing",
         "sub_complaints": [
           {
-            key: 'cutting-folding',
-            message: 'Cutting/Folding',
+            key: 'Folding',
+            message: 'Folding',
           },
-        ]
-      },
-      delayed: {
-        "title": "Delayed",
-        "sub_complaints": [
           {
-            key: 'delayed',
-            message: 'Delayed',
+            key: 'Coating',
+            message: 'Coating',
+          },
+          {
+            key: 'Binding',
+            message: 'Binding',
+          },
+          {
+            key: 'Cutting',
+            message: 'Cutting',
           },
         ]
       },
+
     };
   },
   methods: {
@@ -156,5 +167,11 @@ h3 {
   margin: 0px 0px 40px 20px;
   color: #757575;
   font-weight: 500;
+}
+
+h4 {
+  margin: 0px 0px 40px 0px;
+  color: #000000;
+  font-weight: 600;
 }
 </style>

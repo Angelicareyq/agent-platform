@@ -1,0 +1,385 @@
+{
+  "title": "Fold Lines",
+  "subTitle": "Fold lines are vertical lines that indicate where the folder should be folded. They are usually dotted and magenta but can vary.",
+  "action": "",
+  "question": {
+    "text": "Customer file features fold lines?",
+    "options": [
+      {
+        "class": "btnsecondary",
+        "text": "No",
+        "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by'.",
+        "question": {
+          "text": "Automatic artwork?",
+          "options": [
+            {
+              "class": "btnsecondary",
+              "text": "No",
+              "action": "",
+              "question": {},
+              "solution": {
+                "title": "Fold Lines",
+                "validComplaint": true,
+                "action": "Request a new file from Prepress\nFile complaint in Presta",
+                "questions": [
+                  {
+                    "title": "Customer file features contour line?",
+                    "isValid": false
+                  },
+                  {
+                    "title": "Automatic artwork check?",
+                    "isValid": false
+                  }
+                ],
+                "summaries": [
+                  {
+                    "title": "Solution",
+                    "description": "Our artwork team added folding lines unnecessarily to the cPDF, which caused it to be printed."
+                  },
+                  {
+                    "title": "What to tell the customer",
+                    "description": "Our artwork team added folding lines unnecessarily to the print file, which caused it to be printed incorrectly. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                  },
+                  {
+                    "title": "Log in Presta",
+                    "description": "<strong>Complaint Department:</strong> Manual Artwork Check <strong>\nComplaint Type:</strong> Processed Incorrectly"
+                  }
+                ]
+              }
+            },
+            {
+              "class": "btnprimary",
+              "text": "Yes",
+              "action": "",
+              "question": {},
+              "solution": {
+                "title": "Fold Lines",
+                "validComplaint": true,
+                "action": "Request a new file from Prepress\nFile complaint in Presta",
+                "questions": [
+                  {
+                    "title": "Customer file features contour line?",
+                    "isValid": false
+                  },
+                  {
+                    "title": "Automatic artwork check?",
+                    "isValid": true
+                  }
+                ],
+                "summaries": [
+                  {
+                    "title": "Solution",
+                    "description": "Our autocheck added a cutcontour unnecessarily to the cPDF, which caused it to be printed."
+                  },
+                  {
+                    "title": "What to tell the customer",
+                    "description": "Our autocheck added folding lines unnecessarily to the print file, which caused it to be printed incorrectly. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                  },
+                  {
+                    "title": "Log in Presta",
+                    "description": "<strong>Complaint Department:</strong> Automatic Artwork Check <strong>\nComplaint Type:</strong> Cutcontour, Template, Crop marks"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "class": "btnprimary",
+        "text": "Yes",
+        "action": "",
+        "question": {
+          "text": "Are you:",
+          "options": [
+            {
+              "class": "btnsecondary",
+              "text": "CX Specialist",
+              "action": "",
+              "question": {},
+              "solution": {
+                "title": "Fold Lines",
+                "action": "",
+                "questions": [
+                  {
+                    "title": "Customer file features contour line?",
+                    "isValid": true
+                  },
+                  {
+                    "title": "Are you a CX Specialist?",
+                    "isValid": true
+                  }
+                ],
+                "summaries": [
+                  {
+                    "title": "Solution",
+                    "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                  }
+                ]
+              }
+            },
+            {
+              "class": "btnsecondary",
+              "text": "Prepress Specialist",
+              "action": "",
+              "question": {
+                "text": "Fold lines are pixelated?",
+                "options": [
+                  {
+                    "class": "btnsecondary",
+                    "text": "No",
+                    "action": "",
+                    "question": {
+                      "text": "Fold lines on print layer in template?",
+                      "options": [
+                        {
+                          "class": "btnsecondary",
+                          "text": "No",
+                          "action": "",
+                          "question": {},
+                          "solution": {
+                            "title": "Fold Lines",
+                            "validComplaint": true,
+                            "action": "Use same file for reprint\nFile complaint in Presta",
+                            "questions": [
+                              {
+                                "title": "Customer file features contour line?",
+                                "isValid": true
+                              },
+                              {
+                                "title": "Prepress Specialist",
+                                "isValid": false
+                              },
+                              {
+                                "title": "Fold lines are pixelated?",
+                                "isValid": false
+                              },
+                              {
+                                "title": "Fold lines on print layer in template?",
+                                "isValid": false
+                              }
+                            ],
+                            "summaries": [
+                              {
+                                "title": "Solution",
+                                "description": "The cPDF sent to the supplier is correct, however folding lines were added during their process and printed incorrectly. We can reprint with the same file."
+                              },
+                              {
+                                "title": "What to tell the customer",
+                                "description": "We’ve identified that an error occurred during our processing, resulting in an incorrect print due to added folding lines. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                              },
+                              {
+                                "title": "Log in Presta",
+                                "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Printed Incorrectly"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "class": "btnprimary",
+                          "text": "Yes",
+                          "action": "",
+                          "question": {},
+                          "solution": {
+                            "title": "Fold Lines",
+                            "validComplaint": true,
+                            "action": "Create a fixed cPDF for reprint\nInform Quinten/Rafael/Miguel of template issue\nFile complaint in Presta",
+                            "questions": [
+                              {
+                                "title": "Customer file features contour line?",
+                                "isValid": true
+                              },
+                              {
+                                "title": "Prepress Specialist",
+                                "isValid": true
+                              },
+                              {
+                                "title": "Fold lines are pixelated?",
+                                "isValid": false
+                              },
+                              {
+                                "title": "Fold lines on print layer in template?",
+                                "isValid": true
+                              }
+                            ],
+                            "summaries": [
+                              {
+                                "title": "Solution",
+                                "description": "The cPDF sent to the supplier is correct, however folding lines were added during their process and printed incorrectly. We can reprint with the same file."
+                              },
+                              {
+                                "title": "What to tell the customer",
+                                "description": "We’ve identified that an error occurred during our processing, resulting in an incorrect print due to added folding lines. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                              },
+                              {
+                                "title": "Log in Presta",
+                                "description": "<strong>Complaint Department:</strong> Artwork Process<strong>\nComplaint Type:</strong> Template"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "class": "btnprimary",
+                    "text": "Yes",
+                    "action": "",
+                    "question": {
+                      "text": "Automatic artwork?",
+                      "options": [
+                        {
+                          "class": "btnsecondary",
+                          "text": "No",
+                          "action": "",
+                          "question": {},
+                          "solution": {
+                            "title": "Fold Lines",
+                            "validComplaint": true,
+                            "action": "Request a new file from customer\nFile complaint in Presta",
+                            "questions": [
+                              {
+                                "title": "Customer file features contour line?",
+                                "isValid": true
+                              },
+                              {
+                                "title": "Are you a Prepress Specialist?",
+                                "isValid": true
+                              },
+                              {
+                                "title": "Fold lines are pixelated?",
+                                "isValid": true
+                              },
+                              {
+                                "title": "Automatic artwork check?",
+                                "isValid": false
+                              }
+                            ],
+                            "summaries": [
+                              {
+                                "title": "Solution",
+                                "description": "The customer added pixelated folding lines on a flat file, because of inattention during the artwork check process it was left in the cPDF and printed as part of the design."
+                              },
+                              {
+                                "title": "What to tell the customer",
+                                "description": "We’ve identified that pixelated folding lines added by you were not caught during our artwork check process, resulting in those being printed as part of the design. To resolve this, we can offer you a discount on the current order, arrange a reprint once you provide a corrected file, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer and provide the new file if you choose the reprint option. We will take the necessary steps to ensure your satisfaction."
+                              },
+                              {
+                                "title": "Log in Presta",
+                                "description": "<strong>Complaint Department:</strong> Manual Artwork Check <strong>\nComplaint Type:</strong> Processed Incorrectly"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "class": "btnprimary",
+                          "text": "Yes",
+                          "action": "",
+                          "question": {
+                            "text": "What type of order is this?",
+                            "options": [
+                              {
+                                "class": "btnsecondary",
+                                "text": "Purchase price is over 150",
+                                "action": "",
+                                "question": {},
+                                "solution": {
+                                  "title": "Cutcontour",
+                                  "action": "Check with team lead",
+                                  "validComplaint": false,
+                                  "questions": [
+                                    {
+                                      "title": "Customer file features contour line?",
+                                      "isValid": true
+                                    },
+                                    {
+                                      "title": "Prepress Specialist",
+                                      "isValid": true
+                                    },
+                                    {
+                                      "title": "Fold lines are pixelated?",
+                                      "isValid": true
+                                    },
+                                    {
+                                      "title": "Automatic artwork check?",
+                                      "isValid": true
+                                    },
+                                    {
+                                      "title": "Purchase price is over 150",
+                                      "isValid": true
+                                    }
+                                  ],
+                                  "summaries": [
+                                    {
+                                      "title": "Solution",
+                                      "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "class": "btnsecondary",
+                                "text": "Purchase price is under 150 or New CMR",
+                                "action": "",
+                                "question": {},
+                                "solution": {
+                                  "title": "Fold Lines",
+                                  "action": "Request a new file from the customer\nFile complaint in Presta",
+                                  "validComplaint": false,
+                                  "questions": [
+                                    {
+                                      "title": "Customer file features contour line?",
+                                      "isValid": true
+                                    },
+                                    {
+                                      "title": "Prepress Specialist",
+                                      "isValid": true
+                                    },
+                                    {
+                                      "title": "Fold lines are pixelated?",
+                                      "isValid": true
+                                    },
+                                    {
+                                      "title": "Automatic artwork check?",
+                                      "isValid": true
+                                    },
+                                    {
+                                      "title": "Purchase price is under 150 or New CMR",
+                                      "isValid": true
+                                    }
+                                  ],
+                                  "summaries": [
+                                    {
+                                      "title": "Solution",
+                                      "description": "The customer added a pixelated folding line on a flat file, as pixels are not recognised as fold lines by autocheck this was not caught and it was processed as part of the design."
+                                    },
+                                    {
+                                      "title": "What to tell the customer (NEW)",
+                                      "description": "As a special consideration for being a new customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include pixelated folding lines, as these are not recognized as fold lines by our system and are processed as part of the design. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
+                                    },
+                                    {
+                                      "title": "What to tell the customer (RETURNING)",
+                                      "description": "As a returning customer, we appreciate your continued support and understand that you may not have been fully aware that pixelated folding lines are not recognized by our autocheck system and are processed as part of the design. To ensure your satisfaction and as a gesture of goodwill, we are offering you a 10% discount on the current order or as a voucher for your next order. Please provide us with a new design that does not include the pixelated folding line to avoid any further issues."
+                                    },
+                                    {
+                                      "title": "Log in Presta",
+                                      "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

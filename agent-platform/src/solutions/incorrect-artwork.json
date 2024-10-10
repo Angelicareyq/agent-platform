@@ -1,7 +1,7 @@
 {
     "title": "Incorrect artwork",
-    "subTitle": "It can happen that a customer files a complaint after receiving their order if they discover a mistake in their uploaded design or they uploaded the wrong artwork. Turn on screen reader support. To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash",
-    "action": "Compare the customer's photo with the customers uploaded file associated with their order. Check if the design mistake is already there",
+    "subTitle": "The original file contains incorrectly written words or was uploaded by accident",
+    "action": "Compare the customer's photo with the customer's uploaded file associated with their order. Check if the design mistake is already there",
     "question": {
         "text": "Customer uploaded file is incorrect?",
         "options": [
@@ -9,16 +9,15 @@
                 "class": "btnsecondary",
                 "text": "No",
                 "question": {
+                    "text": "'Artwork Altered' Warning was sent?",
                     "action": "Check the log in the DTP tab. Search for a green update, these are the DTP warnings.",
-                    "text": "An 'Artwork Altered' Warning was sent?",
                     "options": [
                         {
                             "class": "btnsecondary",
                             "text": "No",
-                            "question": {},
                             "solution": {
                                 "title": "Incorrect artwork",
-                                "action": "File the complaint in presta",
+                                "action": "File the complaint in Presta\nRequest a fixed file from Prepress",
                                 "validComplaint": true,
                                 "questions": [
                                     {
@@ -26,7 +25,7 @@
                                         "isValid": false
                                     },
                                     {
-                                        "title": "An 'Artwork Altered' Warning was sent?",
+                                        "title": "'Artwork Altered' Warning was sent?",
                                         "isValid": false
                                     }
                                 ],
@@ -37,7 +36,7 @@
                                     },
                                     {
                                         "title": "What to tell the customer",
-                                        "description": "Our artwork team altered your file but did not warn you of this. We offer to reprint the order with a correct file. If no time for a reprint, could you use this product at a discount?"
+                                        "description": "We have identified that an alteration was made to your design by our agent, which should not have occurred, and no warning was sent, leaving you unaware of the change. To resolve this, we can offer you a discount or arrange a reprint at no additional cost. If there isn't enough time for a reprint, we can also provide a refund. Please let us know which option you prefer, and we will ensure it is promptly addressed to your satisfaction."
                                     },
                                     {
                                         "title": "Log in Presta",
@@ -49,29 +48,78 @@
                         {
                             "class": "btnprimary",
                             "text": "Yes",
-                            "action": "",
-                            "question": {},
-                            "solution": {
-                                "title": "Incorrect artwork",
-                                "validComplaint": false,
-                                "questions": [
+                            "question": {
+                                "text": "What type of order is this?",
+                                "options": [
                                     {
-                                        "title": "Customer uploaded file is incorrect?",
-                                        "isValid": false
+                                        "class": "btnsecondary",
+                                        "text": "Purchase price is over 150",
+                                        "solution": {
+                                            "title": "Incorrect artwork",
+                                            "action": "Check with team lead",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Customer uploaded file is incorrect?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "'Artwork Altered' Warning was sent?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Purchase price is over 150",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                }
+                                            ]
+                                        }
                                     },
                                     {
-                                        "title": "An 'Artwork Altered' Warning was sent?",
-                                        "isValid": true
-                                    }
-                                ],
-                                "summaries": [
-                                    {
-                                        "title": "Solution",
-                                        "description": "Our manual artwork team had to make a change to the design in order for it to be print ready. We warned the customer of any changes so they should have contacted us with questions regarding the alteration. We can offer a discount."
-                                    },
-                                    {
-                                        "title": "What to tell the customer",
-                                        "description": "Our artwork team altered your file as it was not ready for print. For this they did send a warning. Can you use the product at a discount?"
+                                        "class": "btnsecondary",
+                                        "text": "Purchase price is under 150 or New CMR",
+                                        "solution": {
+                                            "title": "Incorrect artwork",
+                                            "action": "File complaint in Presta\nSelect one of the following resolutions based on customer type",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Customer file contains template?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Purchase price is under 150 or New CMR",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Our manual artwork team had to make a change to the design in order for it to be print ready. We warned the customer of any changes so we can't validate the complaint."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer (NEW)",
+                                                    "description": "As a new customer, we understand that you may not be fully aware of our processes. Our manual artwork team made necessary changes to your design to ensure it was print-ready, and we provided a warning about these changes. Therefore, we cannot validate the complaint. However, as a gesture of goodwill and to ensure your satisfaction, we can offer you a reprint with the corrected file at no additional cost. Please let us know if you would like to proceed with this option, and we will make the necessary arrangements."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer (RETURNING)",
+                                                    "description": "As a returning customer, we appreciate your loyalty and want to clarify our process. Our manual artwork team made necessary changes to your design to ensure it was print-ready, and we provided a warning about these changes. Therefore, we cannot validate the complaint. However, to demonstrate our commitment to your satisfaction, we are offering a 10% discount on your current order or a voucher for a future purchase. Please let us know your preference, and we will ensure it is promptly applied."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill\n<strong>Complaint Type:</strong> Wrong artwork uploaded"
+                                                }
+                                            ]
+                                        }
                                     }
                                 ]
                             }
@@ -82,29 +130,70 @@
             {
                 "class": "btnprimary",
                 "text": "Yes",
-                "action": "",
-                "question": {},
-                "solution": {
-                    "title": "Incorrect artwork",
-                    "validComplaint": false,
-                    "questions": [
+                "question": {
+                    "text": "What type of order is this?",
+                    "options": [
                         {
-                            "title": "Customer uploaded file is incorrect?",
-                            "isValid": true
-                        }
-                    ],
-                    "summaries": [
-                        {
-                            "title": "Solution",
-                            "description": "Artwork, either autocheck or manual check, only check files on their technical correctness. When the customer uploads a typo or a incorrect design, we do not review this so these complaints are not valid."
+                            "class": "btnsecondary",
+                            "text": "Purchase price is over 150",
+                            "solution": {
+                                "title": "Incorrect artwork",
+                                "action": "Check with team lead",
+                                "validComplaint": false,
+                                "questions": [
+                                    {
+                                        "title": "Customer uploaded file is incorrect?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Purchase price is over 150",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                    }
+                                ]
+                            }
                         },
                         {
-                            "title": "What to tell the customer - First time CMR or cheap order",
-                            "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include the typo. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
-                        },
-                        {
-                            "title": "What to tell the customer",
-                            "description": "We always strive to provide you with the best possible product. Upon uploading your artwork, we automatically check it whenever feasible (depending on the product). For products that cannot undergo an automatic check, our experts manually review the artwork for common issues at no additional cost. However, please note that our Normal and Premium Artwork checks do not encompass spelling, grammar, or colour interpretation."
+                            "class": "btnsecondary",
+                            "text": "Purchase price is under 150 or New CMR",
+                            "solution": {
+                                "title": "Incorrect artwork",
+                                "action": "File complaint in Presta\nSelect one of the following resolutions based on customer type",
+                                "validComplaint": false,
+                                "questions": [
+                                    {
+                                        "title": "Customer uploaded file is incorrect?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Purchase price is under 150 or New CMR",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "During the artwork check we only look for technical errors, a incorrect design or typo is not checked and so can not be validated."
+                                    },
+                                    {
+                                        "title": "What to tell the customer (NEW)",
+                                        "description": "As a new customer, we understand that you may not be fully aware of our processes. During our artwork check, we focus solely on technical errors and do not review the content for design or text errors. However, as a special consideration, we can offer you a reprint if you provide us with a corrected file. Please let us know if you would like to proceed with this option, and we will make the necessary arrangements to ensure your satisfaction."
+                                    },
+                                    {
+                                        "title": "What to tell the customer (RETURNING)",
+                                        "description": "As a returning customer, we value your continued business and want to clarify our processes. During our artwork check, we focus solely on technical errors and do not review the content for design or text errors. As a result, we cannot validate issues related to these aspects. However, to ensure your satisfaction, we can offer you a 10% discount, which can be applied either to your current order or as a voucher for a future purchase. Please let us know your preference, and we will make the necessary arrangements."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong> Customer goodwill\n<strong>Complaint Type:</strong> Wrong artwork uploaded"
+                                    }
+                                ]
+                            }
                         }
                     ]
                 }

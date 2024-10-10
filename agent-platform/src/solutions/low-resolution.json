@@ -1,179 +1,477 @@
 {
     "title": "Low resolution",
-    "subTitle": "Print quality might be low because the files DPI is below  recommendation",
-    "action": "Compare the customer's photo with the CPDF associated with their order by running Preflight 'HelloCheck'",
+    "subTitle": "There are low quality, pixelated or grainy images or elements in the printed product.",
+    "action": "Validate customer's complaint visually. \nOpen cPDF in Acrobat and compare the reported elements at 100% zoom.",
     "question": {
-        "text": "cPDF is high res?",
+        "text": "Does the artwork at 100% zoom match the printed result?",
         "options": [
             {
                 "class": "btnsecondary",
                 "text": "No",
+                "action": "",
                 "question": {
-                    "text": "Automatic artwork check?",
+                    "text": "Are you:",
                     "options": [
                         {
                             "class": "btnsecondary",
-                            "text": "No",
-                            "action": "Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.",
-                            "question": {
-                                "text": "Low resolution warning sent?",
-                                "options": [
+                            "text": "CX Specialist",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Low resolution",
+                                "action": "",
+                                "questions": [
                                     {
-                                        "class": "btnsecondary",
-                                        "text": "No",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Low resolution",
-                                            "action": "File the complaint in presta",
-                                            "validComplaint": true,
-                                            "questions": [
-                                                {
-                                                    "title": "cPDF is high res?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Automatic art work check?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Low resolution warning sent?",
-                                                    "isValid": false
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "Since it's our fault we didn't sent a warning, we have to make up with it by offering a reprint or a refund."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "I see the file you uploaded has a low resolution. Our team should have sent you an email about the risk. For the inconvenience, I would like to offer you a reprint of the order. In this case, we will need a good file from you with good resolution. Could you provide us with a file that meets the necessary resolution requirements? If you can't use the reprint because it will be too late, I can offer you a refund on this order. Turn on screen reader support"
-                                                },
-                                                {
-                                                    "title": "Log in Presta",
-                                                    "description": "Artwork - Manual Checked / No Warning Sent"
-                                                }
-                                            ]
-                                        }
+                                        "title": "Does the artwork at 100% zoom match the printed result?",
+                                        "isValid": false
                                     },
                                     {
-                                        "class": "btnprimary",
-                                        "text": "Yes",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Low resolution",
-                                            "validComplaint": false,
-                                            "questions": [
-                                                {
-                                                    "title": "cPDF is high res?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Automatic artwork check?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Low resolution warning sent?",
-                                                    "isValid": true
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "The customer approved the file even when we stated there was a risk that the quality of the print is going to be bad."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer - First time CMR or cheap order",
-                                                    "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include low resolution. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "I am sorry but you approved the proof despite being informed about the potential risk of poor print quality. We warned you via email that there is a risk that it will be printed badly. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
-                                                }
-                                            ]
-                                        }
+                                        "title": "Are you a CX Specialist",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
                                     }
                                 ]
                             }
                         },
                         {
-                            "class": "btnprimary",
-                            "text": "Yes",
-                            "action": "Open the DTP Tab in presta & check “AutoCheck Artwork” box",
+                            "class": "btnsecondary",
+                            "text": "Prepress Specialist",
+                            "action": "",
                             "question": {
-                                "text": "Low resolution warning sent?",
+                                "text": "How does it look on the printed product?",
                                 "options": [
                                     {
                                         "class": "btnsecondary",
-                                        "text": "No",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Low resolution",
-                                            "action": "File the complaint in presta",
-                                            "validComplaint": true,
-                                            "questions": [
+                                        "text": "Extremely pixelated (squares)",
+                                        "action": "Open the cPDF in Illustrator and check if the pixelated image is properly embedded. \nIllustrator may warn about images not linked. \nAlternatively, look for Images within a crossed frame.",
+                                        "question": {
+                                            "text": "Are affected elements embedded?",
+                                            "options": [
                                                 {
-                                                    "title": "cPDF is high res?",
-                                                    "isValid": false
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "Were the elements embedded in the customer's original file?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Low resolution",
+                                                                    "action": "Create new fixed cPDF and add to the internal ticket, send the ticket to the relevant CS_Urgent inbox. \nLog the complaint in presta ",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Does the artwork at 100% zoom match the printed result?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Extremely pixelated (Squares)",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Are affected elements embedded?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Were the elements embedded in the customer's original file?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The customers submitted files contained all links correctly embedded but these links disappeared when an artwork agent processed the file. We can proceed by reprinting by reprocessing the submitted file or offering a discount/refund. "
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "We see that your submitted file contained all embedded links and no issues were found. It seems the problem occurred during the prepress check.\nTo resolve this issue, we would like to offer you a reprint of your order, reprocessing the submitted file correctly. \nIf a reprint will be too late for your needs, we can offer you a refund for this order.\nThank you for your cooperation and understanding."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Agent mistake- Incorrectly checked"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No, purchase price is over 150",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Low resolution",
+                                                                    "action": "Check with team lead",
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Does the artwork at 100% zoom match the printed result?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Extremely pixelated (Squares)",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Are affected elements embedded?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Were the elements embedded in the customer's original file?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is over 150",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "We need to review these case by case. Take into account such factors as: Priority Client, Amount of orders total, Amount of prior complaints, Amount spent total and Purchase price vs. customer price."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No, purchase price is under 150 or New CMR",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Low resolution",
+                                                                    "action": "Check with team lead",
+                                                                    "validComplaint":false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Does the artwork at 100% zoom match the printed result?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Extremely pixelated (Squares)",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Are affected elements embedded?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Were the elements embedded in the customer's original file?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is under 150 or New CMR",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The customers submitted files missed the embedded links causing the placeholder links to have a low resolution."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (NEW)",
+                                                                            "description": "As non-embedded elements are an uncommon fault in customer files, we do not thoroughly look for this within our workflow. Our apologies for the inconvenience caused.\nTo resolve this issue, we would like to offer you a discounted reprint with a revised file.\nThank you for your understanding."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (RETURNING)",
+                                                                            "description": "I am sorry, but you approved the proof despite being informed about the potential risk of poor print quality. We have informed you that the low resolution could highly affect the printing quality causing it to be blurry.\nIn consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to your next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction.\nThank you for your understanding."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Uploaded wrong artwork"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 },
                                                 {
-                                                    "title": "Automatic artwork check?",
-                                                    "isValid": true
-                                                },
-                                                {
-                                                    "title": "Low resolution warning sent?",
-                                                    "isValid": false
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "Since it's our fault we didn't sent a warning, we have to make up with it by offering a reprint or a refund."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "I see the file you uploaded has a low resolution. Our autocheck should have sent you an email about the risk. For the inconvenience, I would like to offer you a reprint of the order. In this case, we will need a good file from you with good resolution. Could you provide us with a file that meets the necessary resolution requirements? If you can't use the reprint because it will be too late, I can offer you a refund on this order."
-                                                },
-                                                {
-                                                    "title": "Log in Presta",
-                                                    "description": "Artwork - Automatic Checked / Autocheck - No Warning Given"
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Low resolution",
+                                                        "action": "Create new fixed cPDF and add to the internal ticket, send the ticket to the relevant CS_Urgent inbox.\nLog the complaint in presta",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Does the artwork at 100% zoom match the printed result?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Extremely pixelated (Squares)",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Are affected elements embedded?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The customer and us embedded all files correctly, but the supplier printed them incorrectly, which is their responsibility."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We see that your submitted file contained all embedded links and no issues were found. Additionally, no issues were detected in the print file we sent to our printer. It seems the problem occurred during the printing process.\nTo resolve this issue, we would like to offer you a reprint of your order using the same file.\nIf a reprint will be too late for your needs, we can offer you a refund for this order.\nThank you for your cooperation and understanding."
+                                                            },
+                                                            {
+                                                                "title": "Ticket to traffic",
+                                                                "description": "Request traffic to contact the supplier regarding the complaint prior to reprinting as the supplier needs to be informed in order not to repeat the same issue."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Printed Incorrectly"
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             ]
                                         }
                                     },
                                     {
-                                        "class": "btnprimary",
-                                        "text": "Yes",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Low resolution",
-                                            "validComplaint": false,
-                                            "questions": [
+                                        "class": "btnsecondary",
+                                        "text": "Very grainy/Burry (DOTS)",
+                                        "action": "",
+                                        "question": {
+                                            "text": "Are lines and fonts within the minimum requirements?",
+                                            "options": [
                                                 {
-                                                    "title": "cPDF is high res?",
-                                                    "isValid": false
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "Thin lines / small text warning sent?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Low resolution",
+                                                                    "action": "Create new fixed cPDF and add to the internal ticket, send the ticket to the relevant CS_Urgent inbox.\nLog the complaint in presta",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Does the artwork at 100% zoom match the printed result?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Very Grainy/Blurry",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Are lines and fonts within the minimum requirements?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Thin lines / small text warning sent?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The uploaded file contained lines and details that were below our recommended specifications. We checked this manually but did not send a warning so the customer was not made aware. The complaint is valid"
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Unfortunately, some details did not print to the highest quality due to small details and lines in your design. We apologize for not sending you a warning about this risk, which prevented you from being aware. \nTo make it right, we would like to offer you a reprint of this order. However, we will need a new file that matches the specifications mentioned on the product page.\nIf a reprint is too late, we can fully refund the product."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> No warning sent"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Low resolution",
+                                                                                "action": "Check with team lead",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Does the artwork at 100% zoom match the printed result?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Very Grainy/Blurry",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are lines and fonts within the minimum requirements?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Thin lines / small text warning sent?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Low resolution",
+                                                                                "action": "Pick one of the following resolutions based on type of customer\nFile and finish the complaint in Presta. \nNew file with revised lines required for reprint.",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Does the artwork at 100% zoom match the printed result?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Very Grainy/Blurry",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are lines and fonts within the minimum requirements?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Thin lines / small text warning sent?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The uploaded file contained lines and details that were below our recommended specifications. We warned against this so can not validate this complaint."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "Unfortunately, some details did not print to the highest quality. We did warn you about this since your file contained thin lines and details, which are not recommended for this product. As you are a valued customer, we would like to offer you a one-time reprint of this order. However, we will need a new file that matches the specifications mentioned on the product page."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "Unfortunately, some details did not print to the highest quality. We did warn you about this since your file contained thin lines and details, which are not recommended for this product.\nIn consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to your next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department: </strong> Customer goodwill <strong>\nComplaint Type:</strong> Uploaded wrong artwork"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 },
                                                 {
-                                                    "title": "Automatic artwork check?",
-                                                    "isValid": true
-                                                },
-                                                {
-                                                    "title": "Low resolution warning sent?",
-                                                    "isValid": true
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "The customer approved the file even when we stated there was a risk that the quality of the print is going to be bad."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer - First time CMR or cheap order",
-                                                    "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include low resolution. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "I am sorry but you approved the proof despite being informed about the potential risk of poor print quality. We warned you via email that there is a risk that it will be printed badly. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Low resolution",
+                                                        "action": "Create new fixed cPDF and add to the internal ticket, send the ticket to the relevant CS_Urgent inbox.\nLog the complaint in presta",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Does the artwork at 100% zoom match the printed result?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Very Grainy/Blurry",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Are lines and fonts within the minimum requirements?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Since it's a complaint on the supplier and the file has no issues we can reprint after contacting traffic."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "The file you provided was of good quality, but unfortunately, it was printed with a lower DPI than expected. To make up for any inconvenience caused, I'd like to offer you a reprint of your order. \nIf you can't use the reprint because it will be too late, I can offer you a refund on this order."
+                                                            },
+                                                            {
+                                                                "title": "Ticket to traffic",
+                                                                "description": "Request traffic to contact the supplier regarding the complaint prior to reprinting as the supplier needs to be informed in order not to repeat the same issue."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Supplier - Quality wrong <strong>\nComplaint Type:</strong> Printed incorrectly"
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             ]
                                         }
@@ -187,29 +485,181 @@
             {
                 "class": "btnprimary",
                 "text": "Yes",
-                "question": {},
-                "solution": {
-                    "title": "Low resolution",
-                    "action": "File the complaint in presta",
-                    "validComplaint": true,
-                    "questions": [
+                "action": "\nCheck the log in the DTP tab and search for a green line with a 'DTP Message - Low Resolution' warning. \nCheck the Automatic Check log for a Low Resolution warning \nCheck 360 for transactional email.",
+                "question": {
+                    "text": "Low resolution warning sent?",
+                    "options": [
                         {
-                            "title": "cPDF is high res?",
-                            "isValid": true
-                        }
-                    ],
-                    "summaries": [
-                        {
-                            "title": "Solution",
-                            "description": "Since it's a complaint on the supplier and the file has no issues we can reprint using the same file."
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                            "question": {
+                                "text": "Automatic artwork check?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Low resolution",
+                                            "action": "New high res file required for reprint\nFile complaint in Presta",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Does the artwork at 100% zoom match the printed result?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Low resolution warning sent?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Since we didn't send a low-resolution warning as we should have, the complaint is caused by us. We can offer a reprint with a new, high-resolution file or provide a discount/refund."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "We see that the file you uploaded has a low resolution. Our team should have sent you an email about this risk. We apologize for any inconvenience this may have caused.\nTo resolve this issue, we would like to offer you a reprint of your order. In order to proceed, we will need a new file from you that meets the necessary resolution requirements. Could you please provide us with a high-resolution file so we can ensure the best possible print quality?\nIf you can't use the reprint because it will be too late, we can offer you a refund on this order.\nThank you for your cooperation and understanding. We look forward to resolving this issue promptly."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint type:</strong>  No Warning Sent"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Low resolution",
+                                            "action": "New high res file required for reprint\nFile complaint in Presta",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Does the artwork at 100% zoom match the printed result?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Low resolution warning sent?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Since we failed to send a warning, we need to rectify the situation by offering either a reprint or a refund."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "We see that the file you uploaded has a low resolution. Our autocheck system should have sent you an email about this risk. We apologize for any inconvenience this may have caused.\nTo resolve this issue, we would like to offer you a reprint of your order. In order to proceed, we will need a new file from you that meets the necessary resolution requirements. Could you please provide us with a high-resolution file so we can ensure the best possible print quality?\nIf you can't use the reprint because it will be too late, we can offer you a refund on this order.\nThank you for your cooperation and understanding."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Artwork - Automatic Checked <strong>\nComplaint type:</strong>  No Warning Given"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
                         },
                         {
-                            "title": "What to tell the customer",
-                            "description": "The file you provided was of good quality, but unfortunately, the printer outputted it with a lower DPI than expected. To make up for any inconvenience caused, I'd like to offer you a reprint of your order. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
-                        },
-                        {
-                            "title": "Log in Presta",
-                            "description": "Supplier - Quality Wrong / Printed incorrectly"
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {
+                                "text": "What type of order is this?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Purchase price is over 150",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Low resolution",
+                                            "action": "Check with team lead",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Does the artwork at 100% zoom match the printed result?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Low resolution warning sent?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Purchase price is over 150",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Purchase price is under 150 or New CMR",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Low resolution",
+                                            "action": "Pick one of the following resolutions based on type of customer \nFile and finish the complaint in Presta. \nNew high resolution file required for reprint",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Does the artwork at 100% zoom match the printed result?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Low resolution warning sent?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Purchase price is under 150 or New CMR",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The customer approved the file despite our warning about the risk of poor print quality."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer (NEW)",
+                                                    "description": "We see that the file you uploaded has a low resolution. Our team should have sent you an email about this risk. We apologize for any inconvenience this may have caused. \nAs a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include low resolution. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product.\nIf you can't use the reprint because it will be too late, we can offer you a refund on this order.\nThank you for your cooperation and understanding."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer (RETURNING)",
+                                                    "description": "I am sorry, but you approved the proof despite being informed about the potential risk of poor print quality. We have informed you that the low resolution could highly affect the printing quality causing it to be blurry. \nIn consideration of the inconvenience caused, we can offer you a ...% discount code that can be applied to your next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction.\nThank you for your understanding."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Artwork low resolution"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
                         }
                     ]
                 }

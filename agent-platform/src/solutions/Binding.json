@@ -1,0 +1,279 @@
+{
+    "title": "Binding",
+    "subTitle": "The incorrect bookbinding was used on the product (perfect bound, stapled, glued..)",
+    "action": "Compare the order description on Presta with the customer pictures.",
+    "question": {
+        "text": "Clear incorrect binding?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "Look for loose hanging pages on the customers pictures",
+                "question": {
+                    "text": "Loose inside pages?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "",
+                            "question": {
+                                "text": "Are you:",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "CX Specialist",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Binding",
+                                            "action": "",
+                                            "questions": [
+                                                {
+                                                    "title": "Clear incorrect binding?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Loose inside pages?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Are you a CX Specialist",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Prepress Specialist",
+                                        "action": "Open the file in indesign and offset the page by 3mm then compare with the customers pictures",
+                                        "question": {
+                                            "text": "+3mm cutting deviation?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "What type of order is this?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is over 150",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Binding",
+                                                                    "action": "Check with team lead",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Clear incorrect binding?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Loose inside pages?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "+3mm cutting deviation?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is over 150",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is under 150 or New CMR",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Binding",
+                                                                    "action": "File and finish the complaint in Presta. \nPick one of two suggested solutions",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Clear incorrect binding?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Loose inside pages?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "+3mm cutting deviation?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is under 150 or New CMR",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The order has been stapled and cut correctly, no mistake has been made on our end. "
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (NEW)",
+                                                                            "description": "The order has been stapled and cut correctly, and no mistake has been made on our end. However, as a gesture of goodwill for a new customer, we can offer a refund in case you can not use the product."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (RETURNING)",
+                                                                            "description": "The order has been stapled and cut correctly, and no mistake has been made on our end. As a returning customer, we can offer a 10% discount on the current order or provide a voucher for a future purchase. Please let us know which option you prefer."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Customer goodwill <strong> "
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Binding",
+                                                        "action": "File and finish the complaint in Presta. \nReprint with the same file",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Clear incorrect binding?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Loose inside pages?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "+3mm cutting deviation?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The supplier has cut the product incorrectly causing the opposite sides of the spreads to be visible on the page. "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "The printer has cut the product incorrectly, causing the opposite sides of the spreads to be visible on the page. We apologize for this error. We can offer a discount or reprint the order with the correct cuts. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Cutting"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Binding",
+                                "action": "File and finish the complaint in Presta. \nReprint with the same file",
+                                "validComplaint": false,
+                                "questions": [
+                                    {
+                                        "title": "Clear incorrect binding?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Loose inside pages?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The supplier bound the product poorly causing the pages to hang loose and shift."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "The binding of your product was done poorly, resulting in loose and shifting pages. We apologize for this inconvenience. To address the issue, we can offer a discount or reprint the product with proper binding. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Finishing"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "",
+                "question": {},
+                "solution": {
+                    "title": "Binding",
+                    "action": "File and finish the complaint in Presta. \nPlease reach out to traffic so they are able to contact the suplier before the reprint experiences the same issue.",
+                    "validComplaint": false,
+                    "questions": [
+                        {
+                            "title": "Clear incorrect binding?",
+                            "isValid": true
+                        }
+                    ],
+                    "summaries": [
+                        {
+                            "title": "Solution",
+                            "description": "The SKU/Order description in Presta do not match the printer product as the supplier has used the incorrect binding method. "
+                        },
+                        {
+                            "title": "What to tell the customer",
+                            "description": "We’ve identified that there was an issue with the binding method used for your product, which led to a mismatch with what was expected. We apologize for this error. To resolve the issue, we can offer you a discount or reprint the product with the correct binding. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will promptly address the issue."
+                        },
+                        {
+                            "title": "Log in Presta",
+                            "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Finishing"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

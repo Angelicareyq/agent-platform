@@ -1,168 +1,547 @@
 {
     "title": "Smudges",
-    "subTitle": "Different paper types and finishes absorb ink in a different way. When we print rich black, multiple thick layers of ink on top of each other, on laminated or coated paper it dries less fast and is prone to smudging.",
-    "action": "Open the file in acrobat & check the 'Total area coverage' in the output preview screen.",
+    "subTitle": "Unintended blotch or smudge of ink that disrupts the intended design or text, typically caused by high ink coverage or equipment malfunctions.",
+    "action": "Check the description in Presta",
     "question": {
-        "text": "High ink processed?<br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 10px; margin-bottom: 10px;'>IF DOUBT:<br>Run the HelloCheck on Acrobat<br>Check the 'Total Area Coverage' and set to 340%<br>Check with DTP</span>",
-        "options": [
-            {
+      "text": "Product is laminated?<br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 10px; margin-bottom: 10px;'>Lamination is an additional layer applied over the printed product to prevent ink from smudging and ensure durability.</span>",
+      "options": [
+        {
+          "class": "btnsecondary",
+          "text": "No",
+          "action": "Check the description in Presta",
+          "question": {
+            "text": "Coated paper product ordered?",
+            "options": [
+              {
                 "class": "btnsecondary",
                 "text": "No",
+                "action": "",
                 "question": {},
                 "solution": {
-                    "title": "Smudges",
-                    "action": "File the complaint in Presta",
-                    "validComplaint": true,
-                    "questions": [
-                        {
-                            "title": "High ink processed?",
-                            "isValid": false
-                        }
-                    ],
-                    "summaries": [
-                        {
-                            "title": "Solution",
-                            "description": "No high ink coverage but still stains means the supplier did not allow plenty time to dry or incorrect packaging which allowed product to rub and spread ink. Reprint with the same file."
-                        },
-                        {
-                            "title": "What to tell the customer",
-                            "description": "It seems not enough time was allowed for the ink to dry causing smudges on your product. We would like to offer to reprint the product with the same file. If no time for a reprint, could you use this product at a discount?"
-                        },
-                        {
-                            "title": "Log in Presta",
-                            "description": "Supplier - Quality Wrong / Stains & Smudging "
-                        }
-                    ]
+                  "title": "Smudges",
+                  "action": "File the complaint in Presta. \nProcess the same file",
+                  "validComplaint": true,
+                  "questions": [
+                    {
+                      "title": "Product is laminated?",
+                      "isValid": false
+                    },
+                    {
+                      "title": "Coated paper product ordered?",
+                      "isValid": false
+                    }
+                  ],
+                  "summaries": [
+                    {
+                      "title": "Solution",
+                      "description": "No high ink coverage and no coating implies the inks should be absorbed quickly and the risk of stains is small. As there are still stains this case is valid on the supplier, but we can reprint with the same file on the same product. If a reprint is chosen, advise the customer to add a lamination if available as this will prevent the issue from repeating itself. If the same product is requested, contact traffic prior to production so they can align with supplier."
+                    },
+                    {
+                      "title": "What to tell the customer",
+                      "description": "Although the submitted file does not contain areas with high ink coverage and it was printed on uncoated paper that absorbs ink quickly, there are still stains caused by inattention or insufficient drying time. \nWe would like to offer to reprint the product using the same file. If there's no time for a reprint, could you use this product at a discount?"
+                    },
+                    {
+                      "title": "Log in Presta",
+                      "description": "<strong>Complaint Department:</strong> Supplier - Quality Wrong <strong>\nComplaint Type:</strong>  Stains & Smudging"
+                    }
+                  ]
                 }
-            },
-            {
+              },
+              {
                 "class": "btnprimary",
                 "text": "Yes",
+                "action": "",
                 "question": {
-                    "text": "Product is uncoated and/or laminated?",
-                    "options": [
-                        {
+                  "text": "Are you:",
+                  "options": [
+                    {
+                      "class": "btnsecondary",
+                      "text": "CX Specialist",
+                      "action": "",
+                      "question": {},
+                      "solution": {
+                        "title": "Smudges",
+                        "action": "",
+                        "questions": [
+                          {
+                            "title": "Product is laminated?",
+                            "isValid": false
+                          },
+                          {
+                            "title": "Coated paper product ordered?",
+                            "isValid": true
+                          },
+                          {
+                            "title": "Are you a CX Specialist",
+                            "isValid": true
+                          }
+                        ],
+                        "summaries": [
+                          {
+                            "title": "Solution",
+                            "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "class": "btnsecondary",
+                      "text": "Prepress Specialist",
+                      "action": "Open the file in acrobat & check the 'Total area coverage' in the output preview screen.",
+                      "question": {
+                        "text": "High ink processed?<br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 10px; margin-bottom: 10px;'>IF DOUBT: Run the HelloCheck on Acrobat \nCheck the 'Total Area Coverage' and set to 320%\nCheck with DTP</span>",
+                        "options": [
+                          {
                             "class": "btnsecondary",
                             "text": "No",
-                            "question": {
-                                "text": "Automatic artwork check?",
-                                "options": [
-                                    {
-                                        "class": "btnsecondary",
-                                        "text": "No",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Smudges",
-                                            "action": "File the complaint in Presta",
-                                            "validComplaint": true,
-                                            "questions": [
-                                                {
-                                                    "title": "High ink processed?",
-                                                    "isValid": true
-                                                },
-                                                {
-                                                    "title": "Product is uncoated and/or laminated?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Automatic artwork check?",
-                                                    "isValid": false
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "High ink areas processed on coated products without lamination caused the ink to spread as it needs more time to dry. We can offer a reprint on an uncoated or laminated product. Alternatively, we can ask the customer to adjust their file and remove the high coverage areas."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "It seems some areas contained high ink coverage and we did not send a warning. We would like to offer you a reprint on the same product with a revised file, or a reprint on a laminated or uncoated product with the same file. If no time for a reprint, could you use this product at a discount?"
-                                                },
-                                                {
-                                                    "title": "Log in Presta",
-                                                    "description": "Artwork - Manual Checked / No Warning Sent"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "class": "btnprimary",
-                                        "text": "Yes",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Smudges",
-                                            "action": "File the complaint in Presta",
-                                            "validComplaint": true,
-                                            "questions": [
-                                                {
-                                                    "title": "High ink processed?",
-                                                    "isValid": true
-                                                },
-                                                {
-                                                    "title": "Product is uncoated and/or laminated?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Automatic artwork check?",
-                                                    "isValid": true
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "High ink areas processed on coated products without lamination caused the ink to spread as it needs more time to dry. We can offer a reprint on a uncoated or laminated product. Alternatively we can ask the customer to adjust their file and remove the high coverage areas."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "It seems some areas contained high ink coverage and we did not send a warning. We would like to offer you a reprint on the same product with a revised file, or a reprint on a laminated or uncoated product with the same file. If no time for a reprint, could you use this product at a discount?"
-                                                },
-                                                {
-                                                    "title": "Log in Presta",
-                                                    "description": "Artwork - Automatic Checked / Autocheck - No Warning Given"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "class": "btnprimary",
-                            "text": "Yes",
+                            "action": "",
                             "question": {},
                             "solution": {
-                                "title": "Smudges",
-                                "action": "File the complaint in Presta",
-                                "validComplaint": true,
-                                "questions": [
-                                    {
+                              "title": "Smudges",
+                              "action": "File the complaint in Presta. \nReprocess the same file",
+                              "validComplaint": true,
+                              "questions": [
+                                {
+                                  "title": "Product is laminated?",
+                                  "isValid": false
+                                },
+                                {
+                                  "title": "Coated paper product ordered?",
+                                  "isValid": true
+                                },
+                                {
+                                  "title": "Are you a Prepress Specialist",
+                                  "isValid": true
+                                },
+                                {
+                                  "title": "High ink processed?",
+                                  "isValid": false
+                                }
+                              ],
+                              "summaries": [
+                                {
+                                  "title": "Solution",
+                                  "description": "Uncoated paper has a high absorbency so inks should dry quick, while laminated products have an extra layer of film over the print, both options should prevent smudges. If these are still smudged it indicates the supplier did not use the correct product, finishing or allowed plenty time to dry. We can reprint with the same file on the same order. If it is clear that not enough time was allowed for the product to dry, contact traffic prior to reprinting so they can align with the supplier."
+                                },
+                                {
+                                  "title": "What to tell the customer",
+                                  "description": "The smudges were caused by insufficient drying time, leading to wet ink when the product was handled. To resolve this, we are happy to offer a reprint of the same product using the same file. \nIf a reprint isn’t feasible due to time constraints, would you be willing to use this product at a discount?"
+                                },
+                                {
+                                  "title": "Log in Presta",
+                                  "description": "<strong>Complaint Department:</strong> Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Stains & Smudging"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                            "question": {
+                              "text": "Automatic artwork check?",
+                              "options": [
+                                {
+                                  "class": "btnsecondary",
+                                  "text": "No",
+                                  "action": "",
+                                  "question": {},
+                                  "solution": {
+                                    "title": "Smudges",
+                                    "action": "File the complaint in Presta. \nCreate a fixed cPDF for reprint.",
+                                    "validComplaint": true,
+                                    "questions": [
+                                      {
+                                        "title": "Product is laminated?",
+                                        "isValid": false
+                                      },
+                                      {
+                                        "title": "Coated paper product ordered?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Are you a Prepress Specialist",
+                                        "isValid": true
+                                      },
+                                      {
                                         "title": "High ink processed?",
                                         "isValid": true
-                                    },
-                                    {
-                                        "title": "Product is uncoated and/or laminated?",
-                                        "isValid": true
-                                    }
-                                ],
-                                "summaries": [
-                                    {
+                                      },
+                                      {
+                                        "title": "Automatic artwork check?",
+                                        "isValid": false
+                                      }
+                                    ],
+                                    "summaries": [
+                                      {
                                         "title": "Solution",
-                                        "description": "Uncoated paper has a high absorbency so inks should dry quick, while laminated products have an extra layer of film over the print, both options should prevent smudges. If these are still smudged it indicates the supplier did not use the correct product, finishing or allowed plenty time to dry. We can reprint with the same file on the same order."
-                                    },
-                                    {
+                                        "description": "High ink areas caused the ink to spread as it needs more time to dry. We can ask the customer to adjust their file and remove the high coverage areas for a reprint."
+                                      },
+                                      {
                                         "title": "What to tell the customer",
-                                        "description": "It seems not enough time was allowed for the ink to dry causing smudges on your product. We would like to offer to reprint the product with the same file. If no time for a reprint, could you use this product at a discount?"
-                                    },
-                                    {
+                                        "description": "It appears that some areas have high ink coverage, and we did not provide a warning. \nWe would like to offer you a reprint on the same product with a revised file that reduces ink coverage in the affected areas, or a reprint on a laminated or uncoated product using the same file, please note that the latter option is still quite risky. \nIf a reprint is not feasible due to time constraints, would you consider using this product at a discounted price?"
+                                      },
+                                      {
                                         "title": "Log in Presta",
-                                        "description": "Supplier - Quality Wrong / Stains & Smudging"
-                                    }
-                                ]
+                                        "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint type:</strong>  No Warning Sent"
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "class": "btnprimary",
+                                  "text": "Yes",
+                                  "action": "",
+                                  "question": {},
+                                  "solution": {
+                                    "title": "Smudges",
+                                    "action": "File the complaint in Presta. \nCreate a fixed cPDF for reprint.",
+                                    "validComplaint": true,
+                                    "questions": [
+                                      {
+                                        "title": "Product is laminated?",
+                                        "isValid": false
+                                      },
+                                      {
+                                        "title": "Coated paper product ordered?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Are you a Prepress Specialist",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "High ink processed?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Automatic artwork check?",
+                                        "isValid": true
+                                      }
+                                    ],
+                                    "summaries": [
+                                      {
+                                        "title": "Solution",
+                                        "description": "High ink areas caused the ink to spread as it needs more time to dry. We can ask the customer to adjust their file and remove the high coverage areas for a reprint."
+                                      },
+                                      {
+                                        "title": "What to tell the customer",
+                                        "description": "It appears that some areas have high ink coverage, and we did not provide a warning. \nWe would like to offer you a reprint on the same product with a revised file that reduces ink coverage in the affected areas, or a reprint on a laminated or uncoated product using the same file, please note that the latter option is still quite risky.\nIf a reprint is not feasible due to time constraints, would you consider using this product at a discounted price?"
+                                      },
+                                      {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong> Artwork - Automatic Checked <strong>\nComplaint type:</strong> Autocheck- No Warning Sent"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
                             }
-                        }
-                    ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 }
-            }
-        ]
+              }
+            ]
+          }
+        },
+        {
+          "class": "btnprimary",
+          "text": "Yes",
+          "action": "Check with customer whether they're able to remove the stains. If not removable it means the smudge is under the laminate",
+          "question": {
+            "text": "Is the ink smudge under the laminate?",
+            "options": [
+              {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "Check with customer whether they're able to remove the stains.\nIf removable it means the smudge is on the laminate",
+                "question": {
+                  "text": "Is the laminate itself smudged?",
+                  "options": [
+                    {
+                      "class": "btnsecondary",
+                      "text": "No",
+                      "action": "",
+                      "question": {},
+                      "solution": {
+                        "title": "Smudges",
+                        "action": "File complaint in Presta \nReprocess the same file",
+                        "validComplaint": true,
+                        "questions": [
+                          {
+                            "title": "Product is laminated?",
+                            "isValid": true
+                          },
+                          {
+                            "title": "Is the ink smudge under the laminate?",
+                            "isValid": false
+                          },
+                          {
+                            "title": "Is the laminate itself smudged?",
+                            "isValid": false
+                          }
+                        ],
+                        "summaries": [
+                          {
+                            "title": "Solution",
+                            "description": "It is unclear at what stage the stains appeared but they were caused during the printing process so we still deem them valid on supplier. We can offer a reprint with the same file on the same product. If it is clear that not enough time was allowed for the product to dry, contact traffic prior to reprinting so they can align with the supplier."
+                          },
+                          {
+                            "title": "What to tell the customer",
+                            "description": "The smudges were caused by insufficient drying time, leading to wet ink when the product was handled. To resolve this, we are happy to offer a reprint of the same product using the same file. \nIf a reprint isn’t feasible due to time constraints, would you be willing to use this product at a discount?"
+                          },
+                          {
+                            "title": "Log in Presta",
+                            "description": "<strong>Complaint Department:</strong> Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Stains & Smudging"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "class": "btnprimary",
+                      "text": "Yes",
+                      "action": "",
+                      "question": {},
+                      "solution": {
+                        "title": "Smudges",
+                        "action": "File the complaint in Presta. \nReprocess the same file \nCreate a ticket to traffic so they can raise this case with the supplier, ensuring it does not happen again",
+                        "validComplaint": true,
+                        "questions": [
+                          {
+                            "title": "Product is laminated?",
+                            "isValid": true
+                          },
+                          {
+                            "title": "Is the ink smudge under the laminate?",
+                            "isValid": false
+                          },
+                          {
+                            "title": "Is the laminate itself smudged?",
+                            "isValid": true
+                          }
+                        ],
+                        "summaries": [
+                          {
+                            "title": "Solution",
+                            "description": "The smudges appeared after the printing process, indicating the product was packaged in or by dirty equipment that transferred stains. Complaint caused by careless handling of the product by the supplier."
+                          },
+                          {
+                            "title": "What to tell the customer",
+                            "description": "The smudges were caused by careless handling during the finishing/packaging process. The product was contaminated by ink-stained equipment. \nTo rectify this situation we are happy to offer a reprint. \nIf a reprint isn’t feasible due to time constraints, would you be willing to use this product at a discount?"
+                          },
+                          {
+                            "title": "Log in Presta",
+                            "description": "<strong>Complaint Department:</strong> Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Stains & Smudging"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "",
+                "question": {
+                  "text": "Are you:",
+                  "options": [
+                    {
+                      "class": "btnsecondary",
+                      "text": "CX Specialist",
+                      "action": "",
+                      "question": {},
+                      "solution": {
+                        "title": "Smudges",
+                        "action": "",
+                        "questions": [
+                          {
+                            "title": "Product is laminated?",
+                            "isValid": true
+                          },
+                          {
+                            "title": "Is the ink smudge under the laminate?",
+                            "isValid": true
+                          },
+                          {
+                            "title": "Are you a CX Specialist",
+                            "isValid": true
+                          }
+                        ],
+                        "summaries": [
+                          {
+                            "title": "Solution",
+                            "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "class": "btnsecondary",
+                      "text": "Prepress Specialist",
+                      "action": "Open the file in acrobat & check the 'Total area coverage' in the output preview screen.",
+                      "question": {
+                        "text": "High ink processed?<br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 10px; margin-bottom: 10px;'>IF DOUBT: Run the HelloCheck on Acrobat \nCheck the 'Total Area Coverage' and set to 320%\nCheck with DTP</span>",
+                        "options": [
+                          {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                              "title": "Smudges",
+                              "action": "File the complaint in Presta. \nReprocess the same file",
+                              "validComplaint": true,
+                              "questions": [
+                                {
+                                  "title": "Product is laminated?",
+                                  "isValid": true
+                                },
+                                {
+                                  "title": "Is the ink smudge under the laminate?",
+                                  "isValid": true
+                                },
+                                {
+                                  "title": "Are you a Prepress Specialist",
+                                  "isValid": true
+                                },
+                                {
+                                  "title": "High ink processed?",
+                                  "isValid": false
+                                }
+                              ],
+                              "summaries": [
+                                {
+                                  "title": "Solution",
+                                  "description": "Uncoated paper has a high absorbency so inks should dry quick, while laminated products have an extra layer of film over the print, both options should prevent smudges. If these are still smudged it indicates the supplier did not use the correct product, finishing or allowed plenty time to dry. We can reprint with the same file on the same order. If it is clear that not enough time was allowed for the product to dry, contact traffic prior to reprinting so they can align with the supplier."
+                                },
+                                {
+                                  "title": "What to tell the customer",
+                                  "description": "The smudges were caused by insufficient drying time, leading to wet ink when the product was handled. To resolve this, we are happy to offer a reprint of the same product using the same file. \nIf a reprint isn’t feasible due to time constraints, would you be willing to use this product at a discount?"
+                                },
+                                {
+                                  "title": "Log in Presta",
+                                  "description": "<strong>Complaint Department:</strong> Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Stains & Smudging"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                            "question": {
+                              "text": "Automatic artwork check?",
+                              "options": [
+                                {
+                                  "class": "btnsecondary",
+                                  "text": "No",
+                                  "action": "",
+                                  "question": {},
+                                  "solution": {
+                                    "title": "Smudges",
+                                    "action": "File the complaint in Presta. \nCreate a fixed cPDF for reprint.",
+                                    "validComplaint": true,
+                                    "questions": [
+                                      {
+                                        "title": "Product is laminated?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Is the ink smudge under the laminate?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Are you a Prepress Specialist",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "High ink processed?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Automatic artwork check?",
+                                        "isValid": false
+                                      }
+                                    ],
+                                    "summaries": [
+                                      {
+                                        "title": "Solution",
+                                        "description": "High ink areas caused the ink to spread as it needs more time to dry. We can ask the customer to adjust their file and remove the high coverage areas for a reprint."
+                                      },
+                                      {
+                                        "title": "What to tell the customer",
+                                        "description": "It appears that some areas have high ink coverage, and we did not provide a warning. \nWe would like to offer you a reprint on the same product with a revised file that reduces ink coverage in the affected areas, or a reprint on a laminated or uncoated product using the same file, please note that the latter option is still quite risky. \nIf a reprint is not feasible due to time constraints, would you consider using this product at a discounted price?"
+                                      },
+                                      {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint type:</strong>  No Warning Sent"
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "class": "btnprimary",
+                                  "text": "Yes",
+                                  "action": "",
+                                  "question": {},
+                                  "solution": {
+                                    "title": "Smudges",
+                                    "action": "File the complaint in Presta. \nCreate a fixed cPDF for reprint.",
+                                    "validComplaint": true,
+                                    "questions": [
+                                      {
+                                        "title": "Product is laminated?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Is the ink smudge under the laminate?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Are you a Prepress Specialist",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "High ink processed?",
+                                        "isValid": true
+                                      },
+                                      {
+                                        "title": "Automatic artwork check?",
+                                        "isValid": true
+                                      }
+                                    ],
+                                    "summaries": [
+                                      {
+                                        "title": "Solution",
+                                        "description": "High ink areas caused the ink to spread as it needs more time to dry. We can ask the customer to adjust their file and remove the high coverage areas for a reprint."
+                                      },
+                                      {
+                                        "title": "What to tell the customer",
+                                        "description": "It appears that some areas have high ink coverage, and we did not provide a warning. \nWe would like to offer you a reprint on the same product with a revised file that reduces ink coverage in the affected areas, or a reprint on a laminated or uncoated product using the same file, please note that the latter option is still quite risky.\nIf a reprint is not feasible due to time constraints, would you consider using this product at a discounted price?"
+                                      },
+                                      {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong> Artwork - Automatic Checked <strong>\nComplaint type:</strong> Autocheck- No Warning Sent"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
-}
+  }

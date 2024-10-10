@@ -1,0 +1,426 @@
+{
+    "title": "Coating",
+    "subTitle": "The incorrect coating was used on the product (glossy/matte/uncoated/UV)",
+    "action": "Double check with customer if they understood the product they ordered. They might be confused with silk/gloss.",
+    "question": {
+        "text": "Incorrect product",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "Compare the order description with the complaint pictures. Is the gloss/matte finish clearly incorrect?",
+                "question": {
+                    "text": "Clear oppossite coating?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "Matte paper tends to be semi gloss. Compare the complaint pictures with glossy paper in the sample area",
+                            "question": {
+                                "text": "Matte has a slight gloss?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {
+                                            "text": "What type of order is this?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is over 150",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Coating",
+                                                        "action": "Check with team lead",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Incorrect product?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Clear opposite coating?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Matte has a slight gloss?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over 150",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is under 150 or New CMR",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Coating",
+                                                        "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Incorrect product?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Clear opposite coating?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Matte has a slight gloss?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The product was printed on the correct product, we can not validate this complaint. "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (NEW)",
+                                                                "description": "We do not see a significant difference on the coating or lamination of your ordered product and so can not offer a full reprint or refund. As you are a new customer we would like to offer you a voucher of 10% for the inconvenience caused. "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (RETURNING)",
+                                                                "description": "The product was printed on the ordered product and we do not see a significant different in coating or lamination so we cannot validate the complaint. As such, we are unable to offer any compensation for this issue."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {
+                                            "text": "What type of order is this?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is over 150",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Coating",
+                                                        "action": "Check with team lead",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Incorrect product?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Clear opposite coating?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Matte has a slight gloss?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over 150",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is under 150 or New CMR",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Coating",
+                                                        "action": "File and finish the complaint in Presta. \nPick one of two suggested solutions",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Incorrect product?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Clear opposite coating?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Matte has a slight gloss?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The supplier made no mistake as matte coating has a slight gloss, however the customer expected full matte looking coating. "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (NEW)",
+                                                                "description": "The printer made no mistake as matte coating can have a slight gloss, but we understand that you expected a fully matte finish. As a gesture of goodwill for a new customer, we can offer a reprint or a full refund. Please let us know which option you prefer"
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (RETURNING)",
+                                                                "description": "The printer made no mistake as matte coating can have a slight gloss, but we understand that you expected a fully matte finish. As a returning customer, we can offer a 10% discount on the current order or provide a voucher for a future purchase. Please let us know which option you prefer."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Mismatch on product expectation"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Coating",
+                                "action": "File and finish the complaint in Presta. \nPlease reach out to traffic so they are able to contact the suplier before the reprint experiences the same issue.",
+                                "validComplaint": false,
+                                "questions": [
+                                    {
+                                        "title": "Incorrect product?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Clear opposite coating?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The supplier used the wrong coating/lamination for the product. "
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "The printer used the wrong coating/lamination for your product. We apologize for this error. We can offer a discount or reprint the order with the correct coating/lamination. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements"
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Finishing"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "",
+                "question": {
+                    "text": "Are you:",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "CX Specialist",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Coating",
+                                "action": "",
+                                "questions": [
+                                    {
+                                        "title": "Incorrect product",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Are you a CX Specialist",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnsecondary",
+                            "text": "Prepress Specialist",
+                            "action": "https://docs.google.com/spreadsheets/d/1NQtWIHqG25EibnR3eX7U2EE9tzho_EFSnFJNRPcSfY0/edit?gid=2012935910#gid=2012935910",
+                            "question": {
+                                "text": "SKU/Description Issue?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {
+                                            "text": "What type of order is this?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is over 150",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Coating",
+                                                        "action": "Check with team lead",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Incorrect product?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "SKU/Description Issue?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over 150",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is under 150 or New CMR",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Coating",
+                                                        "action": "File and finish the complaint in Presta. \nReprocess on the correct product\nPick one of two suggested solutions",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Incorrect product?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "SKU/Description Issue?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The customer expected to receive a different product than ordered, caused by confusion on their part. We can not validate the complaint."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (NEW)",
+                                                                "description": "There seems to have been some confusion on your part regarding the product ordered, which led to an expectation of a different item. While we cannot validate the complaint, as a gesture of goodwill to a new customer, we can offer a reprint of the correct product or a full refund. Please let us know which option you prefer."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (RETURNING)",
+                                                                "description": "There seems to have been some confusion on your part regarding the product ordered, which led to an expectation of a different item. While we cannot validate the complaint, as a returning customer, we can offer a 10% discount on the current order or provide a voucher for a future purchase. Please let us know which option you prefer."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Mismatch on product expectation"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Coating",
+                                            "action": "File and finish the complaint in Presta. \nProcess reprint, fix SKU if the issue reoccurs\nInform the presta team",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Incorrect product?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Are you a Prepress Specialist",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "SKU/Description Issue?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The SKU for the order did not match the description or product that the customer has ordered which caused the supplier to print on a alternative product. "
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "The order description was incorrectly submitted to us causing an alternative product to be printed. We apologize for this error. We can offer a discount or reprint the order on the correct product. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Website<strong>\nComplaint Type:</strong> SKU Issue"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

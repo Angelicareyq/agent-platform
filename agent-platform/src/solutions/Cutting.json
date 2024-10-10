@@ -1,0 +1,981 @@
+{
+    "title": "Cutting",
+    "subTitle": "The order was cut poorly, causing white or uneven borders and/or disappearing elements.",
+    "action": "Check the order description on Presta\nLook for option rectangular/custom size\nPossible custom size orders: \nStickers\nPosters\nBanners\nFlags",
+    "question": {
+        "text": "Custom size order?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "Ask the customer to measure the received product, does it match the size in order description?",
+                "question": {
+                    "text": "Different size cut?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "",
+                            "question": {
+                                "text": "Is the product clearly cut off center?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {
+                                            "text": "Are you:",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "CX Specialist",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutting",
+                                                        "action": "",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Custom size order?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Different size cut?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Is the product clearly cut off center?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a CX Specialist",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Prepress Specialist",
+                                                    "action": "Open the file in indesign and offset the page by 3mm then compare with the customers pictures",
+                                                    "question": {
+                                                        "text": "Over 3mm deviated?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "Open the cPDF and check the bleed area, is it processed correctly?",
+                                                                "question": {
+                                                                    "text": "White borders cut that weren't in he cPDF?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {
+                                                                                "text": "What type of order is this?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is over 150",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Cutting",
+                                                                                            "action": "Check with team lead",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Custom size order?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Different size cut?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Is the product clearly cut off center?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Over 3mm deviated?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "White borders cut that weren't in the cPDF?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is over 150",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is under 150 or New CMR",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Cutting",
+                                                                                            "action": "File and finish the complaint in Presta. \nPlease reach out to traffic so they are able to contact the suplier before the reprint experiences the same issue.",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Custom size order?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Different size cut?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Is the product clearly cut off center?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Over 3mm deviated?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "White borders cut that weren't in the cPDF?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is under 150 or New CMR",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "The order has been stapled and cut correctly, no mistake has been made on our end."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (NEW)",
+                                                                                                    "description": "The order cut correctly, and no mistake has been made on our end. However, as a gesture of goodwill for a new customer, we can offer a refund in case you can not use the product."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (RETURNING)",
+                                                                                                    "description": "The orde cut correctly, and no mistake has been made on our end. As a returning customer, we can offer a 10% discount on the current order or provide a voucher for a future purchase. Please let us know which option you prefer."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Cutting",
+                                                                                "action": "File and finish the complaint in Presta. \nPlease reach out to traffic so they are able to contact the suplier before the reprint experiences the same issue.",
+                                                                                "validComplaint": true,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Custom size order?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Different size cut?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Is the product clearly cut off center?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Over 3mm deviated?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "White borders cut that weren't in the cPDF?",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The supplier has altered the cPDF and removed the bleed zone causing white borders to appear after a cutting deviation."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "The printer has cut the product incorrectly, causing the design to be off center. We apologize for this error. We can offer a discount or reprint the order with the correct cuts. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Cutting"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutting",
+                                                                    "action": "File and finish the complaint in Presta. \nReprint with same file",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Custom size order?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Different size cut?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Is the product clearly cut off center?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Over 3mm deviated?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The supplier has cut the product incorrectly causing the design to be off center."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The printer has cut the product incorrectly, causing the design to be off center. We apologize for this error. We can offer a discount or reprint the order with the correct cuts. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Cutting"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Cutting",
+                                            "action": "File and finish the complaint in Presta. \nReprint with same file",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Custom size order?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Different size cut?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Is the product clearly cut off center?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The supplier has cut the product incorrectly causing the design to be off center."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "The printer has cut the product incorrectly, causing the design to be off center. We apologize for this error. We can offer a discount or reprint the order with the correct cuts. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Cutting"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Cutting",
+                                "action": "File and finish the complaint in Presta. \nReprint with same file",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Custom size order?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Different size cut?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The supplier has cut the product incorrectly causing the design to be off center."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "The printer has cut the product incorrectly, causing the design to be off center. We apologize for this error. We can offer a discount or reprint the order with the correct cuts. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements.."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Cutting"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "Look for 'Cutcontour' spot plate in the 'Output preview' tab in Acrobat",
+                "question": {
+                    "text": "Cutcontour in cPDF?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                            "question": {
+                                "text": "Automatic artwork check?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Cutting",
+                                            "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend an 'Artwork Altered' warning",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Custom size order?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Cutcontour in cPDF?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The agent did not add or fix the cutcontour to the cPDF causing the supplier to process it as a rectangular cut product. "
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "Our agent did not add or fix the cut contour to your PDF, which resulted in the printer processing it as a rectangular cut product instead. We apologize for this oversight. To resolve the issue, we can offer a discount or reprint the product with the correct cut contour. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrectly processed"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Cutting",
+                                            "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend the order number to Quinten",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Custom size order?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Cutcontour in cPDF?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Autocheck did not add or fix the cutcontour to the cPDF causing the supplier to process it as a rectangular cut product. "
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "Our automatic artwork checking system did not add or fix the cut contour to your PDF, which resulted in the printer processing it as a rectangular cut product instead. We apologize for this oversight. To resolve the issue, we can offer a discount or reprint the product with the correct cut contour. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Artwork Automatic check <strong>\nComplaint Type:</strong> Orientation issue"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {
+                                "text": "Cut square/rectangle?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {
+                                            "text": "Are you:",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "CX Specialist",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutting",
+                                                        "action": "",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Custom size order?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Cutcontour in cPDF?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Cut square/rectangle?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a CX Specialist",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Prepress Specialist",
+                                                    "action": "Open the file in indesign and offset the page by 3mm then compare with the customers pictures",
+                                                    "question": {
+                                                        "text": "Over 3mm deviated?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "Open the cPDF and check the bleed area, is it processed correctly?",
+                                                                "question": {
+                                                                    "text": "White borders cut that weren't in he cPDF?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {
+                                                                                "text": "What type of order is this?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is over 150",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Cutting",
+                                                                                            "action": "Check with team lead",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Custom size order?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Cutcontour in cPDF?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Cut square/rectangle?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Over 3mm deviated?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "White borders cut that weren't in the cPDF?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is over 150",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is under 150 or New CMR",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Cutting",
+                                                                                            "action": "File and finish the complaint in Presta. \nPlease reach out to traffic so they are able to contact the suplier before the reprint experiences the same issue.",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Custom size order?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Cutcontour in cPDF?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Cut square/rectangle?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Over 3mm deviated?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "White borders cut that weren't in the cPDF?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is under 150 or New CMR",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "The order has been stapled and cut correctly, no mistake has been made on our end."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (NEW)",
+                                                                                                    "description": "The order cut correctly, and no mistake has been made on our end. However, as a gesture of goodwill for a new customer, we can offer a refund in case you can not use the product."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (RETURNING)",
+                                                                                                    "description": "The order cut correctly, and no mistake has been made on our end. As a returning customer, we can offer a 10% discount on the current order or provide a voucher for a future purchase. Please let us know which option you prefer."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Cutting",
+                                                                                "action": "File and finish the complaint in Presta. \nPlease reach out to traffic so they are able to contact the suplier before the reprint experiences the same issue.",
+                                                                                "validComplaint": true,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Custom size order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutcontour in cPDF?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cut square/rectangle?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Over 3mm deviated?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "White borders cut that weren't in the cPDF?",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The supplier has altered the cPDF and removed the bleed zone causing white borders to appear after a cutting deviation."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "The printer has cut the product incorrectly, causing the design to be off center. We apologize for this error. We can offer a discount or reprint the order with the correct cuts. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Cutting"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutting",
+                                                                    "action": "File and finish the complaint in Presta. \nReprint with same file",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Custom size order?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Cutcontour in cPDF?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Cut square/rectangle?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Over 3mm deviated?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The supplier has cut the product incorrectly causing the design to be off center."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The printer has cut the product incorrectly, causing the design to be off center. We apologize for this error. We can offer a discount or reprint the order with the correct cuts. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Cutting"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {
+                                            "text": "Are you:",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "CX Specialist",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutting",
+                                                        "action": "",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Custom size order?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Cutcontour in cPDF?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Cut square/rectangle?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Are you a CX Specialist",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Prepress Specialist",
+                                                    "action": "Check the Cutcontour in Illustrator\nIs the line weight correct?\n100% Magenta spot colour?\nCorrect 'Cutcontour' name?\nIs the cutcontour a closed shape? (look for unconnected anchorpoints)",
+                                                    "question": {
+                                                        "text": "Is the cutcontour correct?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                                                "question": {
+                                                                    "text": "Automatic artwork check?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Cutting",
+                                                                                "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend an 'Artwork Altered' warning",
+                                                                                "validComplaint": true,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Custom size order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutcontour in cPDF?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cut square/rectangle?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Is the cutcontour correct?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": false
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The agent did not add or fix the cutcontour to the cPDF causing the supplier to process it as a rectangular cut product. "
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "Our agent did not add or fix the cut contour to your PDF, which resulted in the printer processing it as a rectangular cut product instead. We apologize for this oversight. To resolve the issue, we can offer a discount or reprint the product with the correct cut contour. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrectly processed"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Cutting",
+                                                                                "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend the order number to Quinten",
+                                                                                "validComplaint": true,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Custom size order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutcontour in cPDF?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cut square/rectangle?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Is the cutcontour correct?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "Autocheck did not add or fix the cutcontour to the cPDF causing the supplier to process it as a rectangular cut product. "
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "Our automatic artwork checking system did not add or fix the cut contour to your PDF, which resulted in the printer processing it as a rectangular cut product instead. We apologize for this oversight. To resolve the issue, we can offer a discount or reprint the product with the correct cut contour. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Artwork Automatic check <strong>\nComplaint Type:</strong> Orientation issue"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutting",
+                                                                    "action": "File and finish the complaint in Presta. \nPlease reach out to traffic so they are able to contact the suplier before the reprint experiences the same issue.",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Custom size order?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Cutcontour in cPDF?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Cut square/rectangle?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Is the cutcontour correct?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The supplier has cut the product incorrectly because of not following the submitted cutcontour line. This caused the customer to receive an incorrect product."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The printer has cut the product incorrectly, causing the final product to be a square instead of a custom shape. We apologize for this error. We can offer a discount or reprint the order with the correct cuts. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Cutting"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

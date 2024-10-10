@@ -1,0 +1,1363 @@
+{
+    "title": "Folding",
+    "subTitle": "The design does not align with the folded product",
+    "action": "Open the proof in Adobe Acrobat\nOpen clear customer evidence\nCompare the product fold to the magenta vertical dotted line in the proof file.",
+    "question": {
+        "text": "Final product looks like proof?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "",
+                "question": {
+                    "text": "Are you:",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "CX Specialist",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Folding",
+                                "action": "",
+                                "questions": [
+                                    {
+                                        "title": "Final product looks like proof?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Are you a CX Specialist",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnsecondary",
+                            "text": "Prepress Specialist",
+                            "action": "Place the cPDF on the template linked to the DTP tab. \nCompare if the supplier ID on the template matches the supplier ID on the DTP tab.\nUnsure how to, send a ticket to artwork_complaints using the macro artwork complaint",
+                            "question": {
+                                "text": "Correct supplier template linked on Presta?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Folding",
+                                            "action": "File and finish the complaint in Presta. \nInform Rafael to update the template\nReprocess on the correct template",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Final product looks like proof?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Are you a Prepress Specialist?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Correct supplier template linked on Presta?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The incorrect template was linked to Presta which caused the file not to match the suppliers fold lines."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "We realised we used an incorrect template for this product, which caused your file to be folded incorrectly. We can reprint the order based on the correct template. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Artwork - Process <strong>\nComplaint Type:</strong> Incorrect Template/Spec"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "Check if the cPDF fits the template. \nDouble check fold lines & bleed zone.",
+                                        "question": {
+                                            "text": "cPDF matches template?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                                    "question": {
+                                                        "text": "Automatic artwork check?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Folding",
+                                                                    "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend an 'Artwork Altered' warning",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Final product looks like proof?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Correct supplier template linked on Presta?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "cPDF matches template?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Automatic artwork check?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The agent did not match the file to the template causing the folds to be displaced on the final product. "
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Our artwork agent did not align the file correctly with the template, resulting in displaced folds on the final product. We can reprint the order with the correct alignment. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrectly processed"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Folding",
+                                                                    "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend the order number to Quinten",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Final product looks like proof?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Correct supplier template linked on Presta?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "cPDF matches template?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Automatic artwork check?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "Autocheck did not match the file to the template causing the folds to be displaced on the final product. "
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Our automatic artwork check did not align the file correctly with the template, resulting in displaced folds on the final product. We can reprint the order with the correct alignment. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Artwork Automatic check <strong>\nComplaint Type:</strong> Orientation issue"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "Check the borders in InDesign for important elements beyond the purple line.",
+                                                    "question": {
+                                                        "text": "Safety margins respected?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "Check the log in the DTP tab for a green message containing a 'Insufficient safety margins' warning.",
+                                                                "question": {
+                                                                    "text": "DTP Warning sent?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                                                            "question": {
+                                                                                "text": "Automatic artwork check?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "No",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Folding",
+                                                                                            "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template, take special care to the safety margins",
+                                                                                            "validComplaint": true,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Final product looks like proof?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Correct supplier template linked on Presta?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "cPDF matches template?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Safety margins respected?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "DTP Warning sent?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Automatic artwork check?",
+                                                                                                    "isValid": false
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "Customers file featured texts/elements that were placed outside of the safe margin. The agent failed to send a warning about this risk. "
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer",
+                                                                                                    "description": "The file included text and elements placed outside of the safe margin, and our agent did not issue a warning about this risk. We can reprint the order with a revised file. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> No Warning Sent"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnprimary",
+                                                                                        "text": "Yes",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Folding",
+                                                                                            "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend the order number to Quinten",
+                                                                                            "validComplaint": true,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Final product looks like proof?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Correct supplier template linked on Presta?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "cPDF matches template?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Safety margins respected?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "DTP Warning sent?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Automatic artwork check?",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "Customers file featured texts/elements that were placed outside of the safe margin. Autocheck failed to send a warning about this risk."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer",
+                                                                                                    "description": "The file included text and elements placed outside of the safe margin, and our automatic artwork check did not issue a warning about this risk. We can reprint the order with a revised file. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong> Artwork Automatic check <strong>\nComplaint Type:</strong> Insufficient text margins"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {
+                                                                                "text": "What type of order is this?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is over 150",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Folding",
+                                                                                            "action": "Check with team lead",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Final product looks like proof?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Correct supplier template linked on Presta?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "cPDF matches template?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Safety margins respected?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "DTP Warning sent?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is over 150",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is under 150 or New CMR",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Folding",
+                                                                                            "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nPay attention to the affected areas",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Final product looks like proof?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Correct supplier template linked on Presta?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "cPDF matches template?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Safety margins respected?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "DTP Warning sent?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is under 150 or New CMR",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "Customers file featured texts/elements that were placed outside of the safe margin. A warning was sent so we can not validate the complaint."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (NEW)",
+                                                                                                    "description": "The file included text and elements outside of the safe margin, and a warning was sent regarding this risk. Since the warning was provided, we cannot validate the complaint. As a new customer, we want to address this issue by offering a reprint with an altered file, a discount on the current order, or a full refund if a reprint is no longer feasible. Please let us know your preferred option."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (RETURNING)",
+                                                                                                    "description": "The file included text and elements outside of the safe margin, and a warning was sent about this risk. Since the warning was provided, we cannot validate the complaint. As a returning customer, we appreciate your loyalty and can offer a 10% discount on a reprint or a voucher for a future order. Please let us know your preference, and we will make the necessary arrangements."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Cutting margin"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "Place the cPDF in the template by 3mm, compare this with the complaint pictures.",
+                                                                "question": {
+                                                                    "text": "Over 3mm deviated?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {
+                                                                                "text": "What type of order is this?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is over 150",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Folding",
+                                                                                            "action": "Check with team lead",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Final product looks like proof?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Correct supplier template linked on Presta?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "cPDF matches template?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Safety margins respected?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Over 3mm deviated?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is over 150",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is under 150 or New CMR",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Folding",
+                                                                                            "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Final product looks like proof?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Correct supplier template linked on Presta?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "cPDF matches template?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Safety margins respected?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Over 3mm deviated?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is under 150 or New CMR",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "The product was printed and folded correctly and we can not validate the complaint. Our acceptable margins are 3mm."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (NEW)",
+                                                                                                    "description": "The product was printed and folded correctly, and we cannot validate the complaint as our acceptable margins are within 3mm. However, as a gesture of goodwill to a new customer, we can offer a 10% discount on the current order or provide a voucher for a future purchase. Please let us know which option you prefer."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (RETURNING)",
+                                                                                                    "description": "The product was printed and folded correctly, and we cannot validate the complaint since our acceptable margins are within 3mm. As such, we are unable to offer any compensation for this issue."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Folding",
+                                                                                "action": "File and finish the complaint in Presta. \nReprint with the same file",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Final product looks like proof?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Correct supplier template linked on Presta?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF matches template?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Safety margins respected?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Over 3mm deviated?",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The supplier has cut/folded incorrectly causing the design to deviate from the folds on the printed product. We can reprint with the same file."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "The supplier has cut or folded the product incorrectly, causing the design to deviate from the intended folds. We can offer a reprint with the same file at no additional cost, provide a discount on the current order, or issue a refund if a reprint is no longer feasible due to time constraints. Please let us know which option you prefer, and we will take the necessary steps to resolve the issue."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong>Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Cutting"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "We allow a deviation of maximum 3mm. Does the deviation from the proof file look bigger than 3mm?\nIf doubt, follow 'NO' option",
+                "question": {
+                    "text": "Visually big deviation?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "",
+                            "question": {
+                                "text": "Are you:",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "CX Specialist",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Folding",
+                                            "action": "",
+                                            "questions": [
+                                                {
+                                                    "title": "Final product looks like proof?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Visually big deviation?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Are you a CX Specialist",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Prepress Specialist",
+                                        "action": "Place the cPDF on the template linked to the DTP tab. \nCompare if the supplier ID on the template matches the supplier ID on the DTP tab.\nUnsure how to, send a ticket to artwork_complaints using the macro artwork complaint",
+                                        "question": {
+                                            "text": "Correct supplier template linked on Presta?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Folding",
+                                                        "action": "File and finish the complaint in Presta. \nInform Rafael to update the template\nReprocess on the correct template",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Final product looks like proof?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Visually big deviation?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Correct supplier template linked on Presta?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The incorrect template was linked to Presta which caused the file not to match the suppliers fold lines."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We realised we used an incorrect template for this product, which caused your file to be folded incorrectly. We can reprint the order based on the correct template. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Artwork - Process <strong>\nComplaint Type:</strong> Incorrect Template/Spec"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "Check if the cPDF fits the template. \nDouble check fold lines & bleed zone.",
+                                                    "question": {
+                                                        "text": "cPDF matches template?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                                                "question": {
+                                                                    "text": "Automatic artwork check?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Folding",
+                                                                                "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend an 'Artwork Altered' warning",
+                                                                                "validComplaint": true,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Final product looks like proof?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Visually big deviation?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Correct supplier template linked on Presta?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF matches template?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": false
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The agent did not match the file to the template causing the folds to be displaced on the final product. "
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "Our artwork agent did not align the file correctly with the template, resulting in displaced folds on the final product. We can reprint the order with the correct alignment. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrectly processed"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Folding",
+                                                                                "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend the order number to Quinten",
+                                                                                "validComplaint": true,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Final product looks like proof?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Visually big deviation?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Correct supplier template linked on Presta?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF matches template?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "Autocheck did not match the file to the template causing the folds to be displaced on the final product. "
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "Our automatic artwork check did not align the file correctly with the template, resulting in displaced folds on the final product. We can reprint the order with the correct alignment. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Artwork Automatic check <strong>\nComplaint Type:</strong> Orientation issue"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "Check the borders in InDesign for important elements beyond the purple line.",
+                                                                "question": {
+                                                                    "text": "Safety margins respected?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "Check the log in the DTP tab for a green message containing a 'Insufficient safety margins' warning.",
+                                                                            "question": {
+                                                                                "text": "DTP Warning sent?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "No",
+                                                                                        "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                                                                        "question": {
+                                                                                            "text": "Automatic artwork check?",
+                                                                                            "options": [
+                                                                                                {
+                                                                                                    "class": "btnsecondary",
+                                                                                                    "text": "No",
+                                                                                                    "action": "",
+                                                                                                    "question": {},
+                                                                                                    "solution": {
+                                                                                                        "title": "Folding",
+                                                                                                        "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template, take special care to the safety margins",
+                                                                                                        "validComplaint": true,
+                                                                                                        "questions": [
+                                                                                                            {
+                                                                                                                "title": "Final product looks like proof?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Visually big deviation?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Are you a Prepress Specialist?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Correct supplier template linked on Presta?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "cPDF matches template?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Safety margins respected?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "DTP Warning sent?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Automatic artwork check?",
+                                                                                                                "isValid": false
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "summaries": [
+                                                                                                            {
+                                                                                                                "title": "Solution",
+                                                                                                                "description": "Customers file featured texts/elements that were placed outside of the safe margin. The agent failed to send a warning about this risk. "
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "What to tell the customer",
+                                                                                                                "description": "The file included text and elements placed outside of the safe margin, and our agent did not issue a warning about this risk. We can reprint the order with a revised file. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Log in Presta",
+                                                                                                                "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> No Warning Sent"
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "class": "btnprimary",
+                                                                                                    "text": "Yes",
+                                                                                                    "action": "",
+                                                                                                    "question": {},
+                                                                                                    "solution": {
+                                                                                                        "title": "Folding",
+                                                                                                        "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nSend the order number to Quinten",
+                                                                                                        "validComplaint": true,
+                                                                                                        "questions": [
+                                                                                                            {
+                                                                                                                "title": "Final product looks like proof?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Visually big deviation?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Are you a Prepress Specialist?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Correct supplier template linked on Presta?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "cPDF matches template?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Safety margins respected?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "DTP Warning sent?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Automatic artwork check?",
+                                                                                                                "isValid": true
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "summaries": [
+                                                                                                            {
+                                                                                                                "title": "Solution",
+                                                                                                                "description": "Customers file featured texts/elements that were placed outside of the safe margin. Autocheck failed to send a warning about this risk."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "What to tell the customer",
+                                                                                                                "description": "The file included text and elements placed outside of the safe margin, and our automatic artwork check did not issue a warning about this risk. We can reprint the order with a revised file. If a reprint is no longer feasible, we can offer a discount on this order or issue a full refund. Please let us know your preferred option."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Log in Presta",
+                                                                                                                "description": "<strong>Complaint Department:</strong> Artwork Automatic check <strong>\nComplaint Type:</strong> Insufficient text margins"
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnprimary",
+                                                                                        "text": "Yes",
+                                                                                        "action": "",
+                                                                                        "question": {
+                                                                                            "text": "What type of order is this?",
+                                                                                            "options": [
+                                                                                                {
+                                                                                                    "class": "btnsecondary",
+                                                                                                    "text": "Purchase price is over 150",
+                                                                                                    "action": "",
+                                                                                                    "question": {},
+                                                                                                    "solution": {
+                                                                                                        "title": "Folding",
+                                                                                                        "action": "Check with team lead",
+                                                                                                        "validComplaint": false,
+                                                                                                        "questions": [
+                                                                                                            {
+                                                                                                                "title": "Final product looks like proof?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Visually big deviation?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Are you a Prepress Specialist?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Correct supplier template linked on Presta?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "cPDF matches template?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Safety margins respected?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "DTP Warning sent?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Purchase price is over 150",
+                                                                                                                "isValid": true
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "summaries": [
+                                                                                                            {
+                                                                                                                "title": "Solution",
+                                                                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "class": "btnsecondary",
+                                                                                                    "text": "Purchase price is under 150 or New CMR",
+                                                                                                    "action": "",
+                                                                                                    "question": {},
+                                                                                                    "solution": {
+                                                                                                        "title": "Folding",
+                                                                                                        "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template\nPay attention to the affected areas",
+                                                                                                        "validComplaint": false,
+                                                                                                        "questions": [
+                                                                                                            {
+                                                                                                                "title": "Final product looks like proof?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Visually big deviation?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Are you a Prepress Specialist?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Correct supplier template linked on Presta?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "cPDF matches template?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Safety margins respected?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "DTP Warning sent?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                                                                "isValid": true
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "summaries": [
+                                                                                                            {
+                                                                                                                "title": "Solution",
+                                                                                                                "description": "Customers file featured texts/elements that were placed outside of the safe margin. A warning was sent so we can not validate the complaint."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "What to tell the customer (NEW)",
+                                                                                                                "description": "The file included text and elements outside of the safe margin, and a warning was sent regarding this risk. Since the warning was provided, we cannot validate the complaint. As a new customer, we want to address this issue by offering a reprint with an altered file, a discount on the current order, or a full refund if a reprint is no longer feasible. Please let us know your preferred option."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "What to tell the customer (RETURNING)",
+                                                                                                                "description": "The file included text and elements outside of the safe margin, and a warning was sent about this risk. Since the warning was provided, we cannot validate the complaint. As a returning customer, we appreciate your loyalty and can offer a 10% discount on a reprint or a voucher for a future order. Please let us know your preference, and we will make the necessary arrangements."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Log in Presta",
+                                                                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Cutting margin"
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "Place the cPDF in the template by 3mm, compare this with the complaint pictures.",
+                                                                            "question": {
+                                                                                "text": "Over 3mm deviated?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "No",
+                                                                                        "action": "",
+                                                                                        "question": {
+                                                                                            "text": "What type of order is this?",
+                                                                                            "options": [
+                                                                                                {
+                                                                                                    "class": "btnsecondary",
+                                                                                                    "text": "Purchase price is over 150",
+                                                                                                    "action": "",
+                                                                                                    "question": {},
+                                                                                                    "solution": {
+                                                                                                        "title": "Folding",
+                                                                                                        "action": "Check with team lead",
+                                                                                                        "validComplaint": false,
+                                                                                                        "questions": [
+                                                                                                            {
+                                                                                                                "title": "Final product looks like proof?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Visually big deviation?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Are you a Prepress Specialist?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Correct supplier template linked on Presta?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "cPDF matches template?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Safety margins respected?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Over 3mm deviated?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Purchase price is over 150",
+                                                                                                                "isValid": true
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "summaries": [
+                                                                                                            {
+                                                                                                                "title": "Solution",
+                                                                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "class": "btnsecondary",
+                                                                                                    "text": "Purchase price is under 150 or New CMR",
+                                                                                                    "action": "",
+                                                                                                    "question": {},
+                                                                                                    "solution": {
+                                                                                                        "title": "Folding",
+                                                                                                        "action": "File and finish the complaint in Presta. \nReprocess the file correctly to the template",
+                                                                                                        "validComplaint": false,
+                                                                                                        "questions": [
+                                                                                                            {
+                                                                                                                "title": "Final product looks like proof?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Visually big deviation?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Are you a Prepress Specialist?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Correct supplier template linked on Presta?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "cPDF matches template?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Safety margins respected?",
+                                                                                                                "isValid": true
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Over 3mm deviated?",
+                                                                                                                "isValid": false
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                                                                "isValid": true
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "summaries": [
+                                                                                                            {
+                                                                                                                "title": "Solution",
+                                                                                                                "description": "The product was printed and folded correctly and we can not validate the complaint. Our acceptable margins are 3mm."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "What to tell the customer (NEW)",
+                                                                                                                "description": "The product was printed and folded correctly, and we cannot validate the complaint as our acceptable margins are within 3mm. However, as a gesture of goodwill to a new customer, we can offer a 10% discount on the current order or provide a voucher for a future purchase. Please let us know which option you prefer."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "What to tell the customer (RETURNING)",
+                                                                                                                "description": "The product was printed and folded correctly, and we cannot validate the complaint since our acceptable margins are within 3mm. As such, we are unable to offer any compensation for this issue."
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "title": "Log in Presta",
+                                                                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnprimary",
+                                                                                        "text": "Yes",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Folding",
+                                                                                            "action": "File and finish the complaint in Presta. \nReprint with the same file",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Final product looks like proof?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Visually big deviation?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Correct supplier template linked on Presta?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "cPDF matches template?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Safety margins respected?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Over 3mm deviated?",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "The supplier has cut/folded incorrectly causing the design to deviate from the folds on the printed product. We can reprint with the same file."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer",
+                                                                                                    "description": "The supplier has cut or folded the product incorrectly, causing the design to deviate from the intended folds. We can offer a reprint with the same file at no additional cost, provide a discount on the current order, or issue a refund if a reprint is no longer feasible due to time constraints. Please let us know which option you prefer, and we will take the necessary steps to resolve the issue."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong>Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Cutting"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Folding",
+                                "action": "File and finish the complaint in Presta. \nReprint with the same file",
+                                "validComplaint": true,
+                                "questions": [
+                                    {
+                                        "title": "Final product looks like proof?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Visually big deviation?",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "The supplier has cut/folded incorrectly causing the design to deviate from the folds on the printed product. We can reprint with the same file."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "The supplier has cut or folded the product incorrectly, causing the design to deviate from the intended folds. We can offer a reprint with the same file at no additional cost, provide a discount on the current order, or issue a refund if a reprint is no longer feasible due to time constraints. Please let us know which option you prefer, and we will take the necessary steps to resolve the issue."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong>Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Cutting"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

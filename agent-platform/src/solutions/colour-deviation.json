@@ -1,77 +1,180 @@
 {
     "title": "Colour deviation",
-    "subTitle": "Colours in CMYK printing can vary because of a few factors: Ink quality, paper type, calibration issues, environmental factors, human error. We aim for colours not to deviate over 10% from the cPDF.",
+    "subTitle": "The colours look drastically different from the proof file the customer saw online.",
     "action": "Open both customers file and the cPDF and compare.",
     "question": {
-        "text": "Colours change from CMR file to cPDF? ",
+        "text": "Colours changed from customers file to cPDF?",
         "options": [
             {
                 "class": "btnsecondary",
                 "text": "No",
-                "action": "Place the customers picture next to the cPDF and compare.If in doubt place in illustrator & use the eyedrop tool to compare colour values.",
+                "action": "",
                 "question": {
-                    "text": "Visually over 10%? <br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 10px; margin-bottom: 10px;'>IF DOUBT: Check the Colour Profiles, Check the colour values in Acrobat (Output Preview), Ask for more evidence, Check with supplier, Check with Quinten, Rafa, Miguel</span>",
+                    "text": "Are you:",
                     "options": [
                         {
                             "class": "btnsecondary",
-                            "text": "No",
+                            "text": "CX Specialist",
+                            "action": "",
                             "question": {},
                             "solution": {
                                 "title": "Colour deviation",
-                                "validComplaint": false,
+                                "action": "",
                                 "questions": [
                                     {
-                                        "title": "Colours change from CMR file to cPDF?",
+                                        "title": "Colours changed from customers file to cPDF?",
                                         "isValid": false
                                     },
                                     {
-                                        "title": "Visually over 10%?",
-                                        "isValid": false
-                                    }
-                                ],
-                                "summaries": [
-                                    {
-                                        "title": "Solution",
-                                        "description": "The colours do not deviate enough for us to validate the complaint. The customer is to use the product as printed. If the customer needs the colours to be correct, you can place a discount on a PMS order."
-                                    },
-                                    {
-                                        "title": "What to tell the customer",
-                                        "description": "Sorry, but the colours are judged to be within 10% of the approved proof, we can not validate the complaint. In CMYK printing colours can deviate because of different factors such as: Ink quality, paper type, calibration issues, environmental factors, human error. We are happy to offer a discount on this product with PMS print to ensure the correct colours are printed."
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "class": "btnprimary",
-                            "text": "Yes",
-                            "question": {},
-                            "solution": {
-                                "title": "Colour deviation",
-                                "action": "File the complaint in Presta.",
-                                "validComplaint": true,
-                                "questions": [
-                                    {
-                                        "title": "Colours change from CMR file to cPDF?",
-                                        "isValid": false
-                                    },
-                                    {
-                                        "title": "Visually over 10%?",
+                                        "title": "Are you a CX Specialist",
                                         "isValid": true
                                     }
                                 ],
                                 "summaries": [
                                     {
                                         "title": "Solution",
-                                        "description": "The supplier mixed the inks incorrectly and they deviated over 10% from the cPDF. A reprint can be processed with the same file as approved."
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnsecondary",
+                            "text": "Prepress Specialist",
+                            "action": "Place the customers picture next to the cPDF and compare.\nCompare colour values in acrobat if the picture is clear.",
+                            "question": {
+                                "text": "Visually over 10%? <br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 10px; margin-bottom: 10px;'>IF DOUBT: Check the Colour Profiles, Check the colour values in Acrobat (Output Preview), Ask for more evidence, Check with supplier, Check with Quinten, Rafa or Miguel.</span>",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {
+                                            "text": "What type of order is this?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is over 150",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Colour deviation",
+                                                        "action": "Check with team lead",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Colours changed from customers file to cPDF? ",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Visually over 10%?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over 150",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is under 150 or New CMR",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Colour deviation",
+                                                        "action": "Pick one of the following resolutions based on type of customer \nAdd to an internal note and forward to CS_Urgent\nPMS colours needed if reprinting on PMS\nWarn customer of risk of repeated colour deviation when reprinting.",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Colours changed from customers file to cPDF? ",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Visually over 10%?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The colours do not deviate enough for us to validate the complaint. If precise colours are required, we can offer a discount on a PMS order. For a loyal or new customer we can offer a discount on the current order. "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (NEW)",
+                                                                "description": "The colours are within 10% of the approved proof, so we cannot validate the complaint. In CMYK printing, colours can deviate due to factors such as ink quality, paper type, calibration issues and environmental conditions. We are happy to offer a discount on this product with PMS printing to ensure the correct colors are printed."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (RETURNING)",
+                                                                "description": "In CMYK printing, colours can deviate due to factors such as ink quality, paper type, calibration issues and environmental conditions. We are happy to offer a discount on a PMS printed product or a one time full reprint as you are a valued customer. \nIf you opt for the reprint, please be aware that we can not guarantee the colours match the proof as the risks mentioned remain. If a reprint is not possible anymore within the timeframe, we can refund the order if the product is returned to us."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Color deviation under 10%"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
                                     },
                                     {
-                                        "title": "What to tell the customer",
-                                        "description": "It seems the colours have deviated over 10%, this could have been caused because of multiple reasons: Ink quality, paper type, calibration issues, environmental factors, human error. We would like to offer to reprint the product with the same file. If no time for a reprint, could you use this product at a discount?"
-                                    }
-                                    ,
-                                    {
-                                        "title": "Log in Presta",
-                                        "description": "Supplier - Quality Wrong / Deviating Colours"
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Colour deviation",
+                                            "action": "File the complaint in Presta. \nSame file can be used for reprint",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Colours changed from customers file to cPDF? ",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Are you a Prepress Specialist?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Visually over 10%?",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The supplier mixed the inks incorrectly and they deviated over 10% from the cPDF. A reprint can be processed with the same file as approved. If a reprint is directed to the same supplier, create a ticket to traffic prior to production to ensure the same mistake is not repeated "
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "The colours have deviated over 10%, this could have been caused because of multiple reasons: Ink quality, paper type, calibration issues, environmental factors, human error. As this is outside of our acceptable margins we would like to offer to reprint the product with the same file. \nIf no time for a reprint, could you use the current printed product at a discount?"
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Deviating Colours"
+                                                }
+                                            ]
+                                        }
                                     }
                                 ]
                             }
@@ -82,27 +185,29 @@
             {
                 "class": "btnprimary",
                 "text": "Yes",
-                "action": "Check the log in the DTP tab and look for a 'Artwork Warning - Colours FIXED' warning.",
+                "action": "Check the log in the DTP tab and look for a 'DTP Message - Colours FIXED' warning.",
                 "question": {
                     "text": "DTP Warning sent?",
                     "options": [
                         {
                             "class": "btnsecondary",
                             "text": "No",
+                            "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
                             "question": {
                                 "text": "Automatic artwork check?",
                                 "options": [
                                     {
                                         "class": "btnsecondary",
                                         "text": "No",
+                                        "action": "File the complaint in Presta. \nIf a reprint is required, make sure to warn the customer of a possible deviation",
                                         "question": {},
                                         "solution": {
                                             "title": "Colour deviation",
-                                            "action": "File the complaint in Presta.",
+                                            "action": "File the complaint in Presta. \nIf a reprint is required, make sure to warn the customer of a possible deviation",
                                             "validComplaint": true,
                                             "questions": [
                                                 {
-                                                    "title": "Colours change from CMR file to cPDF?",
+                                                    "title": "Colours changed from customers file to cPDF? ",
                                                     "isValid": true
                                                 },
                                                 {
@@ -117,15 +222,15 @@
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "We altered the colours from the original design but did not warn the customer, this indicates a lack of attention on our end. The agent should have reviewed the altered colours. We can reprint with a fixed CMYK / PMS file from the customer or they can use the current order at a discount."
+                                                    "description": "We altered the colours from the original design but did not warn the customer, this indicates a lack of attention on our end. We can reprint with a CMYK / PMS file from the customer or they can use the current order at a discount."
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "We altered the colours in your file but failed to inform you. As we can not print the colours you have uploaded, we suggest using the current product at a discount or we offer to reprint with an altered file."
+                                                    "description": "The colours in your file were altered to conform to the printing technique ordered, but we failed to warn you regarding this change. As we can not print the colours you have uploaded, we suggest using the current product at a discount. \nAlternitivaly we are happy to offer to reprint with a colour corrected file. "
                                                 },
                                                 {
                                                     "title": "Log in Presta",
-                                                    "description": "Artwork - Manual Checked / Agent mistake - No Warning Sent"
+                                                    "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Agent mistake - No Warning Given"
                                                 }
                                             ]
                                         }
@@ -133,14 +238,15 @@
                                     {
                                         "class": "btnprimary",
                                         "text": "Yes",
+                                        "action": "",
                                         "question": {},
                                         "solution": {
                                             "title": "Colour deviation",
-                                            "action": "File the complaint in Presta.",
+                                            "action": "File the complaint in Presta. \nIf a reprint is required, make sure to warn the customer of a possible deviation",
                                             "validComplaint": true,
                                             "questions": [
                                                 {
-                                                    "title": "Colours change from CMR file to cPDF?",
+                                                    "title": "Colours changed from customers file to cPDF? ",
                                                     "isValid": true
                                                 },
                                                 {
@@ -155,15 +261,15 @@
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "Autocheck can not yet send warnings when colours have been altered. Since the customer was not informed we can reprint with a fixed CMYK / PMS file from the customer or they can use the current order at a discount."
+                                                    "description": "Autocheck failed to send a warning regarding the colour change. Since the customer was not informed we can reprint with a fixed CMYK / PMS file from the customer or they can use the current order at a discount."
                                                 },
                                                 {
                                                     "title": "What to tell the customer",
-                                                    "description": "We altered the colours in your file but failed to inform you. As we can not print the colours you have uploaded, we suggest using the current product at a discount or we offer to reprint with an altered file."
+                                                    "description": "The colours in your file were altered to conform to the printing technique ordered, but we failed to warn you regarding this change. As we can not print the colours you have uploaded, we suggest using the current product at a discount. \nAlternitivaly we are happy to offer to reprint with a colour corrected file. "
                                                 },
                                                 {
                                                     "title": "Log in Presta",
-                                                    "description": "Artwork - Automatic Checked / Autocheck - No Warning Given"
+                                                    "description": "<strong>Complaint Department:</strong> Artwork - Automatic Checked <strong>\nComplaint Type:</strong> Autocheck - No Warning Given"
                                                 }
                                             ]
                                         }
@@ -174,28 +280,28 @@
                         {
                             "class": "btnprimary",
                             "text": "Yes",
-                            "action": "Check in 'Output Preview' on Acrobat to see if there's spot plates in the list.",
+                            "action": "Open Acrobat and find 'Output Preview'. Check for PANTONE colours under 'Spot Plates'",
                             "question": {
                                 "text": "PMS Order?",
                                 "options": [
                                     {
                                         "class": "btnsecondary",
-                                        "action": "Place the customers picture next to the cPDF and compare.If in doubt place in illustrator & use the eyedrop tool to compare colour values.",
                                         "text": "No",
+                                        "action": "",
                                         "question": {
-                                            "text": "Visually over 10%? <br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 10px; margin-bottom: 10px;'>IF DOUBT: Check the Colour Profiles, Check the colour values in Acrobat (Output Preview), Ask for more evidence, Check with supplier, Check with Quinten, Rafa, Miguel</span>",
+                                            "text": "Are you:",
                                             "options": [
                                                 {
                                                     "class": "btnsecondary",
-                                                    "text": "No",
+                                                    "text": "CX Specialist",
+                                                    "action": "",
                                                     "question": {},
                                                     "solution": {
                                                         "title": "Colour deviation",
-                                                        "action": "File the complaint in Presta.",
-                                                        "validComplaint": false,
+                                                        "action": "",
                                                         "questions": [
                                                             {
-                                                                "title": "Colours change from CMR file to cPDF?",
+                                                                "title": "Colours changed from customers file to cPDF?",
                                                                 "isValid": true
                                                             },
                                                             {
@@ -207,60 +313,179 @@
                                                                 "isValid": false
                                                             },
                                                             {
-                                                                "title": "Visually over 10%?",
-                                                                "isValid": false
+                                                                "title": "Are you a CX Specialist",
+                                                                "isValid": true
                                                             }
                                                         ],
                                                         "summaries": [
                                                             {
                                                                 "title": "Solution",
-                                                                "description": "The colours do not deviate enough for us to validate the complaint. The customer is to use the product as printed. If the customer needs the colours to be correct, you can place a discount on a PMS order."
-                                                            },
-                                                            {
-                                                                "title": "What to tell the customer",
-                                                                "description": "Sorry, but the colours are judged to be within 10% of the approved proof, we can not validate the complaint. In CMYK printing colours can deviate because of different factors such as: Ink quality, paper type, calibration issues, environmental factors, human error. We are happy to offer a discount on this product with PMS print to ensure the correct colours are printed."
+                                                                "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
                                                             }
                                                         ]
                                                     }
                                                 },
                                                 {
-                                                    "class": "btnprimary",
-                                                    "text": "Yes",
-                                                    "question": {},
-                                                    "solution": {
-                                                        "title": "Colour deviation",
-                                                        "action": "File the complaint in Presta.",
-                                                        "validComplaint": true,
-                                                        "questions": [
+                                                    "class": "btnsecondary",
+                                                    "text": "Prepress Specialist",
+                                                    "action": "Place the customers picture next to the cPDF and compare.\nCompare colour values in acrobat if the picture is clear.",
+                                                    "question": {
+                                                        "text": "Visually over 10%? <br><span style='color: #757575; font-size: 20px; font-weight: normal; display: block; text-align: center; margin-top: 10px; margin-bottom: 10px;'>IF DOUBT: Check the Colour Profiles, Check the colour values in Acrobat (Output Preview), Ask for more evidence, Check with supplier, Check with Quinten, Rafa or Miguel.</span>",
+                                                        "options": [
                                                             {
-                                                                "title": "Colours change from CMR file to cPDF?",
-                                                                "isValid": true
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Colour deviation",
+                                                                                "action": "Check with team lead",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Colours changed from customers file to cPDF?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "DTP Warning sent?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "PMS Order?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Visually over 10%?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Colour deviation",
+                                                                                "action": "Pick one of the following resolutions based on type of customer \nAdd to an internal note and forward to CS_Urgent \nPMS colours needed if reprinting on PMS \nWarn customer of risk of repeated colour deviation when reprinting.",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Colours changed from customers file to cPDF?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "DTP Warning sent?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "PMS Order?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Visually over 10%?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The colours do not deviate enough for us to validate the complaint. If precise colours are required, we can offer a discount on a PMS order. For a loyal or new customer we can offer a discount on the current order. "
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "The colours are within 10% of the approved proof, so we cannot validate the complaint. In CMYK printing, colours can deviate due to factors such as ink quality, paper type, calibration issues and environmental conditions. We are happy to offer a discount on this product with PMS printing to ensure the correct colors are printed."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "In CMYK printing, colours can deviate due to factors such as ink quality, paper type, calibration issues and environmental conditions. We are happy to offer a discount on a PMS printed product or a one time full reprint as you are a valued customer. \nIf you opt for the reprint, please be aware that we can not guarantee the colours match the proof as the risks mentioned remain. If a reprint is not possible anymore within the timeframe, we can refund the order if the product is returned to us."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Color deviation under 10%"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
                                                             },
                                                             {
-                                                                "title": "DTP Warning sent?",
-                                                                "isValid": true
-                                                            },
-                                                            {
-                                                                "title": "PMS Order?",
-                                                                "isValid": false
-                                                            },
-                                                            {
-                                                                "title": "Visually over 10%?",
-                                                                "isValid": true
-                                                            }
-                                                        ],
-                                                        "summaries": [
-                                                            {
-                                                                "title": "Solution",
-                                                                "description": "The supplier mixed the inks incorrectly and they deviated over 10% from the cPDF. A reprint can be processed with the same file as approved."
-                                                            },
-                                                            {
-                                                                "title": "What to tell the customer",
-                                                                "description": "It seems the colours have deviated over 10%, this could have been caused because of multiple reasons: Ink quality, paper type, calibration issues, environmental factors, human error. We would like to offer to reprint the product with the same file. If no time for a reprint, could you use this product at a discount?"
-                                                            },
-                                                            {
-                                                                "title": "Log in Presta",
-                                                                "description": "Supplier - Quality Wrong / Deviating Colours"
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Colour deviation",
+                                                                    "action": "File the complaint in Presta. \nSame file can be used for reprint",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Colours changed from customers file to cPDF? ",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "DTP Warning sent?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "PMS Order?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Visually over 10%?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The supplier mixed the inks incorrectly and they deviated over 10% from the cPDF. A reprint can be processed with the same file as approved. If a reprint is directed to the same supplier, create a ticket to traffic prior to production to ensure the same mistake is not repeated "
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The colours have deviated over 10%, this could have been caused because of multiple reasons: Ink quality, paper type, calibration issues, environmental factors, human error. As this is outside of our acceptable margins we would like to offer to reprint the product with the same file. \nIf no time for a reprint, could you use the current printed product at a discount?"
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Deviating Colours"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
@@ -271,37 +496,208 @@
                                     {
                                         "class": "btnprimary",
                                         "text": "Yes",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Colour deviation",
-                                            "action": "File the complaint in Presta.",
-                                            "validComplaint": true,
-                                            "questions": [
+                                        "action": "",
+                                        "question": {
+                                            "text": "Are you:",
+                                            "options": [
                                                 {
-                                                    "title": "Colours change from CMR file to cPDF?",
-                                                    "isValid": true
+                                                    "class": "btnsecondary",
+                                                    "text": "CX Specialist",
+                                                    "action": "Ask the customer for a picture of a product on which they previously printed this PMS colour.",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Colour deviation",
+                                                        "action": "Ask the customer for a picture of a product on which they previously printed this PMS colour.",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Colours changed from customers file to cPDF? ",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "DTP Warning sent?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "PMS Order?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Are you a CX Specialist",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                            }
+                                                        ]
+                                                    }
                                                 },
                                                 {
-                                                    "title": "DTP Warning sent?",
-                                                    "isValid": true
-                                                },
-                                                {
-                                                    "title": "PMS Order?",
-                                                    "isValid": true
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "PMS colours are inks that are premade and should always have the same colour. If a colour deviation is apparent on a PMS order it means the supplier did not use the correct pot. Hence you can reprint with the same file (correct PMS colours)."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "It seems we printed alternative PMS colours to those approved on the print proof, we want to rectify this by reprinting your order with the correct PMS colours.  If you can't use the reprint because it will be too late, I can offer you a refund on this order."
-                                                },
-                                                {
-                                                    "title": "Log in Presta",
-                                                    "description": "Supplier - Quality Wrong / Deviating Colours"
+                                                    "class": "btnsecondary",
+                                                    "text": "Prepress Specialist",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "Does the printed product match the colour in PANTONE Formula Guide?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Colour deviation",
+                                                                    "validComplaint": true,
+                                                                    "action": "File the complaint in Presta.  \nCheck if the PMS composition is possible at the current supplier \nCheck if the file is correct for type of paper (check Coated/Uncoated).",
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Colours changed from customers file to cPDF? ",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "DTP Warning sent?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "PMS Order?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Does the printed product match the colour in PANTONE Formula Guide?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "PMS colours are premade and should always have the same colour. If a colour deviation is apparent on a PMS order it means the supplier did not follow the correct mixture. You can reprint with the same file. If a reprint is directed to the same supplier, create a ticket to traffic prior to production to ensure the same mistake is not repeated."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "It seems we printed alternative PMS colours to those approved on the print proof. We apologise for this oversight and want to rectify this mistake by reprinting your order with the correct PMS colours.  \nIf you can't use the reprint because it will be too late, I can offer you a refund on this order."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Supplier - Quality Wrong <strong>\nComplaint Type:</strong> Deviating Colours"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Colour deviation",
+                                                                                "validComplaint": false,
+                                                                                "action": "Check with team lead",
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Colours changed from customers file to cPDF? ",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "DTP Warning sent?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "PMS Order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Does the printed product match the colour in PANTONE Formula Guide?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Colour deviation",
+                                                                                "validComplaint": false,
+                                                                                "action": "File and finish the complaint in Presta. \nSelect one of the following outcomes based on customer type\nWarn that a reprint would have the same result unless printed on a different product.",
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Colours changed from customers file to cPDF? ",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "DTP Warning sent?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "PMS Order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Does the printed product match the colour in PANTONE Formula Guide?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The colours match the PANTONE colour book so cannot validate the complaint. The customer might compare to a previous order. We can offer a discount or alter the PMS colour in our cPDF."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "The PANTONE colour printed matches the mixture stipulated in the PANTONE Formula Guide, so no mistake was made during printing. \nAs you are a valued customer and we would like to rectify this situation we would like to offer a reprint with a corrected PMS colour, for this we would need you to compare a previously printed product to its matching PANTONE mixture in the PANTONE Formula Guide, mind the paper choice. \nInform us of the corrected PANTONE mixture and we can alter the file for reprint."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "The PANTONE colour printed matches the mixture stipulated in the PANTONE Formula Guide, so no mistake was made during printing. As you are a valued customer we offer to discount the current order with 10%, alternatively we could send you this discount as a voucher for future use."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Color deviation under 10%"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             ]
                                         }

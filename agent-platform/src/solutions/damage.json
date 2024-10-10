@@ -149,7 +149,7 @@
                             "question": {},
                             "solution": {
                                             "title": "Damaged",
-                                            "action": "File the complaint in Presta.",
+                                            "action": "File and finish the complaint in Presta. ",
                                             "validComplaint": true,
                                             "questions": [
                                                 {

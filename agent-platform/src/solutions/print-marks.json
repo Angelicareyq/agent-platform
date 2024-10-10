@@ -1,57 +1,260 @@
 {
     "title": "Print Marks",
-    "subTitle": "Sometimes crop marks can be seen on the end product. The issue could be coming from us or from our suppliers. Most of the time, this issue comes from a double set of cropmarks that was delivered in the print file.",
-    "action": "Compare the customer's photo with the cPDF associated with their order by running Preflight 'HelloCheck'",
+    "subTitle": "Black lines in the corners of the page are meant to show the cutting machine where to cut the product, when incorrectly processed, these can show up on the final product.",
+    "action": "Compare the customer's photo with the cPDF associated with their order.",
     "question": {
         "text": "Customer uploaded print marks?",
         "options": [
             {
                 "class": "btnsecondary",
                 "text": "No",
-                "action": "Check on the DTP tab for Export: 1_CROPMARKS",
+                "action": "",
                 "question": {
-                    "text": "Export settings on Presta request cropmarks?",
+                    "text": "Are you:",
                     "options": [
                         {
                             "class": "btnsecondary",
-                            "text": "No",
+                            "text": "CX Specialist",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Print Marks",
+                                "action": "",
+                                "questions": [
+                                    {
+                                        "title": "Customer uploaded print marks?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Are you a CX Specialist",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnsecondary",
+                            "text": "Prepress Specialist",
+                            "action": "Check on the DTP tab for \nExport: 1_CROPMARKS",
                             "question": {
-                                "text": "Automatic art work check?",
+                                "text": "Export settings on Presta request print marks?",
                                 "options": [
                                     {
                                         "class": "btnsecondary",
                                         "text": "No",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Print Marks",
-                                            "action": "File the complaint in Presta",
-                                            "validComplaint": true,
-                                            "questions": [
+                                        "action": "",
+                                        "question": {
+                                            "text": "(Pixeled) Print marks in design?",
+                                            "options": [
                                                 {
-                                                    "title": "Customer uploaded print marks?",
-                                                    "isValid": false
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "Automatic artwork check?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Print Marks",
+                                                                    "action": "File the complaint in Presta. \nCreate a fixed file for reprint",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer uploaded print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Export setting on Presta request print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "(Pixeled) Print marks in design",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Automatic artwork check?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The print file was exported with cropmarks while that is not required for this product. Incorrect export of this file caused the marks to be printed and thus this complaint can be logged on the artwork agent."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The crop marks appeared on your product because the file was set up with them, even though they weren’t needed for this print. To fix this, we can reprint the product with the corrected file that excludes these marks.\nIf a reprint isn't possible due to time constraints, would you be open to using this product at a discount?"
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrect Process"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Print Marks",
+                                                                    "action": "File the complaint in Presta. \nCreate a fixed file for reprint",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer uploaded print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Export setting on Presta request print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "(Pixeled) Print marks in design",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Automatic artwork check?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The print file was exported with cropmarks while that is not required for this product. Incorrect export of this file caused the marks to be printed and thus this complaint can be logged on autocheck."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The crop marks appeared on your product because the file was set up with them, even though they weren’t needed for this print. To fix this, we can reprint the product with the corrected file that excludes these marks. \nIf a reprint isn't possible due to time constraints, would you be open to using this product at a discount?"
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Artwork - Automatic Checked <strong>\nComplaint Type:</strong> Crop marks, contour, template"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 },
                                                 {
-                                                    "title": "Export settings on Presta request cropmarks?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Automatic art work check?",
-                                                    "isValid": false
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "Since no cropmarks were needed and the cPDF has them means the agent used the incorrect export. We can reprint the order with a new cPDF obtained via prepress."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "We incorrectly added cropmarks to your file which were not required for this product. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
-                                                },
-                                                {
-                                                    "title": "Log in Presta",
-                                                    "description": "Artwork - Manual Checked / Incorrect Process"
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "What type of order is this?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is over 150",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Print Marks",
+                                                                    "action": "Check with team lead",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer uploaded print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Export setting on Presta request print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "(Pixeled) Print marks in design",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is over 150",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is under 150 or New CMR",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Print Marks",
+                                                                    "action": "File and finish the complaint in Presta. \nChoose one of the following outcomes based on customer type\nCreate a fixed file for reprint",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer uploaded print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Export setting on Presta request print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "(Pixeled) Print marks in design",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is under 150 or New CMR",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "Alternative print marks were left in the design by the customer which were not caught by our agent or autocheck as they can be interpreted as design elements. This is not valid."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (NEW)",
+                                                                            "description": "The print marks in the design were not caught by our artwork check as these are pixelated and can be interpreted as part of the design. This means we cannot consider the complaint valid. We mention not to use marks on our product pages.However, as you're a valued customer and we understand the oversight, we're happy to reprint the order.\nIn case a reprint can not be used due to time restraints, we are happy to offer a partial discount."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (RETURNING)",
+                                                                            "description": "The print marks in the design were not identified by our artwork check, as they were pixelated and could be interpreted as part of the design. Therefore, we cannot consider the complaint valid. We do advise against using such marks on our product pages. \nHowever, as you're a valued customer and we understand the oversight, we are pleased to offer you a 10% discount or a voucher for future use."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Uploaded wrong artwork"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             ]
                                         }
@@ -59,74 +262,155 @@
                                     {
                                         "class": "btnprimary",
                                         "text": "Yes",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Print Marks",
-                                            "action": "File the complaint in Presta",
-                                            "validComplaint": true,
-                                            "questions": [
+                                        "action": "Check with Prepress or place cPDF in template and move 3mm, then compare with customers photos.",
+                                        "question": {
+                                            "text": "Cutting over 3mm deviated?",
+                                            "options": [
                                                 {
-                                                    "title": "Customer uploaded print marks?",
-                                                    "isValid": false
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "What type of order is this?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is over 150",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Print Marks",
+                                                                    "action": "",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer uploaded print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Export setting on Presta request print marks?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Cutting over 3 deviated?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is over 150",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is under 150 or New CMR",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Print Marks",
+                                                                    "action": "File and finish the complaint in Presta. \nChoose one of the following outcomes based on customer type\nCreate a fixed file for reprint",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer uploaded print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Export setting on Presta request print marks?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Cutting over 3 deviated?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is under 150 or New CMR",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "Crop marks featured in the bleed zone but were revealed on the finished product because of a cutting deviation. The deviation is within 3mm and this is within our acceptable margin. We can not validate the complaint."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (NEW)",
+                                                                            "description": "Crop marks, which featured in the bleed zone, were revealed on the finished product due to a cutting deviation. As this was not shown on the proof file we understand the surprise and want to rectify this by offering a full reprin \nHowever, if a reprint isn't feasible due to time constraints, we are happy to offer a partial discount."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (RETURNING)",
+                                                                            "description": "Crop marks, which featured in the bleed zone, were revealed on the finished product due to a cutting deviation. As this was not shown on the proof file, we understand your surprise and want to rectify this by offering a partial refund or a voucher if you are looking to use the product."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department: </strong> Customer goodwill <strong>\nComplaint Type:</strong> Cutting deviation"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 },
                                                 {
-                                                    "title": "Export settings on Presta request cropmarks?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Automatic art work check?",
-                                                    "isValid": true
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "Since no cropmarks were needed and the cPDF has them means the autocheck has incorrect settings for this product. We can reprint the order with a new cPDF obtained via prepress."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "We incorrectly added cropmarks to your file which were not required for this product. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
-                                                },
-                                                {
-                                                    "title": "Log in Presta",
-                                                    "description": "Artwork - Automatic Checked / Crop marks, contour, template"
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Print Marks",
+                                                        "action": "File and finish the complaint in Presta. \nReprint with the same file",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer uploaded print marks?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Export setting on Presta request print marks?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Cutting over 3 deviated?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Crop marks were added correctly but because of a bigger cutting deviation caused by the supplier, they appeared on the final product. "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "The product was cut incorrectly, and we apologize for the mistake. We’d like to offer you a reprint with a corrected file to address the issue. If a reprint isn’t feasible due to time constraints, we can provide a refund for this order instead.\nPlease let us know how you’d like to proceed."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department: </strong> Supplier - Quality wrong <strong>\nComplaint Type:</strong> Cutting"
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             ]
                                         }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "class": "btnprimary",
-                            "text": "Yes",
-                            "question": {},
-                            "solution": {
-                                "title": "Print Marks",
-                                "action": "File the complaint in Presta",
-                                "validComplaint": true,
-                                "questions": [
-                                    {
-                                        "title": "Customer uploaded print marks?",
-                                        "isValid": false
-                                    },
-                                    {
-                                        "title": "Export settings on Presta request cropmarks?",
-                                        "isValid": true
-                                    }
-                                ],
-                                "summaries": [
-                                    {
-                                        "title": "Solution",
-                                        "description": "The supplier has either used their own cropmarks or the cutting has deviated. As it's on supplier, this should not happen again, reprint using the same file."
-                                    },
-                                    {
-                                        "title": "What to tell the customer",
-                                        "description": "During production new cropmarks were added which became visible when the product was cut incorrectly. This should not repeat itself. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
-                                    },
-                                    {
-                                        "title": "Log in Presta",
-                                        "description": "Supplier - Quality wrong / Printed incorrectly"
                                     }
                                 ]
                             }
@@ -137,89 +421,443 @@
             {
                 "class": "btnprimary",
                 "text": "Yes",
-                "action": "Check the cPDF in acrobat and look at the corners",
+                "action": "Check the cPDF in acrobat and look at the corners of the design and page size",
                 "question": {
-                    "text": "CPDF has double set of print marks?",
+                    "text": "cPDF has double set of print marks?",
                     "options": [
                         {
                             "class": "btnsecondary",
                             "text": "No",
-                            "action": "Check with Prepress or place cPDF in template and move 3mm, then compare with customers photos.",
+                            "action": "",
                             "question": {
-                                "text": "Cutting over 3mm deviated?",
+                                "text": "Are you:",
                                 "options": [
                                     {
                                         "class": "btnsecondary",
-                                        "text": "No",
+                                        "text": "CX Specialist",
+                                        "action": "",
                                         "question": {},
                                         "solution": {
                                             "title": "Print Marks",
-                                            "action": "File the complaint in Presta",
-                                            "validComplaint": false,
+                                            "action": "",
                                             "questions": [
                                                 {
                                                     "title": "Customer uploaded print marks?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Are you a CX Specialist",
                                                     "isValid": true
-                                                },
-                                                {
-                                                    "title": "CPDF has double set of print marks?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Cutting over 3mm deviated?",
-                                                    "isValid": false
                                                 }
                                             ],
                                             "summaries": [
                                                 {
                                                     "title": "Solution",
-                                                    "description": "We mention on the website not to upload cropmarks, if this has been done and it was read as \"part of the design\" by either autocheck or our agents, we can't validate the complaint."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer - First time CMR or cheap order",
-                                                    "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include cropmarks. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "I am sorry but you approved the proof with cropmarks, which we mention, on the website, should not be included in your design. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
+                                                    "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
                                                 }
                                             ]
                                         }
                                     },
                                     {
-                                        "class": "btnprimary",
-                                        "text": "Yes",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Print Marks",
-                                            "action": "File the complaint in Presta",
-                                            "validComplaint": true,
-                                            "questions": [
+                                        "class": "btnsecondary",
+                                        "text": "Prepress Specialist",
+                                        "action": "Check on the DTP tab for Export: 1_CROPMARKS",
+                                        "question": {
+                                            "text": "Export settings on Presta request print marks?",
+                                            "options": [
                                                 {
-                                                    "title": "Customer uploaded print marks?",
-                                                    "isValid": true
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "(Pixeled) Print marks in design?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                                                "question": {
+                                                                    "text": "Automatic artwork check?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Print Marks",
+                                                                                "validComplaint": true,
+                                                                                "action": "File the complaint in Presta. \nCreate a fixed file for reprint",
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer uploaded print marks?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF has double set of print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Export settings on Presta request print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "(Pixeled) Print marks in design?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": false
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The print file was exported with cropmarks while that is not required for this product. Incorrect export of this file caused the marks to be printed and thus this complaint can be logged on the artwork agent."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "The crop marks appeared on your product because the file was set up with them, even though they weren’t needed for this print. To fix this, we can reprint the product with the corrected file that excludes these marks.\nIf a reprint isn't possible due to time constraints, would you be open to using this product at a discount?"
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrect Process"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Print Marks",
+                                                                                "validComplaint": true,
+                                                                                "action": "File the complaint in Presta. \nCreate a fixed file for reprint",
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer uploaded print marks?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF has double set of print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Export settings on Presta request print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "(Pixeled) Print marks in design?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The print file was exported with cropmarks while that is not required for this product. Incorrect export of this file caused the marks to be printed and thus this complaint can be logged on autocheck."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "The crop marks appeared on your product because the file was set up with them, even though they weren’t needed for this print. To fix this, we can reprint the product with the corrected file that excludes these marks.\nIf a reprint isn't possible due to time constraints, would you be open to using this product at a discount?"
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrect Process"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Print Marks",
+                                                                                "action": "Check with team lead",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer uploaded print marks?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF has double set of print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Export settings on Presta request print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "(Pixeled) Print marks in design?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Print Marks",
+                                                                                "action": "File and finish the complaint in Presta. \nChoose one of the following outcomes based on customer type\nCreate a fixed file for reprint",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer uploaded print marks?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF has double set of print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Export settings on Presta request print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "(Pixeled) Print marks in design?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "Alternative print marks were left in the design by the customer which were not caught by our agent or autocheck as they can be interpreted as design elements. This is not valid."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "The print marks in the design were not caught by our artwork check as these are pixelated and can be interpreted as part of the design. This means we cannot consider the complaint valid. We mention not to use marks on our product pages.However, as you're a valued customer and we understand the oversight, we're happy to reprint the order. \nIn case a reprint can not be used due to time restraints, we are happy to offer a partial discount."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "The print marks in the design were not identified by our artwork check, as they were pixelated and could be interpreted as part of the design. Therefore, we cannot consider the complaint valid. We do advise against using such marks on our product pages. \nHowever, as you're a valued customer and we understand the oversight, we are pleased to offer you a 10% discount or a voucher for future use."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 },
                                                 {
-                                                    "title": "CPDF has double set of print marks?",
-                                                    "isValid": false
-                                                },
-                                                {
-                                                    "title": "Cutting over 3mm deviated?",
-                                                    "isValid": true
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "The supplier has used our cPDF but has cut the product incorrectly. This should not happen again so you can use the same file for a reprint."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "The product was cut incorrectly. This should not repeat itself. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
-                                                },
-                                                {
-                                                    "title": "Log in Presta",
-                                                    "description": "Supplier - Quality wrong Cutting"
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "Check with Prepress or place cPDF in template and move 3mm, then compare with customers photos.",
+                                                    "question": {
+                                                        "text": "Cutting over 3mm deviated?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Print Marks",
+                                                                                "action": "Check with team lead",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer uploaded print marks?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF has double set of print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Export settings on Presta request print marks?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutting over 3 deviated?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Print Marks",
+                                                                                "action": "File and finish the complaint in Presta. \nChoose one of the following outcomes based on customer type\nCreate a fixed file for reprint",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer uploaded print marks?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "cPDF has double set of print marks?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Export settings on Presta request print marks?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutting over 3 deviated?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "Crop marks featured in the bleed zone but were revealed on the finished product because of a cutting deviation. The deviation is within 3mm and this is within our acceptable margin. We can not validate the complaint."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "Crop marks, which featured in the bleed zone, were revealed on the finished product due to a cutting deviation. As this was not shown on the proof file we understand the surprise and want to rectify this by offering a full reprint.\nHowever, if a reprint isn't feasible due to time constraints, we are happy to offer a partial discount."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "Crop marks, which featured in the bleed zone, were revealed on the finished product due to a cutting deviation. As this was not shown on the proof file, we understand your surprise and want to rectify this by offering a partial refund or a voucher if you are looking to use the product."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Cutting deviation"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Print Marks",
+                                                                    "action": "File and finish the complaint in Presta. \nChoose one of the following outcomes based on customer type \nCreate a fixed file for reprint",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer uploaded print marks?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "cPDF has double set of print marks?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Export settings on Presta request print marks?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "Crop marks were added correctly but because of a bigger cutting deviation caused by the supplier, they appeared on the final product. "
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "The product was cut incorrectly, and we apologize for the mistake. We’d like to offer you a reprint with a corrected file to address the issue. If a reprint isn’t feasible due to time constraints, we can provide a refund for this order instead.\nPlease let us know how you’d like to proceed."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department: </strong> Supplier - Quality wrong <strong>\nComplaint Type:</strong> Cutting"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             ]
                                         }
@@ -232,11 +870,12 @@
                             "text": "Yes",
                             "action": "Check if for example: multiple business cards with marks on a page or cropmarks in a different size than ordered.",
                             "question": {
-                                "text": "The design implies the customer would cut it themselves after?",
+                                "text": "The design implies the customer would cut the product after? ",
                                 "options": [
                                     {
                                         "class": "btnsecondary",
                                         "text": "No",
+                                        "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
                                         "question": {
                                             "text": "Automatic artwork check?",
                                             "options": [
@@ -246,7 +885,7 @@
                                                     "question": {},
                                                     "solution": {
                                                         "title": "Print Marks",
-                                                        "action": "File the complaint in Presta",
+                                                        "action": "File and finish the complaint in Presta. \nRequest a new file from Prepress",
                                                         "validComplaint": true,
                                                         "questions": [
                                                             {
@@ -254,11 +893,11 @@
                                                                 "isValid": true
                                                             },
                                                             {
-                                                                "title": "CPDF has double set of print marks?",
+                                                                "title": "cPDF has double set of print marks?",
                                                                 "isValid": true
                                                             },
                                                             {
-                                                                "title": "The design implies the customer would cut it themselves after?",
+                                                                "title": "The design implies the customer would cut the product after?",
                                                                 "isValid": false
                                                             },
                                                             {
@@ -269,15 +908,15 @@
                                                         "summaries": [
                                                             {
                                                                 "title": "Solution",
-                                                                "description": "Printed cropmarks in this case indicate a lack of attention during process as the agent should have seen and removed them. Upon seeing these cropmarks the customer will have thought it will be cut there. A reprint can be processed with a new file obtained by our Prepress team."
+                                                                "description": "Printed cropmarks in this case indicate a lack of attention during process as the agent should have seen and removed them. Upon seeing these cropmarks the customer will have thought it will be cut there. "
                                                             },
                                                             {
                                                                 "title": "What to tell the customer",
-                                                                "description": "We incorrectly added cropmarks to your file which were not required for this product. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
+                                                                "description": "We incorrectly left cropmarks on your file which were not required for this product, these should have been deleted by us. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
                                                             },
                                                             {
                                                                 "title": "Log in Presta",
-                                                                "description": "Artwork - Manual Checked / Incorrect Process "
+                                                                "description": "<strong>Complaint Department: </strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrect Process"
                                                             }
                                                         ]
                                                     }
@@ -285,10 +924,11 @@
                                                 {
                                                     "class": "btnprimary",
                                                     "text": "Yes",
+                                                    "action": "",
                                                     "question": {},
                                                     "solution": {
                                                         "title": "Print Marks",
-                                                        "action": "File the complaint in Presta",
+                                                        "action": "File and finish the complaint in Presta. \nRequest a new file from Prepress",
                                                         "validComplaint": true,
                                                         "questions": [
                                                             {
@@ -296,11 +936,11 @@
                                                                 "isValid": true
                                                             },
                                                             {
-                                                                "title": "CPDF has double set of print marks?",
+                                                                "title": "cPDF has double set of print marks?",
                                                                 "isValid": true
                                                             },
                                                             {
-                                                                "title": "The design implies the customer would cut it themselves after?",
+                                                                "title": "The design implies the customer would cut the product after?",
                                                                 "isValid": false
                                                             },
                                                             {
@@ -311,15 +951,15 @@
                                                         "summaries": [
                                                             {
                                                                 "title": "Solution",
-                                                                "description": "Autocheck can not recognise pixelated cropmarks so if they are printed it means the customer uploaded incorrectly. Since the customer then saw the cropmarks on the proof, they will assume that is where it will be cut. So expecting a different result than printed."
+                                                                "description": "Autocheck can not recognise pixelated cropmarks so if they are printed it means the customer uploaded incorrectly. Since the customer then saw the cropmarks on the proof, they will assume that is where it will be cut. So expecting a different result than printed. "
                                                             },
                                                             {
                                                                 "title": "What to tell the customer",
-                                                                "description": "You uploaded pixelated cropmarks which were not recognised by our autocheck. We mention on the website not to upload cropmarks for this reason. We can reprint your order with an altered file."
+                                                                "description": "We incorrectly left cropmarks on your file which were not required for this product, these should have been deleted by us. Our apologies for this oversight. I'd like to offer you a reprint with a resolved file. If you can't use the reprint because it will be too late, I can offer you a refund on this order."
                                                             },
                                                             {
                                                                 "title": "Log in Presta",
-                                                                "description": "Customer Goodwill : Mismatch on product expectations"
+                                                                "description": "<strong>Complaint Department: </strong> Customer Goodwill <strong>\nComplaint Type:</strong> Mismatch on product expectations"
                                                             }
                                                         ]
                                                     }
@@ -330,36 +970,91 @@
                                     {
                                         "class": "btnprimary",
                                         "text": "Yes",
-                                        "question": {},
-                                        "solution": {
-                                            "title": "Print Marks",
-                                            "validComplaint": false,
-                                            "questions": [
+                                        "action": "",
+                                        "question": {
+                                            "text": "What type of order is this?",
+                                            "options": [
                                                 {
-                                                    "title": "Customer uploaded print marks?",
-                                                    "isValid": true
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is over 150",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Print Marks",
+                                                        "action": "Check with team lead",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer uploaded print marks?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "cPDF has double set of print marks?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "The design implies the customer would cut the product after?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over 150",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                            }
+                                                        ]
+                                                    }
                                                 },
                                                 {
-                                                    "title": "CPDF has double set of print marks?",
-                                                    "isValid": true
-                                                },
-                                                {
-                                                    "title": "The design implies the customer would cut it themselves after?",
-                                                    "isValid": true
-                                                }
-                                            ],
-                                            "summaries": [
-                                                {
-                                                    "title": "Solution",
-                                                    "description": "The customer design implies they wanted the cropmarks printed, this was visible on the proof and they accepted so we can not validate the complaint."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer - First time CMR or cheap order",
-                                                    "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include cropmarks. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
-                                                },
-                                                {
-                                                    "title": "What to tell the customer",
-                                                    "description": "I am sorry but you uploaded cropmarks that indicated a different size which were proofed by us and accepted by you. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is under 150 or New CMR",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Print Marks",
+                                                        "action": "File and finish the complaint in Presta. \nSelect one of the following resolutions based on customer type",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer uploaded print marks?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "cPDF has double set of print marks?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "The design implies the customer would cut the product after?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The customer design implies they wanted the cropmarks printed, this was visible on the proof and they accepted so we can not validate the complaint.  "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (NEW)",
+                                                                "description": "As a special consideration for being a first-time customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include cropmarks. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (RETURNING)",
+                                                                "description": "I am sorry but you uploaded cropmarks that indicated a different size which were proofed by us and accepted by you. In consideration of the inconvenience caused, we can offer you a 10% discount code that can be applied to the next order. This discount serves as a gesture of goodwill to express our commitment to customer satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                            }
+                                                        ]
+                                                    }
                                                 }
                                             ]
                                         }

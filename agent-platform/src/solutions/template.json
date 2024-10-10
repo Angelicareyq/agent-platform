@@ -1,0 +1,314 @@
+{
+    "title": "Template",
+    "subTitle": "We use templates to ensure correct placement on the printed products. These are generally removed from the cPDF but in some cases can be printed because of incorrect handling.",
+    "action": "Open the customer's file.\nLook for lines or shapes that have been placed on the design that indicate the finished product.",
+    "question": {
+        "text": "Customer file contains template?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "",
+                "question": {
+                    "text": "Are you:",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "CX Specialist",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Template",
+                                "action": "",
+                                "questions": [
+                                    {
+                                        "title": "Customer file contains template?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Are you a CX Specialist",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnsecondary",
+                            "text": "Prepress Specialist",
+                            "action": "Open the template and look at the layers, is the template placed on the print layer?",
+                            "question": {
+                                "text": "Template / marks on print layer?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Template",
+                                            "action": "Same file is ok for reprint \nFile complaint in Presta",
+                                            "questions": [
+                                                {
+                                                    "title": "Customer file contains template?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Are you a Prepress Specialist",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Template / marks on print layer?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "No template featured on the cPDF we sent to the supplier, however a template was still printed indicating the supplier altered the cPDF and processed the file incorrectly."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "We have identified that an error occurred during the processing of your file, resulting in a template being printed incorrectly. To address this issue, we can offer you a discounted price for the current order, arrange a reprint with the same file at no additional cost, or issue a refund if a reprint is no longer feasible. Please let us know your preference, and we will make the necessary arrangements to ensure your satisfaction."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Printed Incorrectly"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "Open the template and look at the information. Does the information indicate the template should be exported on the print layer?",
+                                        "question": {
+                                            "text": "Template requires marks on print layer?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Template",
+                                                        "action": "Create a fixed cPDF for reprint\nFile complaint in Presta",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer file contains template?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Template / marks on print layer?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Template requires marks on print layer?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Template featured on the cPDF which was missed by our artwork check."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We have identified that a template on the cPDF was missed during our artwork check, leading to an error in the printing of your order. To resolve this, we can offer you a reprint with a corrected file (which we will create for you), a discount on the current order, or a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will make the necessary arrangements to ensure your satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Manual Artwork Check <strong>\nComplaint Type:</strong> Processed Incorrectly"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Template",
+                                                        "action": "Create a fixed cPDF for reprint\nInform Quinten/Rafael/Miguel of template issue\nFile complaint in Presta",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer file contains template?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Template / marks on print layer?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Template requires marks on print layer?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Our internal template requires we leave the template on the cPDF, in this case it is incorrect as it resulted in a printed template. We have to update the template in Presta. Inform Rafael to update Template."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We have discovered that the internal template we use, which was left on the cPDF, resulted in an incorrect printed template on your order. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know your preferred option, and we will take the necessary steps to ensure your satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Artwork Process <strong>\nComplaint Type:</strong> Template"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                "question": {
+                    "text": "Automatic artwork check?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Template",
+                                "action": "Request a new file from Prepress\nFile complaint in Presta",
+                                "questions": [
+                                    {
+                                        "title": "Customer file contains template?",
+                                        "isValid": true
+                                    },
+                                    {
+                                        "title": "Automatic artwork check?",
+                                        "isValid": false
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Customer added a template to the design, this was not caught by the artwork agent during the artwork check and caused it to be printed."
+                                    },
+                                    {
+                                        "title": "What to tell the customer",
+                                        "description": "We have identified that a template added to your design was not caught during the artwork check and resulted in it being printed. To address this issue, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will make the necessary arrangements to ensure your satisfaction."
+                                    },
+                                    {
+                                        "title": "Log in Presta",
+                                        "description": "<strong>Complaint Department:</strong> Manual Artwork Check <strong>\nComplaint Type:</strong> Processed Incorrectly"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {
+                                "text": "What type of order is this?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Purchase price is over 150",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Template",
+                                            "action": "Check with team lead",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Customer file contains template?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Purchase price is over 150",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Purchase price is under 150 or New CMR",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Template",
+                                            "action": "Request a new file from Prepress\nFile complaint in Presta",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Customer file contains template?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Automatic artwork check?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Purchase price is under 150 or New CMR",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The customers file contains a template that was not recognised by our autocheck. As we warn the customer on the product pages to remove the template we can't validate the complaint on autocheck. "
+                                                },
+                                                {
+                                                    "title": "What to tell the customer (NEW)",
+                                                    "description": "As a special consideration for being a valued customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include the template, as noted in our product guidelines. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer (RETURNING)",
+                                                    "description": "We understand that you may not have been fully aware of our autocheck processes regarding template usage. Although we indicate on our product pages that templates should be removed, we appreciate your experience and value your feedback. To ensure your satisfaction and as a gesture of goodwill, we are offering you a 10% discount on the current order or as a voucher for your next order.. Please provide us with a new design without the template to avoid any further issues."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

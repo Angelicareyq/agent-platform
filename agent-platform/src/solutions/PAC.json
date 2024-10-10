@@ -1,0 +1,962 @@
+{
+    "title": "PAC",
+    "subTitle": "A paid service that includes more in depth manual artwork checks. ",
+    "action": "Check the order overview for a Service - Premium artwork check order line.",
+    "question": {
+        "text": "Customer ordered Premium Artwork Check?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "",
+                "question": {
+                    "text": "Are you:",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "CX Specialist",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "PAC",
+                                "action": "",
+                                "questions": [
+                                    {
+                                        "title": "Customer ordered Premium Artwork Check?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Are you a CX Specialist",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Prepress Specialist",
+                            "action": "",
+                            "question": {
+                                "text": "Customer uploaded a print ready file?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {
+                                            "text": "The design issue is clearly visible?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "What type of order is this?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is over 150",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "PAC",
+                                                                    "action": "Check with team lead",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer ordered Premium Artwork Check?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Customer uploaded a print ready file?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "The design issue is clearly visible?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is over 150",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is under 150 or New CMR",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "PAC",
+                                                                    "action": "File and finish the complaint in Presta. \nRequest a new file\nPick one of two suggested solutions",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer ordered Premium Artwork Check?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Customer uploaded a print ready file?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "The design issue is clearly visible?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is under 150 or New CMR",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "No premium artwork check was paid and no avoidable/human errors were made, we can not validate the complaint."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (NEW)",
+                                                                            "description": "We carefully reviewed your order and found that a premium artwork check was not selected. Additionally, there were no avoidable or human errors made during the processing. However, as a gesture of goodwill for a new customer, we can offer a full reprint or a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will be happy to assist you."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (RETURNING)",
+                                                                            "description": "We carefully reviewed your order and found that a premium artwork check was not selected. Additionally, there were no avoidable or human errors made during the processing. As a returning customer, we would like to offer a 10% discount on the current order or a voucher for future use as a gesture of goodwill. Please let us know which option you prefer, and we will be happy to assist you."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "The agent fixed the file/sent a warning?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "PAC",
+                                                                    "action": "File and finish the complaint in Presta. \nRequest a new file from prepress",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer ordered Premium Artwork Check?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Customer uploaded a print ready file?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "The design issue is clearly visible?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "The agent fixed the file/sent a warning?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The customers file contained a clear issue which the artwork agent did not resolve."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "We discovered that your file contained a clear issue which our artwork agent did not resolve. We apologize for this oversight. To address the situation, we can offer a discount, reprint the order with a corrected file, or provide a full refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will promptly resolve the issue."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrect Process"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "Avoidable mistakes were made during artwork check?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {
+                                                                                "text": "What type of order is this?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is over 150",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "PAC",
+                                                                                            "action": "Check with team lead",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Customer ordered Premium Artwork Check?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Customer uploaded a print ready file?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "The design issue is clearly visible?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "The agent fixed the file/sent a warning?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Avoidable mistakes were made during artwork check?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is over 150",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is under 150 or New CMR",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "PAC",
+                                                                                            "action": "File and finish the complaint in Presta. \nRequest a new file\nPick one of two suggested solutions",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Customer ordered Premium Artwork Check?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Customer uploaded a print ready file?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "The design issue is clearly visible?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "The agent fixed the file/sent a warning?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Avoidable mistakes were made during artwork check?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is under 150 or New CMR",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "No premium artwork check was paid and no avoidable/human errors were made, we can not validate the complaint."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (NEW)",
+                                                                                                    "description": "We carefully reviewed your order and found that a premium artwork check was not selected. Additionally, there were no avoidable or human errors made during the processing. However, as a gesture of goodwill for a new customer, we can offer a full reprint or a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will be happy to assist you."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (RETURNING)",
+                                                                                                    "description": "We carefully reviewed your order and found that a premium artwork check was not selected. Additionally, there were no avoidable or human errors made during the processing. As a returning customer, we would like to offer a 10% discount on the current order or a voucher for future use as a gesture of goodwill. Please let us know which option you prefer, and we will be happy to assist you."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "PAC",
+                                                                                "action": "File and finish the complaint in Presta. \nRequest a new file from prepress",
+                                                                                "validComplaint": true,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer ordered Premium Artwork Check?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Customer uploaded a print ready file?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "The design issue is clearly visible?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "The agent fixed the file/sent a warning?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Avoidable mistakes were made during artwork check?",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "A mistake was made by the artwork agent during the artwork check causing the customers file to be altered and printed incorrectly. "
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "We discovered that a mistake was made by our artwork agent during the artwork check, which caused your file to be altered and printed incorrectly. We apologize for this oversight. To resolve the issue, we can offer a discount, reprint the order with a corrected file, or provide a full refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will promptly address the situation."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrect Process"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {
+                                            "text": "Avoidable mistakes were made during artwork check?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "What type of order is this?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is over 150",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "PAC",
+                                                                    "action": "Check with team lead",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer ordered Premium Artwork Check?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Customer uploaded a print ready file?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Avoidable mistakes were made during artwork check?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is over 150",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is under 150 or New CMR",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "PAC",
+                                                                    "action": "File and finish the complaint in Presta. \nRequest a new file\nPick one of two suggested solutions",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer ordered Premium Artwork Check?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Customer uploaded a print ready file?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Avoidable mistakes were made during artwork check?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is under 150 or New CMR",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "No premium artwork check was paid and no avoidable/human errors were made, we can not validate the complaint."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (NEW)",
+                                                                            "description": "We carefully reviewed your order and found that a premium artwork check was not selected. Additionally, there were no avoidable or human errors made during the processing. However, as a gesture of goodwill for a new customer, we can offer a full reprint or a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will be happy to assist you."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (RETURNING)",
+                                                                            "description": "We carefully reviewed your order and found that a premium artwork check was not selected. Additionally, there were no avoidable or human errors made during the processing. As a returning customer, we would like to offer a 10% discount on the current order or a voucher for future use as a gesture of goodwill. Please let us know which option you prefer, and we will be happy to assist you."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "PAC",
+                                                        "action": "File and finish the complaint in Presta. \nRequest a new file from prepress",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer ordered Premium Artwork Check?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Customer uploaded a print ready file?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Avoidable mistakes were made during artwork check?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "A mistake was made by the artwork agent during the artwork check causing the customers file to be altered and printed incorrectly. "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We discovered that a mistake was made by our artwork agent during the artwork check, which caused your file to be altered and printed incorrectly. We apologize for this oversight. To resolve the issue, we can offer a discount, reprint the order with a corrected file, or provide a full refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will promptly address the situation."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrect Process"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "Check the log for a 'Autocheck - proof sent' note",
+                "question": {
+                    "text": "Customer file went through autocheck?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "",
+                            "question": {
+                                "text": "Are you:",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "CX Specialist",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "PAC",
+                                            "action": "",
+                                            "questions": [
+                                                {
+                                                    "title": "Customer ordered Premium Artwork Check?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Customer ordered Premium Artwork Check?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Are you a CX Specialist",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Prepress Specialist",
+                                        "action": "",
+                                        "question": {
+                                            "text": "The artwork agent resolved the issues the file?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "PAC",
+                                                        "action": "File and finish the complaint in Presta. \nRequest a new file from prepress",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer ordered Premium Artwork Check?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Customer ordered Premium Artwork Check?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "The artwork agent resolved the issues the file?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The customer paid for premium check but the issues in the files were not caught and resolved by the artwork agent."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "Although you paid for a premium check, the issues in your files were not caught and resolved by our artwork agent. We apologize for this oversight. To address the situation, we can offer a discount, reprint the order with a corrected file, or provide a full refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will promptly resolve the issue."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> Incorrect Process"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "(Correct) warnings sent?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "PAC",
+                                                                    "action": "File and finish the complaint in Presta. \nRequest a new file from customer",
+                                                                    "validComplaint": true,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Customer ordered Premium Artwork Check?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Customer ordered Premium Artwork Check?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "The artwork agent resolved the issues the file?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "(Correct) warnings sent?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The customer paid for premium check but the issues in the files were not caught and resolved by the artwork agent."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Although you paid for a premium check and our artwork agent resolved the issues in your file, we did not send any warnings regarding the changes or remaining risks. We apologise for this oversight. To address the situation, we can offer a discount, reprint the order with a corrected file, or provide a full refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will promptly resolve the issue"
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Artwork - Manual Checked <strong>\nComplaint Type:</strong> No Warning sent"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "PAC",
+                                                                                "action": "Check with team lead",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer ordered Premium Artwork Check?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Customer ordered Premium Artwork Check?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "The artwork agent resolved the issues the file?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "(Correct) warnings sent?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "PAC",
+                                                                                "action": "File and finish the complaint in Presta. \nRequest a new file\nPick one of two suggested solutions",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Customer ordered Premium Artwork Check?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Customer uploaded a print ready file?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "The artwork agent resolved the issues the file?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "(Correct) warnings sent?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "Premium artwork check paid, artwork agent resolved the file issues and warned the customer of the remaining risks. The premium check was completed correctly."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "We have confirmed that the premium artwork check was completed correctly, with our agent resolving the file issues and warning you of the remaining risks. As a gesture of goodwill, we can offer a 10% discount on your current order or provide a voucher for a future order. Please let us know which option you prefer."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "We have confirmed that the premium artwork check was completed correctly, with our agent resolving the file issues and warning you of the remaining risks. Unfortunately, we cannot offer any further compensation at this time. We appreciate your understanding."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "Check the autocheck box and look at the sent warnings",
+                            "question": {
+                                "text": "An accurate warning was sent regarding the issue?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "PAC",
+                                            "action": "File and finish the complaint in Presta. \nRequest a new file created by Prepress",
+                                            "validComplaint": true,
+                                            "questions": [
+                                                {
+                                                    "title": "Customer ordered Premium Artwork Check?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Customer file went through autocheck?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "An accurate warning was sent regarding the issue?",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "No accurate artwork warning was sent by autocheck even though the customer paid for a premium check."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "We regret that our artwork check did not provide the accurate warning it should have, despite you paying for our premium check service. We apologize for this oversight. To resolve the issue, we can offer a discount or reprint the product with the correct artwork. If a reprint is no longer feasible, we can issue a full refund. Please let us know which option you prefer, and we will promptly address the issue."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Artwork - Auto Checked <strong>\nComplaint Type:</strong> No Warning sent"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {
+                                            "text": "What type of order is this?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is over 150",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "PAC",
+                                                        "action": "Check with team lead",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer ordered Premium Artwork Check?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Customer file went through autocheck?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "An accurate warning was sent regarding the issue?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over 150",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is under 150 or New CMR",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "PAC",
+                                                        "action": "File and finish the complaint in Presta. \nRequest a new file\nPick one of two suggested solutions",
+                                                        "validComplaint": true,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Customer ordered Premium Artwork Check?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Customer file went through autocheck?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "An accurate warning was sent regarding the issue?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "An accurate artwork warning was sent by autocheck, even though the customer paid for premium check, they were sufficiently warned."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (NEW)",
+                                                                "description": "We regret that you only received the standard autocheck instead of the premium artwork check you paid for. To resolve this, we can offer a full reprint or a refund if a reprint is no longer feasible. Additionally, we will refund the cost of the premium artwork check. Please let us know which option you prefer."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (RETURNING)",
+                                                                "description": "We regret that you only received the standard autocheck instead of the premium artwork check you paid for. To make it right, we can offer a 10% discount on the current order or a voucher for future use. We will also refund the cost of the premium artwork check. Please let us know which option you prefer."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

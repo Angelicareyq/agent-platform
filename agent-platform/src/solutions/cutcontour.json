@@ -1,0 +1,727 @@
+{
+    "title": "Cutcontour",
+    "subTitle": "Cutcontours are a magenta-coloured line that runs around a design that indicate the shape in which the product will be cut.",
+    "action": "Look for 'Rectangular' or 'Custom Shape' in the order description on presta",
+    "question": {
+        "text": "Custom / round size order?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "Look for a magenta line around the customers design",
+                "question": {
+                    "text": "Customer file features contour line?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "Compare the customers file with the cPDF. If the customers file has no contour but the cPDF does, it means it was added during the check.",
+                            "question": {
+                                "text": "Cutcontour added during artwork check?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Cutcontour",
+                                            "action": "File is ok for reprint\nFile complaint in Presta",
+                                            "questions": [
+                                                {
+                                                    "title": "Custom / round size order?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Customer file features contour line?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Cutcontour added during artwork check??",
+                                                    "isValid": false
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The cPDF sent to the supplier is correct, however a contourline was added during their process and printed incorrectly. We can reprint with the same file."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer",
+                                                    "description": "We’ve identified that an error occurred during our processing, resulting in an incorrect print due to an added contour line. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Printed Incorrectly"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                        "question": {
+                                            "text": "Automatic artwork check?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutcontour",
+                                                        "action": "Request a new file from Prepress\nFile complaint in Presta",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Custom / round size order?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Customer file features contour line?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Cutcontour added during artwork check??",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Automatic artwork check?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Our artwork team added a cutcontour unnecessarily to the cPDF, which caused it to be printed."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "Our artwork team added a cut contour unnecessarily to the print file, which caused it to be printed incorrectly. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Manual Artwork Check <strong>\nComplaint Type:</strong> Processed Incorrectly"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutcontour",
+                                                        "action": "Request a new file from Prepress\nFile complaint in Presta",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Custom / round size order?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Customer file features contour line?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Cutcontour added during artwork check??",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Automatic artwork check?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Our autocheck added a cutcontour unnecessarily to the cPDF, which caused it to be printed."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "Our autocheck added a cut contour unnecessarily to the print file, which caused it to be printed incorrectly. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Artwork Automatic Check <strong>\nComplaint Type:</strong> Cropmarks, template, lines printed"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {
+                                "text": "What type of order is this?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Purchase price is over 150",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Cutcontour",
+                                            "action": "Check with team lead",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Custom / round size order?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Customer file features contour line?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Purchase price is over 150",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Purchase price is under 150 or New CMR",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Cutcontour",
+                                            "action": "Request a new file from Prepress\nFile complaint in Presta\nCheck customer type & select one of the suggested resolutions",
+                                            "validComplaint": false,
+                                            "questions": [
+                                                {
+                                                    "title": "Custom / round size order?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Customer file features contour line?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Purchase price is under 150 or New CMR",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "The customer added a cutting line on a straight cut order, as we do not look for cutcontours in these type of orders the line was recognised as part of the design and processed without altering. "
+                                                },
+                                                {
+                                                    "title": "What to tell the customer (NEW)",
+                                                    "description": "As a special consideration for being a new customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include the cutting line. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
+                                                },
+                                                {
+                                                    "title": "What to tell the customer (RETURNING)",
+                                                    "description": "We understand that, as an experienced customer, you may not have been fully aware that cutting lines are not necessary for straight cut orders, as they are recognized as part of the design and processed without alteration. To ensure your satisfaction and as a gesture of goodwill, we are offering you a 10% discount on the current order or as a voucher for your next order. Please provide us with a new design without the cutting line to avoid any further issues."
+                                                },
+                                                {
+                                                    "title": "Log in Presta",
+                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "",
+                "question": {
+                    "text": "Are you:",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "CX Specialist",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Cutcontour",
+                                "action": "",
+                                "questions": [
+                                    {
+                                        "title": "Custom / round size order?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Are you a CX Specialist",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnsecondary",
+                            "text": "Prepress Specialist",
+                            "action": "Open the linked template on presta and read the description (if featured).",
+                            "question": {
+                                "text": "Template request a Cutcontour?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                        "question": {
+                                            "text": "Automatic artwork check?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutcontour",
+                                                        "action": "Request a new file from Prepress\nFile complaint in Presta",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Custom / round size order?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Template request a Cutcontour?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Automatic artwork check?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "This issue might occur on round stickers as these are cut round standard by the supplier. A contour line was incorrectly added by the artwork agent."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We’ve identified that a contour line was incorrectly added by our artwork agent to your round sticker design. As round stickers are cut standard by the printer, this led to an error in the printing. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Manual Artwork Check <strong>\nComplaint Type:</strong> Processed Incorrectly"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Cutcontour",
+                                                        "action": "Create a fixed cPDF\nFile complaint in Presta",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Custom / round size order?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Template request a Cutcontour?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Automatic artwork check?",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "This issue might occur on round stickers as these are cut round standard by the supplier. A contour line was incorrectly added by autocheck."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We’ve identified that a contour line was incorrectly added by our autocheck to your round sticker design. As round stickers are cut standard by the printer, this led to an error in the printing. To resolve this, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Artwork Automatic Check <strong>\nComplaint Type:</strong> Cropmarks, template, lines printed"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {
+                                            "text": "Cutcontour is pixelated?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "Correct Spot Colour used?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                                                "question": {
+                                                                    "text": "Automatic artwork check?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Cutcontour",
+                                                                                "action": "Create a fixed cPDF\nFile complaint in Presta",
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Custom / round size order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Template request a Cutcontour?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutcontour is pixelated?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Correct Spot Colour used?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": false
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "A cutcontour without spot colour was added by the artwork agent, causing the printer not to recognise this as a cutting shape, rather as part of the design."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "Our artwork agent added a cut contour without spot color, which caused the printer to recognize it as part of the design rather than a cutting shape. To address this issue, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Manual Artwork Check <strong>\nComplaint Type:</strong> Processed Incorrectly"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Cutcontour",
+                                                                                "action": "Create a fixed cPDF\nFile complaint in Presta",
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Custom / round size order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Template request a Cutcontour?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutcontour is pixelated?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Correct Spot Colour used?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "A cutcontour without spot colour was added by autocheck, causing the printer not to recognise this as a cutting shape, rather as part of the design."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "Our autocheck added a cut contour without spot color, which caused the printer to recognize it as part of the design rather than a cutting shape. To address this issue, we can offer you a discount on the current order, arrange a reprint with an altered file that we will provide, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Artwork Automatic Check <strong>\nComplaint Type:</strong> Cutcontour, template, Cropmarks"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutcontour",
+                                                                    "action": "Create a fixed cPDF\nFile complaint in Presta",
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Custom / round size order?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Template request a Cutcontour?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Cutcontour is pixelated?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Correct Spot Colour used?",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The cPDF is correct, however the supplier printed the cutcontour we supplied correctly on the file. We can reprint with the same file"
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "Although the cPDF we provided was correct, an error occurred in the printing of the cut contour. To resolve this, we can offer you a discount on the current order, arrange a reprint with the same file at no additional cost, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will take the necessary steps to ensure your satisfaction."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Printed Incorrectly"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "\n<strong>Automatic: </strong>Open the DTP Tab in Presta & check 'AutoCheck Artwork' box.\n<strong>Manual:</strong> 'Open the DTP Tab in Presta, check 'Attachments' box, and see agent name under 'Uploaded by.",
+                                                    "question": {
+                                                        "text": "Automatic artwork check?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Cutcontour",
+                                                                    "action": "Request a new file from the customer\nFile complaint in Presta",
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Custom / round size order?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Template request a Cutcontour?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Cutcontour is pixelated?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Automatic artwork check?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The customer added a pixelated cutting line on a flat file, because of inattention during the artwork check process it was left in the cPDF and printed as part of the design. "
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "We’ve identified that a pixelated cutting line added by you was not caught during our artwork check process, resulting in it being printed as part of the design. To resolve this, we can offer you a discount on the current order, arrange a reprint once you provide a corrected file, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer and provide the new file if you choose the reprint option. We will take the necessary steps to ensure your satisfaction."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Manual Artwork Check <strong>\nComplaint Type:</strong> Processed Incorrectly"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Cutcontour",
+                                                                                "action": "Check with team lead",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Custom / round size order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Template request a Cutcontour?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutcontour is pixelated?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Cutcontour",
+                                                                                "action": "Request a new file from the customer\nFile complaint in Presta\nCheck customer type & select one of the suggested resolutions",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Custom / round size order?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Template request a Cutcontour?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Cutcontour is pixelated?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Automatic artwork check?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The customer added a pixelated cutting line on a flat file, as pixels are not recognised as cutcontour by autocheck this was not caught and it was processed as part of the design. "
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "As a special consideration for being a new customer, we understand that you may not have been fully aware of our processes. As an exception, we would like to offer you a free reprint of your order. However, we kindly request that you provide us with a new design that does not include a pixelated cutting line, as these are not recognized as cut contours by our system and are processed as part of the design. This gesture is intended to ensure your satisfaction and demonstrate our commitment to delivering the best possible product."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "We understand that, as an returning customer, you may not have been fully aware that pixelated cutting lines are not recognized as cut contours by our autocheck system and are processed as part of the design. To ensure your satisfaction and as a gesture of goodwill, we are offering you a 10% discount on the current order or as a voucher for your next order.. Please provide us with a new design without the pixelated cutting line to avoid any further issues."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,1063 @@
+{
+    "title": "Text/Images Disappearing ",
+    "subTitle": "Overprint is a design function that blends colours. Light colours will disappear on darker colours.",
+    "action": "Compare customers design with the printed product, did lighter elements disappear into a dark background?",
+    "question": {
+        "text": "Light coloured elements disappearing?",
+        "options": [
+            {
+                "class": "btnsecondary",
+                "text": "No",
+                "action": "",
+                "question": {
+                    "text": "Are you:",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "CX Specialist",
+                            "action": "",
+                            "question": {},
+                            "solution": {
+                                "title": "Text/Images Disappearing",
+                                "action": "",
+                                "questions": [
+                                    {
+                                        "title": "Light coloured elements disappearing?",
+                                        "isValid": false
+                                    },
+                                    {
+                                        "title": "Are you a CX Specialist",
+                                        "isValid": true
+                                    }
+                                ],
+                                "summaries": [
+                                    {
+                                        "title": "Solution",
+                                        "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnsecondary",
+                            "text": "Prepress Specialist",
+                            "action": "Open the customers file in Illustrator, look for a pop up warning regarding missing links",
+                            "question": {
+                                "text": "Links are correctly embedded?",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {
+                                            "text": "What type of order is this?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is over 150",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Text/Images Disappearing",
+                                                        "action": "Check with team lead",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Light coloured elements disappearing?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Links are correctly embedded?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over 150",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is under 150 or New CMR",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Text/Images Disappearing",
+                                                        "action": "File and finish the complaint in Presta. \nSelect one of the following resolutions based on customer type\nCustomer needs to embed links before we reprint",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Light coloured elements disappearing?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Links are correctly embedded?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The customer did not embed the affected elements causing the links to not be recognised and therefore not printed. "
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (NEW)",
+                                                                "description": "We have identified that the affected elements were not embedded in your design, causing the links to not be recognized and therefore not printed. As a new customer, we understand that you may not have been fully aware of this requirement. To resolve the issue, we can offer you a discount on the current order, arrange a reprint of a corrected file supplied by you, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will ensure it is promptly addressed"
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (RETURNING)",
+                                                                "description": "We have identified that the affected elements were not embedded in your design, which caused the links to not be recognized and therefore not printed. As a returning customer, we appreciate your continued support and understand that such issues can occur. To address this, we can offer you a 10% discount on this order or a voucher for a future purchase. Please let us know your preference, and we will make the necessary arrangements to ensure your satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "Open Illustrator and select the affected elements. Look at the Attributes tab, to see if they have been set to overprint.",
+                                        "question": {
+                                            "text": "Affected elements in Illustrator have overprint?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Text/Images Disappearing ",
+                                                        "validComplaint": true,
+                                                        "action": "Use same file for reprint\nFile complaint in Presta",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Light coloured elements disappearing?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a Prepress Specialist?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Links are correctly embedded?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Affected elements in Illustrator have overprint?",
+                                                                "isValid": false
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The cPDF is correct, no overprint on embedded links indicates the supplier altered the file or did not allow sufficient time to load before production."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer",
+                                                                "description": "We have reviewed the cPDF and confirmed that it was correct, with no issues regarding overprint on embedded links. It appears that an error occurred during the production process, possibly due to file alterations or insufficient loading time. To resolve this, we can offer you a discount on your current order or arrange a reprint if time allows. If a reprint is not feasible due to time constraints, we can provide a refund. Please let us know your preferred solution, and we will take the necessary steps to ensure your satisfaction."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Printed Incorrectly"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "What type of order is this?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is over 150",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Text/Images Disappearing",
+                                                                    "action": "Check with team lead",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Light coloured elements disappearing?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Links are correctly embedded?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Affected elements in Illustrator have overprint?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is over 150",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is under 150 or New CMR",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Text/Images Disappearing",
+                                                                    "action": "File and finish the complaint in Presta. \nSelect one of the following resolutions based on customer type\nOverprint to be removed before reprint",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Light coloured elements disappearing?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Links are correctly embedded?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Affected elements in Illustrator have overprint?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is under 150 or New CMR",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The customer added overprint incorrectly to their design causing some elements to disappear on the final print. We warn on the website not to use overprint if uncertain as we do not cover this in our artwork check."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (NEW)",
+                                                                            "description": "We have identified that overprint was added incorrectly to your design, which caused some elements to disappear in the final print. Since overprint is an aesthetic design choice and we do not check or alter these aspects during our artwork check, we cannot validate this complaint. As a new customer, we want to ensure your satisfaction, so we can offer you a discount on this order, arrange a reprint with the corrected file at no additional cost, or provide a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (RETURNING)",
+                                                                            "description": "We have identified that overprint was added incorrectly to your design, leading to some elements disappearing in the final print. As overprint is considered an aesthetic design choice and is not checked or altered by us during our artwork review, we cannot validate this complaint. As a returning customer, we value your continued support and want to address this issue. We can offer you a 10% discount on this order or provide a voucher for a future purchase. Please let us know your preference, and we will make the necessary arrangements."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "btnprimary",
+                "text": "Yes",
+                "action": "Open the customers file in Adobe Acrobat and click the 'Output Preview' tab.  ",
+                "question": {
+                    "text": "Adobe Acrobat shows overprint in file?",
+                    "options": [
+                        {
+                            "class": "btnsecondary",
+                            "text": "No",
+                            "action": "",
+                            "question": {
+                                "text": "Are you:",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "CX Specialist",
+                                        "action": "",
+                                        "question": {},
+                                        "solution": {
+                                            "title": "Text/Images Disappearing",
+                                            "action": "",
+                                            "questions": [
+                                                {
+                                                    "title": "Light coloured elements disappearing?",
+                                                    "isValid": true
+                                                },
+                                                {
+                                                    "title": "Adobe Acrobat shows overprint in file?",
+                                                    "isValid": false
+                                                },
+                                                {
+                                                    "title": "Are you a CX Specialist",
+                                                    "isValid": true
+                                                }
+                                            ],
+                                            "summaries": [
+                                                {
+                                                    "title": "Solution",
+                                                    "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "Prepress Specialist",
+                                        "action": "Open the customers file in Illustrator, look for a pop up warning regarding missing links",
+                                        "question": {
+                                            "text": "Links are correctly embedded?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "No",
+                                                    "action": "",
+                                                    "question": {
+                                                        "text": "What type of order is this?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is over 150",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Text/Images Disappearing",
+                                                                    "action": "Check with team lead",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Light coloured elements disappearing?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Adobe Acrobat shows overprint in file?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Links are correctly embedded?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is over 150",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "Purchase price is under 150 or New CMR",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Text/Images Disappearing",
+                                                                    "action": "File and finish the complaint in Presta. \nSelect one of the following resolutions based on customer type\nCustomer needs to embed links before we reprint",
+                                                                    "validComplaint": false,
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Light coloured elements disappearing?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Adobe Acrobat shows overprint in file?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Links are correctly embedded?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Purchase price is under 150 or New CMR",
+                                                                            "isValid": true
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The customer did not embed the affected elements causing the links to not be recognised and therefore not printed. "
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (NEW)",
+                                                                            "description": "We have identified that the affected elements were not embedded in your design, causing the links to not be recognized and therefore not printed. As a new customer, we understand that you may not have been fully aware of this requirement. To resolve the issue, we can offer you a discount on the current order, arrange a reprint of a corrected file supplied by you, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will ensure it is promptly addressed"
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer (RETURNING)",
+                                                                            "description": "We have identified that the affected elements were not embedded in your design, which caused the links to not be recognized and therefore not printed. As a returning customer, we appreciate your continued support and understand that such issues can occur. To address this, we can offer you a 10% discount on this order or a voucher for a future purchase. Please let us know your preference, and we will make the necessary arrangements to ensure your satisfaction."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnprimary",
+                                                    "text": "Yes",
+                                                    "action": "Open Illustrator and select the affected elements. Look at the Attributes tab, to see if they have been set to overprint.",
+                                                    "question": {
+                                                        "text": "Affected elements in Illustrator have overprint?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {},
+                                                                "solution": {
+                                                                    "title": "Text/Images Disappearing ",
+                                                                    "validComplaint": true,
+                                                                    "action": "Use same file for reprint\nFile complaint in Presta",
+                                                                    "questions": [
+                                                                        {
+                                                                            "title": "Light coloured elements disappearing?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Adobe Acrobat shows overprint in file?",
+                                                                            "isValid": false
+                                                                        },
+                                                                        {
+                                                                            "title": "Are you a Prepress Specialist?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Links are correctly embedded?",
+                                                                            "isValid": true
+                                                                        },
+                                                                        {
+                                                                            "title": "Affected elements in Illustrator have overprint?",
+                                                                            "isValid": false
+                                                                        }
+                                                                    ],
+                                                                    "summaries": [
+                                                                        {
+                                                                            "title": "Solution",
+                                                                            "description": "The cPDF is correct, no overprint on embedded links indicates the supplier altered the file or did not allow sufficient time to load before production."
+                                                                        },
+                                                                        {
+                                                                            "title": "What to tell the customer",
+                                                                            "description": "We have reviewed the cPDF and confirmed that it was correct, with no issues regarding overprint on embedded links. It appears that an error occurred during the production process, possibly due to file alterations or insufficient loading time. To resolve this, we can offer you a discount on your current order or arrange a reprint if time allows. If a reprint is not feasible due to time constraints, we can provide a refund. Please let us know your preferred solution, and we will take the necessary steps to ensure your satisfaction."
+                                                                        },
+                                                                        {
+                                                                            "title": "Log in Presta",
+                                                                            "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Printed Incorrectly"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Text/Images Disappearing",
+                                                                                "action": "Check with team lead",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Light coloured elements disappearing?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Adobe Acrobat shows overprint in file?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Links are correctly embedded?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Affected elements in Illustrator have overprint?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Text/Images Disappearing",
+                                                                                "action": "File and finish the complaint in Presta. \nSelect one of the following resolutions based on customer type\nOverprint to be removed before reprint",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Light coloured elements disappearing?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Links are correctly embedded?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Affected elements in Illustrator have overprint?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The customer added overprint incorrectly to their design causing some elements to disappear on the final print. We warn on the website not to use overprint if uncertain as we do not cover this in our artwork check."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "We have identified that overprint was added incorrectly to your design, which caused some elements to disappear in the final print. Since overprint is an aesthetic design choice and we do not check or alter these aspects during our artwork check, we cannot validate this complaint. As a new customer, we want to ensure your satisfaction, so we can offer you a discount on this order, arrange a reprint with the corrected file at no additional cost, or provide a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "We have identified that overprint was added incorrectly to your design, leading to some elements disappearing in the final print. As overprint is considered an aesthetic design choice and is not checked or altered by us during our artwork review, we cannot validate this complaint. As a returning customer, we value your continued support and want to address this issue. We can offer you a 10% discount on this order or provide a voucher for a future purchase. Please let us know your preference, and we will make the necessary arrangements."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "btnprimary",
+                            "text": "Yes",
+                            "action": "",
+                            "question": {
+                                "text": "Affected elements disappear when selecting 'Simulate Overprinting'",
+                                "options": [
+                                    {
+                                        "class": "btnsecondary",
+                                        "text": "No",
+                                        "action": "",
+                                        "question": {
+                                            "text": "Are you:",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "CX Specialist",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Text/Images Disappearing",
+                                                        "action": "",
+                                                        "questions": [
+                                                            {
+                                                                "title": "Light coloured elements disappearing?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Adobe Acrobat shows overprint in file?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Affected elements in Illustrator have overprint?",
+                                                                "isValid": false
+                                                            },
+                                                            {
+                                                                "title": "Are you a CX Specialist",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "Send a side conversation to Artwork_Complaints inbox with the artwork complaints macro."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Prepress Specialist",
+                                                    "action": "Open the customers file in Illustrator, look for a pop up warning regarding missing links",
+                                                    "question": {
+                                                        "text": "Links are correctly embedded?",
+                                                        "options": [
+                                                            {
+                                                                "class": "btnsecondary",
+                                                                "text": "No",
+                                                                "action": "",
+                                                                "question": {
+                                                                    "text": "What type of order is this?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is over 150",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Text/Images Disappearing",
+                                                                                "action": "Check with team lead",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Light coloured elements disappearing?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Adobe Acrobat shows overprint in file?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Affected elements in Illustrator have overprint?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Links are correctly embedded?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is over 150",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "Purchase price is under 150 or New CMR",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Text/Images Disappearing",
+                                                                                "action": "File and finish the complaint in Presta. \nSelect one of the following resolutions based on customer type\nCustomer needs to embed links before we reprint",
+                                                                                "validComplaint": false,
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Light coloured elements disappearing?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Adobe Acrobat shows overprint in file?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Affected elements in Illustrator have overprint?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Links are correctly embedded?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Purchase price is under 150 or New CMR",
+                                                                                        "isValid": true
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The customer did not embed the affected elements causing the links to not be recognised and therefore not printed. "
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (NEW)",
+                                                                                        "description": "We have identified that the affected elements were not embedded in your design, causing the links to not be recognized and therefore not printed. As a new customer, we understand that you may not have been fully aware of this requirement. To resolve the issue, we can offer you a discount on the current order, arrange a reprint of a corrected file supplied by you, or issue a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will ensure it is promptly addressed"
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer (RETURNING)",
+                                                                                        "description": "We have identified that the affected elements were not embedded in your design, which caused the links to not be recognized and therefore not printed. As a returning customer, we appreciate your continued support and understand that such issues can occur. To address this, we can offer you a 10% discount on this order or a voucher for a future purchase. Please let us know your preference, and we will make the necessary arrangements to ensure your satisfaction."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "class": "btnprimary",
+                                                                "text": "Yes",
+                                                                "action": "Open Illustrator and select the affected elements. Look at the Attributes tab, to see if they have been set to overprint.",
+                                                                "question": {
+                                                                    "text": "Affected elements in Illustrator have overprint?",
+                                                                    "options": [
+                                                                        {
+                                                                            "class": "btnsecondary",
+                                                                            "text": "No",
+                                                                            "action": "",
+                                                                            "question": {},
+                                                                            "solution": {
+                                                                                "title": "Text/Images Disappearing ",
+                                                                                "validComplaint": true,
+                                                                                "action": "Use same file for reprint\nFile complaint in Presta",
+                                                                                "questions": [
+                                                                                    {
+                                                                                        "title": "Light coloured elements disappearing?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Adobe Acrobat shows overprint in file?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Affected elements in Illustrator have overprint?",
+                                                                                        "isValid": false
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Are you a Prepress Specialist?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Links are correctly embedded?",
+                                                                                        "isValid": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Affected elements in Illustrator have overprint?",
+                                                                                        "isValid": false
+                                                                                    }
+                                                                                ],
+                                                                                "summaries": [
+                                                                                    {
+                                                                                        "title": "Solution",
+                                                                                        "description": "The cPDF is correct, no overprint on embedded links indicates the supplier altered the file or did not allow sufficient time to load before production."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "What to tell the customer",
+                                                                                        "description": "We have reviewed the cPDF and confirmed that it was correct, with no issues regarding overprint on embedded links. It appears that an error occurred during the production process, possibly due to file alterations or insufficient loading time. To resolve this, we can offer you a discount on your current order or arrange a reprint if time allows. If a reprint is not feasible due to time constraints, we can provide a refund. Please let us know your preferred solution, and we will take the necessary steps to ensure your satisfaction."
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Log in Presta",
+                                                                                        "description": "<strong>Complaint Department:</strong> Supplier <strong>\nComplaint Type:</strong> Printed Incorrectly"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "class": "btnprimary",
+                                                                            "text": "Yes",
+                                                                            "action": "",
+                                                                            "question": {
+                                                                                "text": "What type of order is this?",
+                                                                                "options": [
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is over 150",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Text/Images Disappearing",
+                                                                                            "action": "Check with team lead",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Light coloured elements disappearing?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Adobe Acrobat shows overprint in file?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Affected elements in Illustrator have overprint?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Links are correctly embedded?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Affected elements in Illustrator have overprint?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is over 150",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "class": "btnsecondary",
+                                                                                        "text": "Purchase price is under 150 or New CMR",
+                                                                                        "action": "",
+                                                                                        "question": {},
+                                                                                        "solution": {
+                                                                                            "title": "Text/Images Disappearing",
+                                                                                            "action": "File and finish the complaint in Presta. \nSelect one of the following resolutions based on customer type\nOverprint to be removed before reprint",
+                                                                                            "validComplaint": false,
+                                                                                            "questions": [
+                                                                                                {
+                                                                                                    "title": "Light coloured elements disappearing?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Adobe Acrobat shows overprint in file?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Affected elements in Illustrator have overprint?",
+                                                                                                    "isValid": false
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Are you a Prepress Specialist?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Links are correctly embedded?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Affected elements in Illustrator have overprint?",
+                                                                                                    "isValid": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Purchase price is under 150 or New CMR",
+                                                                                                    "isValid": true
+                                                                                                }
+                                                                                            ],
+                                                                                            "summaries": [
+                                                                                                {
+                                                                                                    "title": "Solution",
+                                                                                                    "description": "The customer added overprint incorrectly to their design causing some elements to disappear on the final print. We warn on the website not to use overprint if uncertain as we do not cover this in our artwork check."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (NEW)",
+                                                                                                    "description": "We have identified that overprint was added incorrectly to your design, which caused some elements to disappear in the final print. Since overprint is an aesthetic design choice and we do not check or alter these aspects during our artwork check, we cannot validate this complaint. As a new customer, we want to ensure your satisfaction, so we can offer you a discount on this order, arrange a reprint with the corrected file at no additional cost, or provide a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "What to tell the customer (RETURNING)",
+                                                                                                    "description": "We have identified that overprint was added incorrectly to your design, leading to some elements disappearing in the final print. As overprint is considered an aesthetic design choice and is not checked or altered by us during our artwork review, we cannot validate this complaint. As a returning customer, we value your continued support and want to address this issue. We can offer you a 10% discount on this order or provide a voucher for a future purchase. Please let us know your preference, and we will make the necessary arrangements."
+                                                                                                },
+                                                                                                {
+                                                                                                    "title": "Log in Presta",
+                                                                                                    "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "class": "btnprimary",
+                                        "text": "Yes",
+                                        "action": "",
+                                        "question": {
+                                            "text": "What type of order is this?",
+                                            "options": [
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is over 150",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Text/Images Disappearing",
+                                                        "action": "Check with team lead",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Light coloured elements disappearing?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Adobe Acrobat shows overprint in file?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Affected elements in Illustrator have overprint?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is over 150",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "We need to review these case by case. Take into account such factors as: Priority Client, amount of orders total, amount of prior complaints, amount spent total, purchase price vs. customer price."
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "class": "btnsecondary",
+                                                    "text": "Purchase price is under 150 or New CMR",
+                                                    "action": "",
+                                                    "question": {},
+                                                    "solution": {
+                                                        "title": "Text/Images Disappearing",
+                                                        "action": "File and finish the complaint in Presta. \nSelect one of the following resolutions based on customer type\nOverprint to be removed or file flattened before reprint",
+                                                        "validComplaint": false,
+                                                        "questions": [
+                                                            {
+                                                                "title": "Light coloured elements disappearing?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Adobe Acrobat shows overprint in file?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Affected elements in Illustrator have overprint?",
+                                                                "isValid": true
+                                                            },
+                                                            {
+                                                                "title": "Purchase price is under 150 or New CMR",
+                                                                "isValid": true
+                                                            }
+                                                        ],
+                                                        "summaries": [
+                                                            {
+                                                                "title": "Solution",
+                                                                "description": "The customer added overprint incorrectly to their design causing some elements to disappear on the final print. We warn on the website not to use overprint if uncertain as we do not cover this in our artwork check."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (NEW)",
+                                                                "description": "We have identified that overprint was added incorrectly to your design, which caused some elements to disappear in the final print. Since overprint is an aesthetic design choice and we do not check or alter these aspects during our artwork check, we cannot validate this complaint. As a new customer, we want to ensure your satisfaction, so we can offer you a discount on this order, arrange a reprint with the corrected file at no additional cost, or provide a refund if a reprint is no longer feasible. Please let us know which option you prefer, and we will make the necessary arrangements."
+                                                            },
+                                                            {
+                                                                "title": "What to tell the customer (RETURNING)",
+                                                                "description": "We have identified that overprint was added incorrectly to your design, leading to some elements disappearing in the final print. As overprint is considered an aesthetic design choice and is not checked or altered by us during our artwork review, we cannot validate this complaint. As a returning customer, we value your continued support and want to address this issue. We can offer you a 10% discount on this order or provide a voucher for a future purchase. Please let us know your preference, and we will make the necessary arrangements."
+                                                            },
+                                                            {
+                                                                "title": "Log in Presta",
+                                                                "description": "<strong>Complaint Department:</strong> Customer goodwill <strong>\nComplaint Type:</strong> Wrong artwork uploaded"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
